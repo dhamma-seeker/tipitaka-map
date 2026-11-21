@@ -1,0 +1,38 @@
+{
+  "karuna_total_segments": 216,
+  "karuna_by_pitaka": {
+    "vinaya": 1,
+    "sutta": 142,
+    "abhidhamma": 73
+  },
+  "expected_proportional": {
+    "vinaya": 34.8,
+    "sutta": 138.3,
+    "abhidhamma": 42.9
+  },
+  "chi2_pitaka": 53.917,
+  "df": 2,
+  "std_residual": {
+    "vinaya": -5.73,
+    "sutta": 0.32,
+    "abhidhamma": 4.59
+  },
+  "density_per_1000": {
+    "vinaya": 0.01,
+    "sutta": 0.5,
+    "abhidhamma": 0.83
+  },
+  "karuna_share_of_4_brahmavihara": 0.081,
+  "karuna_cetovimutti_share_of_karuna": 0.083,
+  "compounds_karuna": {
+    "karuṇācetovimutti": 18,
+    "karuṇāsahagatena": 44,
+    "karuṇābhāvanā": 0,
+    "mahākaruṇā": 26
+  },
+  "compounds_metta_contrast": {
+    "mettācetovimutti": 121,
+    "mettāsahagatena": 58,
+    "mettābhāvanā": 6
+  }
+}

@@ -43,6 +43,17 @@
 
 ---
 
+## 📖 งานวิจัยเชิงสำรวจศัพท์ (keyword survey: เมตตา/กรุณา)
+
+| หัวข้อ | รายงาน | ข้อมูล |
+|---|---|---|
+| **เมตตา (mettā)** | [report.md](metta-research/metta_research_report.md) | [per_nikaya.csv](metta-research/metta_per_nikaya.csv), [quant.json](metta-research/metta_quant_results.json), [nikaya.json](metta-research/metta_nikaya_results.json) |
+| **กรุณา (karuṇā)** | [report.md](karuna-research/karuna_research_report.md) | [per_nikaya.csv](karuna-research/karuna_per_nikaya.csv), [quant.json](karuna-research/karuna_quant_results.json), [nikaya.json](karuna-research/karuna_nikaya_results.json) |
+
+*(งานสำรวจคำ "เมตตา/กรุณา" ทั่วพระไตรปิฎกแบบ exhaustive — วิธีวิทยาเดียวกับงาน 5 สูตร)*
+
+---
+
 ## 🔬 วิธีวิจัย (methodology)
 
 1. **แหล่งข้อมูล:** ตัวบท**ภาษาบาลีโรมัน**เท่านั้น (ไม่ใช้การแปลภาษาอังกฤษ/ภาษาอื่นในการวิเคราะห์) ผ่าน tripitaka-mcp ทั้ง local และ online — ฐานข้อมูล SuttaCentral `bilara-data` (CC0)

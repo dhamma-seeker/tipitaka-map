@@ -1,0 +1,65 @@
+{
+  "corpus_segments": {
+    "vinaya": 71557,
+    "sutta": 284702,
+    "abhidhamma": 88414,
+    "total": 444673
+  },
+  "metta_stem_total": 735,
+  "metta_stem_observed": {
+    "vinaya": 46,
+    "sutta": 610,
+    "abhidhamma": 79
+  },
+  "metta_stem_expected_proportional": {
+    "vinaya": 118.3,
+    "sutta": 470.6,
+    "abhidhamma": 146.1
+  },
+  "chi2": 116.316,
+  "df": 2,
+  "std_residual": {
+    "vinaya": -6.65,
+    "sutta": 6.43,
+    "abhidhamma": -5.55
+  },
+  "metta_per_1000_segments": {
+    "vinaya": 0.64,
+    "sutta": 2.14,
+    "abhidhamma": 0.89
+  },
+  "brahmavihara_stem_counts": {
+    "mettā": 735,
+    "karuṇā": 216,
+    "muditā": 190,
+    "upekkhā": 1539,
+    "appamaññā": 48
+  },
+  "metta_share_of_four_brahmavihara": 0.274,
+  "compounds": {
+    "mettācetovimutti": {
+      "segments": 121,
+      "suttas": 14,
+      "pitaka": {
+        "sutta": 107,
+        "abhidhamma": 14
+      }
+    },
+    "mettāsahagatena": {
+      "segments": 58,
+      "suttas": 36,
+      "pitaka": {
+        "sutta": 51,
+        "abhidhamma": 7
+      }
+    },
+    "mettābhāvanā": {
+      "segments": 6,
+      "suttas": 5,
+      "pitaka": {
+        "sutta": 6
+      }
+    }
+  },
+  "metta_cetovimutti_share_of_metta": 0.165
+}

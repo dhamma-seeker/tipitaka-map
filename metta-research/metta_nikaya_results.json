@@ -1,0 +1,69 @@
+{
+  "per_nikaya": {
+    "DN": {
+      "segments": 37,
+      "suttas": 11,
+      "density_per_1000": 2.26
+    },
+    "MN": {
+      "segments": 76,
+      "suttas": 21,
+      "density_per_1000": 2.79
+    },
+    "SN": {
+      "segments": 31,
+      "suttas": 13,
+      "density_per_1000": 0.71
+    },
+    "AN": {
+      "segments": 101,
+      "suttas": 49,
+      "density_per_1000": 2.41
+    },
+    "KN": {
+      "segments": 365,
+      "suttas": 102,
+      "density_per_1000": 2.34
+    },
+    "Vinaya": {
+      "segments": 46,
+      "suttas": 11,
+      "density_per_1000": 0.64
+    },
+    "Abhidhamma": {
+      "segments": 79,
+      "suttas": 6,
+      "density_per_1000": 0.89
+    }
+  },
+  "chi2_5_nikayas": {
+    "chi2": 51.295,
+    "df": 4,
+    "std_residuals": {
+      "DN": 0.31,
+      "MN": 2.32,
+      "SN": -6.44,
+      "AN": 1.2,
+      "KN": 1.71
+    }
+  },
+  "chi2_3_pitakas": {
+    "chi2": 116.316,
+    "df": 2,
+    "std_residuals": {
+      "Vinaya": -6.65,
+      "Sutta": 6.43,
+      "Abhidhamma": -5.55
+    }
+  },
+  "cleaned_excluding_32_name_title_segments": 703,
+  "abhidhamma_by_book": {
+    "ds": 8,
+    "vb": 67,
+    "kv": 4,
+    "dt": 0,
+    "pp": 0,
+    "ya": 0,
+    "patthana": 0
+  }
+}

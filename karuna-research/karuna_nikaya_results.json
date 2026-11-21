@@ -1,0 +1,56 @@
+{
+  "per_nikaya": {
+    "DN": {
+      "segments": 26,
+      "suttas": 8,
+      "density_per_1000": 1.59
+    },
+    "MN": {
+      "segments": 18,
+      "suttas": 12,
+      "density_per_1000": 0.66
+    },
+    "SN": {
+      "segments": 15,
+      "suttas": 6,
+      "density_per_1000": 0.35
+    },
+    "AN": {
+      "segments": 17,
+      "suttas": 14,
+      "density_per_1000": 0.41
+    },
+    "KN": {
+      "segments": 66,
+      "suttas": 40,
+      "density_per_1000": 0.42
+    },
+    "Vinaya": {
+      "segments": 1,
+      "suttas": 1,
+      "density_per_1000": 0.01
+    },
+    "Abhidhamma": {
+      "segments": 73,
+      "suttas": 6,
+      "density_per_1000": 0.83
+    }
+  },
+  "chi2_5_nikayas": {
+    "chi2": 44.808,
+    "df": 4,
+    "std_residuals": {
+      "DN": 6.23,
+      "MN": 1.2,
+      "SN": -1.43,
+      "AN": -0.85,
+      "KN": -1.33
+    }
+  },
+  "cleaned_excluding_8_epithets": 208,
+  "abhidhamma_books": {
+    "ds": 2,
+    "vb": 56,
+    "kv": 15
+  }
+}
