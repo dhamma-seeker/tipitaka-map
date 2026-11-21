@@ -3,103 +3,459 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>แผนที่พระไตรปิฎก (Tipiṭaka Map) — หน้ารวมงานวิจัย</title>
+<title>แผนที่พระไตรปิฎก (Tipiṭaka Map) — แผนที่เชิงโต้ตอบ</title>
+<meta name="description" content="แผนที่พระไตรปิฎกฉบับสมบูรณ์: 10 root · 4 แกน · 3 ปิฎก วิเคราะห์จากตัวบทบาลีโรมันเท่านั้น">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;600;700&family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root { --maroon:#8a1f1f; --gold:#8a6d3b; --bg:#fdfaf3; --card:#fffdf5; --ink:#3a2a12; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:"Georgia","Thonburi","Cordia New",serif; background:var(--bg); color:var(--ink); line-height:1.7; }
-  header { background:linear-gradient(135deg,#6b1a1a,#8a1f1f); color:#fff; padding:2.2rem 1rem; text-align:center; }
-  header h1 { margin:0 0 .4rem; font-size:1.9rem; }
-  header p { margin:.2rem 0; opacity:.92; font-size:.95rem; }
-  main { max-width:980px; margin:0 auto; padding:1.5rem 1rem 3rem; }
-  h2 { color:var(--maroon); border-bottom:2px solid var(--gold); padding-bottom:.3rem; margin-top:2.2rem; }
-  .lead { background:var(--card); border:1px solid #e8dcc3; border-radius:10px; padding:1rem 1.2rem; }
-  .lead code { background:#f1e3c3; padding:.1rem .4rem; border-radius:4px; }
-  table { width:100%; border-collapse:collapse; margin:.8rem 0 1.4rem; font-size:.92rem; background:var(--card); }
-  th,td { border:1px solid #e0d2b4; padding:.5rem .6rem; text-align:left; vertical-align:top; }
-  th { background:#f1e3c3; color:var(--maroon); }
-  a { color:#6b1a1a; text-decoration:none; border-bottom:1px dotted #8a6d3b; }
-  a:hover { color:#a62; border-bottom-style:solid; }
-  img { max-width:100%; height:auto; border:1px solid #e0d2b4; border-radius:8px; }
-  .badge { display:inline-block; background:#f1e3c3; color:var(--maroon); border-radius:10px; padding:.05rem .6rem; font-size:.8rem; margin-right:.3rem; }
-  .macro { background:#8a1f1f; color:#fff; }
-  footer { text-align:center; font-size:.8rem; color:#7a5a2a; padding:1.5rem; border-top:1px solid #e0d2b4; }
-  .caveat { background:#fff8e6; border-left:4px solid var(--gold); padding:.7rem 1rem; border-radius:6px; font-size:.9rem; }
+  :root{
+    --bg:#faf6ee; --surface:#fffdf7; --surface-2:#f5efe2;
+    --ink:#2b2620; --muted:#6c6355; --faint:#9a8f7d;
+    --primary:#7a2e2e; --primary-strong:#5b1d1d; --primary-soft:#f0e2d8;
+    --accent:#a97f2e; --accent-soft:#f3e8cd;
+    --border:#e6dcc6; --border-strong:#cdbfa2;
+    --what:#7a2e2e; --index:#2f6b4f; --authority:#5b3a73; --how:#2f5370;
+    --focus:#2f6b4f;
+    --radius:12px; --radius-sm:8px;
+    --shadow:0 1px 2px rgba(60,45,20,.05),0 8px 24px -12px rgba(60,45,20,.18);
+    --serif:"Noto Serif Thai",Georgia,"Times New Roman",serif;
+    --sans:"Sarabun",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} *{transition:none!important;animation:none!important} }
+  body{margin:0;font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.7;font-size:16px}
+  a{color:var(--primary);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
+  a:hover{color:var(--primary-strong);border-bottom-color:var(--primary)}
+  a:focus-visible,button:focus-visible,.node:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
+  h1,h2,h3{font-family:var(--serif);color:var(--primary-strong);line-height:1.3;font-weight:600}
+  h1{font-size:clamp(1.7rem,4vw,2.6rem);margin:.2rem 0 .5rem}
+  h2{font-size:clamp(1.3rem,3vw,1.8rem);margin:0 0 1rem;display:flex;align-items:center;gap:.6rem}
+  h2::after{content:"";flex:1;height:1px;background:var(--border-strong);margin-left:.5rem}
+  .icon{width:20px;height:20px;flex:none;color:var(--accent)}
+  .container{max-width:1120px;margin:0 auto;padding:0 1.2rem}
+
+  /* header */
+  header{background:linear-gradient(160deg,#5b1d1d 0%,#7a2e2e 60%,#8a3a2f 100%);color:#fdf6ec;padding:3.2rem 1rem 2.6rem;text-align:center;border-bottom:4px solid var(--accent)}
+  header .kicker{display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:#e8c88a;border:1px solid rgba(232,200,138,.4);padding:.25rem .8rem;border-radius:999px;margin-bottom:1rem}
+  header h1{color:#fffdf5;font-weight:700}
+  header .sub{max-width:760px;margin:.6rem auto 0;color:#f2e3cf;font-size:1.02rem}
+  .stats{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin-top:1.5rem}
+  .stat{background:rgba(255,253,245,.08);border:1px solid rgba(255,253,245,.18);border-radius:10px;padding:.5rem 1rem;font-size:.88rem}
+  .stat b{display:block;font-family:var(--serif);font-size:1.3rem;color:#fff}
+  .stat span{color:#e6d5bb}
+
+  /* sections */
+  section{padding:2.6rem 0}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.4rem 1.5rem}
+  .lead{font-size:1.03rem}
+  .lead strong{color:var(--primary-strong)}
+
+  /* axis legend */
+  .legend{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0 1rem}
+  .legend span{display:inline-flex;align-items:center;gap:.35rem;font-size:.85rem;padding:.2rem .7rem;border-radius:999px;border:1px solid var(--border);background:var(--surface)}
+  .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+
+  /* interactive map */
+  .map-wrap{position:relative;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+  .map-toolbar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;justify-content:space-between;padding:.8rem 1rem;border-bottom:1px solid var(--border);background:var(--surface-2)}
+  .map-toolbar .hint{font-size:.82rem;color:var(--muted)}
+  .map-toolbar button{font-family:var(--sans);font-size:.85rem;background:var(--surface);border:1px solid var(--border-strong);border-radius:999px;padding:.35rem .9rem;cursor:pointer;color:var(--ink)}
+  .map-toolbar button:hover{border-color:var(--primary);color:var(--primary)}
+  .map-toolbar button[aria-pressed="true"]{background:var(--primary);color:#fff;border-color:var(--primary)}
+  svg.map{display:block;width:100%;height:auto;cursor:default}
+  .node{cursor:pointer}
+  .node rect{transition:opacity .15s,stroke-width .15s}
+  .node:hover rect{stroke-width:2.5}
+  .node text{pointer-events:none;user-select:none}
+  .edge{stroke:#cbb98f;stroke-width:1.2;fill:none;opacity:.8;transition:opacity .2s,stroke-width .2s}
+  .edge.dim{opacity:.08}
+  .edge.lit{stroke:var(--accent);stroke-width:2.4;opacity:1}
+  .node.dim rect{opacity:.15}
+  .node.dim text{opacity:.15}
+
+  /* detail panel */
+  #detail{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1rem 1.1rem;margin:1rem;display:none}
+  #detail.show{display:block}
+  #detail h3{margin:.2rem 0 .3rem;font-size:1.15rem}
+  #detail .role{font-size:.88rem;color:var(--accent);font-weight:600}
+  #detail p{margin:.3rem 0}
+  #detail .links{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.6rem}
+  #detail a{font-size:.88rem;background:var(--primary);color:#fff;padding:.3rem .8rem;border-radius:999px;border:none}
+  #detail a:hover{background:var(--primary-strong)}
+
+  /* root cards */
+  .roots{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;margin-top:1rem}
+  .root-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--border-strong);border-radius:var(--radius-sm);padding:1rem 1.1rem;cursor:pointer;transition:transform .15s,box-shadow .15s;position:relative}
+  .root-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+  .root-card:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+  .root-card .axis{font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;font-weight:600;color:#fff;display:inline-block;padding:.12rem .55rem;border-radius:6px;margin-bottom:.4rem}
+  .root-card h3{margin:.1rem 0 .2rem;font-size:1.05rem}
+  .root-card .sid{font-size:.8rem;color:var(--faint);font-family:var(--sans)}
+  .root-card p{margin:.3rem 0 0;font-size:.88rem;color:var(--muted)}
+
+  /* tables */
+  table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.92rem;background:var(--surface)}
+  th,td{border:1px solid var(--border);padding:.6rem .7rem;text-align:left;vertical-align:top}
+  th{background:var(--surface-2);color:var(--primary-strong);font-weight:600;font-family:var(--serif)}
+  tr:nth-child(even) td{background:#fcfaf4}
+  .table-scroll{overflow-x:auto}
+
+  .caveat{background:#fff8e8;border-left:4px solid var(--accent);padding:.9rem 1.1rem;border-radius:var(--radius-sm);font-size:.9rem;margin-top:1rem}
+
+  footer{text-align:center;font-size:.85rem;color:var(--muted);padding:2rem 1rem;border-top:1px solid var(--border);margin-top:2rem}
+  footer a{color:var(--primary)}
+
+  @media (max-width:768px){
+    .roots{grid-template-columns:1fr 1fr}
+    header{padding:2.4rem 1rem 2rem}
+  }
+  @media (max-width:480px){
+    .roots{grid-template-columns:1fr}
+    .stats{gap:.4rem}
+  }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>📿 แผนที่พระไตรปิฎก (Tipiṭaka Map)</h1>
-  <p>งานวิจัย: พระสูตรหลักใช้เป็น "โครงสร้าง/สารบัญ" เชื่อมโยงครอบคลุมพระไตรปิฎกทั้ง 3 ปิฎกได้หรือไม่</p>
-  <p>วิเคราะห์จาก <strong>ตัวบทบาลีโรมันเท่านั้น</strong> · tripitaka-mcp (local + online) · SuttaCentral <code>bilara-data</code> (CC0)</p>
+  <span class="kicker">
+    <svg class="icon" style="width:14px;height:14px;color:#e8c88a" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+    งานวิจัยเชิงโครงสร้างพระไตรปิฎก
+  </span>
+  <h1>แผนที่พระไตรปิฎก (Tipiṭaka Map)</h1>
+  <p class="sub">พระสูตรหลักใช้เป็น "โครงสร้าง / สารบัญ" เชื่อมโยงครอบคลุมพระไตรปิฎกทั้ง 3 ปิฎกได้หรือไม่ — วิเคราะห์จาก<strong style="color:#fff">ตัวบทบาลีโรมันเท่านั้น</strong></p>
+  <div class="stats">
+    <div class="stat"><b>10</b><span>root (พระสูตรหลัก)</span></div>
+    <div class="stat"><b>4</b><span>แกน (WHAT/INDEX/AUTHORITY/HOW)</span></div>
+    <div class="stat"><b>3</b><span>ปิฎก (วินัย·สุตตันตะ·อภิธรรม)</span></div>
+    <div class="stat"><b>28</b><span>โหนดในกราฟรวม</span></div>
+    <div class="stat"><b>Pāli</b><span>เฉพาะตัวบทบาลีโรมัน</span></div>
+  </div>
 </header>
 
-<main>
+<main class="container">
 
-  <section class="lead">
-    <h2 style="margin-top:0">🎯 ข้อค้นพบหลัก</h2>
-    <p><strong>แผนที่พระไตรปิฎกที่สมบูรณ์ที่สุด = "สองรากเอก + สามรากย่อย":</strong></p>
-    <table>
-      <tr><th>บทบาท</th><th>พระสูตร</th><th>ครอบคลุม</th></tr>
-      <tr><td><span class="badge macro">รากเอก</span> โครง/สารบัญ (WHAT)</td><td><a href="dhammacakka-mapping/report.md">ธัมมจักกัปปวัตตนสูตร (SN 56.11)</a></td><td>อริยสัจ 4 = ธรรมะทั้งหมด (ครบ 3 ปิฎก 3 รูปแบบ)</td></tr>
-      <tr><td><span class="badge macro">รากเอก</span> ลำดับมรรค (PATH)</td><td><a href="samannaphala-mapping/report.md">สามัญญผลสูตร (DN 2)</a></td><td>ไตรสิกขา = 3 ปิฎกเป็น 3 ขั้น</td></tr>
-      <tr><td><span class="badge">รากย่อย</span> วิเคราะห์มรรค (WHICH)</td><td><a href="mahacattarisaka-mapping/report.md">มหาจัตตารีสกสูตร (MN 117)</a></td><td>มรรค 8→10, โลกิย/โลกุตตร → อภิธรรม</td></tr>
-      <tr><td><span class="badge">รากย่อย</span> หมวดธรรม (WHO)</td><td><a href="mahasatipatthana-mapping/report.md">มหาสติปัฏฐานสูตร (DN 22)</a></td><td>นิวรณ์/ขันธ์/อายตนะ/โพชฌงค์ → อภิธรรม</td></tr>
-      <tr><td><span class="badge">รากย่อย</span> วิธีปฏิบัติ (HOW)</td><td><a href="anapanasati-mapping/report.md">อานาปานสติสูตร (MN 118)</a></td><td>อานาปานสติ 16 ขั้น → วิชชาวิมุตติ</td></tr>
-    </table>
-    <p><strong>แกนคู่:</strong> <a href="dhammacakka-mapping/report.md">SN 56.11</a> บอกว่า "ธรรมะคืออะไร" (อริยสัจ 4) + <a href="samannaphala-mapping/report.md">DN 2</a> บอกว่า "ปฏิบัติอย่างไรเป็นลำดับ" (ไตรสิกขา = 3 ปิฎก) — ทั้งสองบรรจบกันที่ "มรรค" (อริยสัจข้อ 4 = ไตรสิกขา)</p>
+  <section id="map-section">
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7 8v8M17 8v8M7 14l3-4 3 4"/></svg>
+      แผนที่เชิงโต้ตอบ
+    </h2>
+    <p class="lead">คลิกที่โหนดเพื่อดูรายละเอียด · ปุ่มแกนด้านบนใช้กรองไฮไลต์ · กด "ล้าง" เพื่อกลับ</p>
+    <div class="legend" id="legend">
+      <span><i class="dot" style="background:var(--what)"></i>WHAT · เนื้อหา</span>
+      <span><i class="dot" style="background:var(--index)"></i>INDEX · สารบัญ</span>
+      <span><i class="dot" style="background:var(--authority)"></i>AUTHORITY · เกณฑ์</span>
+      <span><i class="dot" style="background:var(--how)"></i>HOW · ปฏิบัติ</span>
+    </div>
+    <div class="map-wrap">
+      <div class="map-toolbar" role="toolbar" aria-label="ตัวกรองแกน">
+        <span class="hint">ไฮไลต์ตามแกน:</span>
+        <button type="button" data-axis="all" aria-pressed="true">ทั้งหมด</button>
+        <button type="button" data-axis="what">WHAT</button>
+        <button type="button" data-axis="index">INDEX</button>
+        <button type="button" data-axis="authority">AUTHORITY</button>
+        <button type="button" data-axis="how">HOW</button>
+        <button type="button" data-axis="clear" id="clearBtn">ล้าง</button>
+      </div>
+      <svg class="map" id="map" viewBox="0 0 1120 760" role="img" aria-label="แผนที่พระไตรปิฎก 4 แกน 10 root"></svg>
+      <div id="detail" aria-live="polite"></div>
+    </div>
   </section>
 
-  <h2>🗺️ แผนที่ฉบับรวม (Combined Map)</h2>
-  <img src="combined-map/combined_map_4axes.svg" alt="แผนที่พระไตรปิฎกฉบับสมบูรณ์ (4 แกน + 10 root)">
-  <p>📄 <a href="combined-map/report.md">อ่านรายงานฉบับรวม</a> · 🔗 <a href="combined-map/combined_graph.json">โครงสร้าง node–edge (JSON, 28 โหนด 31 ขอบ)</a> · 🖼️ <a href="combined-map/combined_map_4axes.png">ดาวน์โหลด PNG</a></p>
+  <section id="roots-section">
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5M4 19h16M8 15l4-6 4 6"/></svg>
+      10 root — พระสูตรหลักที่ใช้เป็นสารบัญ
+    </h2>
+    <p class="lead">คลิกการ์ดเพื่อเปิดรายงานวิจัยละเอียดของแต่ละ root</p>
+    <div class="roots" id="rootsGrid"></div>
+  </section>
 
-  <h2>📂 งานวิจัย 5 ชุด (รายละเอียด)</h2>
-  <table>
-    <tr><th>#</th><th>พระสูตร</th><th>รายงาน</th><th>แผนที่</th><th>ข้อมูล</th></tr>
-    <tr><td>1</td><td>ธัมมจักกัปปวัตตนสูตร (SN 56.11)</td><td><a href="dhammacakka-mapping/report.md">report</a></td><td><a href="dhammacakka-mapping/map.png">png</a> / <a href="dhammacakka-mapping/map.svg">svg</a></td><td><a href="dhammacakka-mapping/survey_data.csv">csv</a></td></tr>
-    <tr><td>2</td><td>มหาสติปัฏฐานสูตร (DN 22)</td><td><a href="mahasatipatthana-mapping/report.md">report</a></td><td><a href="mahasatipatthana-mapping/map.png">png</a></td><td><a href="mahasatipatthana-mapping/survey_data.csv">csv</a></td></tr>
-    <tr><td>3</td><td>อานาปานสติสูตร (MN 118)</td><td><a href="anapanasati-mapping/report.md">report</a></td><td><a href="anapanasati-mapping/map.png">png</a></td><td><a href="anapanasati-mapping/survey_data.csv">csv</a></td></tr>
-    <tr><td>4</td><td>มหาจัตตารีสกสูตร (MN 117)</td><td><a href="mahacattarisaka-mapping/report.md">report</a></td><td><a href="mahacattarisaka-mapping/map.png">png</a></td><td><a href="mahacattarisaka-mapping/survey_data.csv">csv</a></td></tr>
-    <tr><td>5</td><td>สามัญญผลสูตร (DN 2)</td><td><a href="samannaphala-mapping/report.md">report</a></td><td><a href="samannaphala-mapping/map.png">png</a></td><td><a href="samannaphala-mapping/survey_data.csv">csv</a></td></tr>
-  </table>
+  <section id="studies-section">
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+      งานวิจัยทั้งหมด
+    </h2>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>#</th><th>พระสูตร</th><th>แกน</th><th>รายงาน</th><th>ข้อมูล</th><th>แผนที่</th></tr></thead>
+        <tbody id="studiesBody"></tbody>
+      </table>
+    </div>
+  </section>
 
-  <h2>📖 งานวิจัยเชิงสำรวจศัพท์ (เมตตา/กรุณา)</h2>
-  <table>
-    <tr><th>หัวข้อ</th><th>รายงาน</th><th>ข้อมูล</th></tr>
-    <tr><td>เมตตา (mettā)</td><td><a href="metta-research/metta_research_report.md">report</a></td><td><a href="metta-research/metta_per_nikaya.csv">csv</a> · <a href="metta-research/metta_quant_results.json">json</a></td></tr>
-    <tr><td>กรุณา (karuṇā)</td><td><a href="karuna-research/karuna_research_report.md">report</a></td><td><a href="karuna-research/karuna_per_nikaya.csv">csv</a> · <a href="karuna-research/karuna_quant_results.json">json</a></td></tr>
-  </table>
-
-  <h2>🌱 Root เพิ่มเติม (สารบัญโดยธรรมชาติของพระไตรปิฎก)</h2>
-  <p>นอกจาก 5 สูตรข้างต้น ยังพบพระสูตรที่ตัวพระไตรปิฎก<strong>สร้างไว้เป็น "สารบัญ" ของตนเอง</strong>อยู่แล้ว — <a href="root-candidates/additional_roots_report.md">อ่านรายงาน root เพิ่มเติม</a></p>
-  <table>
-    <tr><th>ชนิด</th><th>root</th><th>รายงานละเอียด</th></tr>
-    <tr><td>สารบัญเชิงตัวเลข (INDEX)</td><td>สังคีติสูตร (DN 33) + ทสุตตรสูตร (DN 34)</td><td><a href="sangiti-dasuttara-mapping/report.md">report</a> · <a href="sangiti-dasuttara-mapping/survey_data.csv">data</a></td></tr>
-    <tr><td>เกณฑ์วินิจฉัยพุทธวจนะ (AUTHORITY)</td><td>มหาปรินิพพานสูตร (DN 16)</td><td><a href="mahaparinibbana-mapping/report.md">report</a> · <a href="mahaparinibbana-mapping/survey_data.csv">data</a></td></tr>
-    <tr><td>หลักสูตรกรรมฐาน (CURRICULUM)</td><td>มหาราหุโลวาทสูตร (MN 62)</td><td><a href="rahulovada-mapping/report.md">report</a> · <a href="rahulovada-mapping/survey_data.csv">data</a></td></tr>
-    <tr><td>แผนที่สัมมาทิฏฐิ</td><td>สัมมาทิฏฐิสูตร (MN 9)</td><td><a href="sammaditthi-mapping/report.md">report</a> · <a href="sammaditthi-mapping/survey_data.csv">data</a></td></tr>
-  </table>
-
-  <h2>🔬 วิธีวิจัย</h2>
-  <ul>
-    <li><strong>แหล่งข้อมูล:</strong> ตัวบท<strong>ภาษาบาลีโรมันเท่านั้น</strong> (ไม่ใช้การแปลภาษาอังกฤษ/ภาษาอื่น) ผ่าน tripitaka-mcp ทั้ง local + online</li>
-    <li><strong>เครื่องมือ:</strong> <code>get_sutta</code> + <code>survey_corpus</code> (นับการกระจายศัพท์แบบ exhaustive <code>complete:true</code>)</li>
-    <li><strong>ขั้นตอน:</strong> สกัดศัพท์หลัก → สำรวจการกระจายทั่ว 3 ปิฎก → เจาะปมเชื่อมด้วยพระสูตรสะพาน (SN 45.8, MN 44, AN 3.89, DN 16) → ทดสอบสมมติฐาน → สร้างแผนที่ node–edge</li>
-    <li><strong>การยืนยัน:</strong> cross-check ผลระหว่าง server local กับ online (ผลตรงกัน)</li>
-  </ul>
-
-  <div class="caveat">
-    <strong>⚠️ ข้อควรทราบ:</strong> (1) ตัวเลขศัพท์กว้างบางตัว (ศีล/ปัญญา/ขันธ์/ฌาน/อินทรีย์) เป็น<strong>ขอบเขตบน</strong> เพราะ stem ติดคำพ้องรูป (เช่น <code>sīla</code> ติด <code>silā</code> = หิน) — ใช้ยืนยัน "ทิศทางการเข้าถึงปิฎก" ไม่ใช่จำนวนธรรมะจริง; (2) การเชื่อม "วินัย" เป็นเชิงมโนทัศน์ (ผ่านไตรสิกขา/ศีล/สิกขาบท) ตามที่ตัวบาลีบัญญัติใน MN 44
-  </div>
+  <section id="method-section">
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6M9 21h6M12 3v18M5 12h14"/></svg>
+      วิธีวิจัย
+    </h2>
+    <div class="card">
+      <ul style="margin:.2rem 0">
+        <li><strong>แหล่งข้อมูล:</strong> ตัวบท<strong>ภาษาบาลีโรมันเท่านั้น</strong> (ไม่ใช้การแปลภาษาอังกฤษ/ภาษาอื่นในการวิเคราะห์) ผ่าน tripitaka-mcp (local + online) — SuttaCentral <code>bilara-data</code> (CC0)</li>
+        <li><strong>เครื่องมือ:</strong> <code>get_sutta</code> + <code>survey_corpus</code> (นับการกระจายศัพท์แบบ exhaustive <code>complete:true</code>)</li>
+        <li><strong>ขั้นตอน:</strong> สกัดศัพท์หลัก → สำรวจกระจายทั่ว 3 ปิฎก → เจาะปมเชื่อมด้วยพระสูตรสะพาน (SN 45.8, MN 44, AN 3.89, DN 16) → ทดสอบสมมติฐาน → สร้างแผนที่ node–edge</li>
+        <li><strong>การยืนยัน:</strong> cross-check ผลระหว่าง server local กับ online (ผลตรงกัน)</li>
+        <li><strong>ระเบียบวิธีฉบับเต็ม:</strong> <a href="SKILL.md">SKILL.md</a></li>
+      </ul>
+    </div>
+    <div class="caveat">
+      <strong>⚠️ ข้อควรทราบ:</strong> (1) ตัวเลขศัพท์กว้างบางตัว (ศีล/ปัญญา/ขันธ์/ฌาน/อินทรีย์) เป็น<strong>ขอบเขตบน</strong> เพราะ stem ติดคำพ้องรูป (เช่น <code>sīla</code> ติด <code>silā</code> = หิน); (2) การเชื่อม "วินัย" เป็นเชิงมโนทัศน์ (ผ่านไตรสิกขา/ศีล/สิกขาบท) ตามที่ตัวบาลีบัญญัติใน MN 44
+    </div>
+  </section>
 
 </main>
 
 <footer>
   <p>งานวิจัยนี้ใช้ข้อมูลเพื่อการศึกษา (Dhamma Dāna) เท่านั้น · ข้อมูลต้นฉบับ: SuttaCentral <code>bilara-data</code> (CC0) · โปรดสอบทานกับฉบับพิมพ์ล่าสุดก่อนอ้างอิงทางวิชาการ</p>
-  <p>Repository: <a href="https://github.com/dhamma-seeker/tipitaka-map">github.com/dhamma-seeker/tipitaka-map</a></p>
+  <p><a href="https://github.com/dhamma-seeker/tipitaka-map">github.com/dhamma-seeker/tipitaka-map</a> · <a href="SKILL.md">ระเบียบวิธีวิจัย (SKILL.md)</a></p>
 </footer>
 
+<script>
+/* ===== ข้อมูลกราฟ (จาก combined_graph.json — 28 โหนด 31 ขอบ) ===== */
+const NODES = [
+ // roots
+ {id:"SN56.11",th:"ธัมมจักกัปปวัตตนสูตร",axis:"what",pitaka:"Suttantapiṭaka",report:"dhammacakka-mapping/report.md",role:"อริยสัจ 4 = ธรรมะทั้งหมด"},
+ {id:"DN2",th:"สามัญญผลสูตร",axis:"what",pitaka:"Suttantapiṭaka",report:"samannaphala-mapping/report.md",role:"ไตรสิกขา = 3 ปิฎกเป็น 3 ขั้น"},
+ {id:"DN33",th:"สังคีติสูตร",axis:"index",pitaka:"Suttantapiṭaka",report:"sangiti-dasuttara-mapping/report.md",role:"มาติกา 1–10 (เอกกะ→ทสกะ)"},
+ {id:"DN34",th:"ทสุตตรสูตร",axis:"index",pitaka:"Suttantapiṭaka",report:"sangiti-dasuttara-mapping/report.md",role:"เมทริกซ์ 10×10 (100 ช่อง)"},
+ {id:"DN16",th:"มหาปรินิพพานสูตร",axis:"authority",pitaka:"Suttantapiṭaka",report:"mahaparinibbana-mapping/report.md",role:"จตุมหาปเทส + โพธิปักขิยธรรม 37"},
+ {id:"MN117",th:"มหาจัตตารีสกสูตร",axis:"how",pitaka:"Suttantapiṭaka",report:"mahacattarisaka-mapping/report.md",role:"มรรค 8→10 · โลกิย/โลกุตตร"},
+ {id:"DN22",th:"มหาสติปัฏฐานสูตร",axis:"how",pitaka:"Suttantapiṭaka",report:"mahasatipatthana-mapping/report.md",role:"สติปัฏฐาน 4 (หมวดธรรม)"},
+ {id:"MN118",th:"อานาปานสติสูตร",axis:"how",pitaka:"Suttantapiṭaka",report:"anapanasati-mapping/report.md",role:"อานาปาน 16 ขั้น → วิชชาวิมุตติ"},
+ {id:"MN62",th:"มหาราหุโลวาทสูตร",axis:"how",pitaka:"Suttantapiṭaka",report:"rahulovada-mapping/report.md",role:"หลักสูตรกรรมฐานครบวงจร"},
+ {id:"MN9",th:"สัมมาทิฏฐิสูตร",axis:"how",pitaka:"Suttantapiṭaka",report:"sammaditthi-mapping/report.md",role:"สัมมาทิฏฐิ = แผนที่ญาณ"},
+ // concepts
+ {id:"ariyasacca",th:"อริยสัจ 4",axis:"concept",pitaka:"—",role:"แก่นธรรม (ครบ 3 ปิฎก)"},
+ {id:"magga8",th:"มรรคมีองค์ 8",axis:"concept",pitaka:"—",role:"ข้อ 4 ของอริยสัจ"},
+ {id:"tissosikkha",th:"ไตรสิกขา (ศีล·สมาธิ·ปัญญา)",axis:"concept",pitaka:"—",role:"สะพาน 3 ปิฎก"},
+ {id:"satipatthana",th:"สติปัฏฐาน 4",axis:"concept",pitaka:"—",role:"= สัมมาสติ"},
+ {id:"bojjhanga",th:"โพชฌงค์ 7",axis:"concept",pitaka:"—",role:"→ วิชชาวิมุตติ"},
+ {id:"bodhipakkhiya37",th:"โพธิปักขิยธรรม 37",axis:"concept",pitaka:"—",role:"กรอบรวมทั้งหมด"},
+ {id:"matika",th:"มาติกา (แม่บท)",axis:"concept",pitaka:"—",role:"สารบัญเชิงตัวเลข"},
+ {id:"mahapadesa",th:"จตุมหาปเทส",axis:"concept",pitaka:"—",role:"เกณฑ์วินิจฉัยพุทธวจนะ"},
+ // pitakas
+ {id:"Vinaya",th:"วินัยปิฎก",axis:"pitaka",pitaka:"Vinayapiṭaka",role:"ศีล: ปาติโมกข์·วิภังค์·ขันธกะ"},
+ {id:"Sutta",th:"สุตตันตปิฎก",axis:"pitaka",pitaka:"Suttantapiṭaka",role:"สมาธิ: 5 นิกาย"},
+ {id:"Abhidhamma",th:"อภิธรรมปิฎก",axis:"pitaka",pitaka:"Abhidhammapiṭaka",role:"ปัญญา: 7 คัมภีร์"},
+];
+const EDGES = [
+ ["SN56.11","ariyasacca"],["SN56.11","magga8"],["ariyasacca","magga8"],
+ ["DN2","tissosikkha"],["tissosikkha","Vinaya"],["tissosikkha","Sutta"],["tissosikkha","Abhidhamma"],
+ ["DN33","matika"],["DN34","matika"],
+ ["DN16","mahapadesa"],["DN16","bodhipakkhiya37"],
+ ["MN117","magga8"],["magga8","satipatthana"],
+ ["DN22","satipatthana"],["DN22","ariyasacca"],
+ ["MN118","satipatthana"],["satipatthana","bojjhanga"],["bojjhanga","bodhipakkhiya37"],
+ ["MN62","satipatthana"],["MN9","magga8"],
+ ["magga8","bodhipakkhiya37"],["matika","Sutta"],["mahapadesa","Vinaya"],["mahapadesa","Sutta"],
+];
+const AXIS_COLOR = {what:"#7a2e2e",index:"#2f6b4f",authority:"#5b3a73",how:"#2f5370"};
+const AXIS_LABEL = {what:"WHAT · เนื้อหา",index:"INDEX · สารบัญ",authority:"AUTHORITY · เกณฑ์",how:"HOW · ปฏิบัติ"};
+
+/* ===== จัดวางโหนด (hand-placed layered layout) ===== */
+const POS = {};
+const rootsByAxis = {what:["SN56.11","DN2"],index:["DN33","DN34"],authority:["DN16"],how:["MN117","DN22","MN118","MN62","MN9"]};
+const axisX = {what:180,index:430,authority:680,how:930};
+function placeRoots(){
+  for(const ax of Object.keys(rootsByAxis)){
+    const ids = rootsByAxis[ax];
+    ids.forEach((id,i)=>{
+      POS[id] = {x:axisX[ax], y:120 + i*86};
+    });
+  }
+}
+const conceptPos = [
+  ["ariyasacca",560,300],["magga8",470,300],["tissosikkha",680,300],
+  ["satipatthana",380,400],["bojjhanga",300,400],["bodhipakkhiya37",300,520],
+  ["matika",560,400],["mahapadesa",680,400],
+];
+conceptPos.forEach(([id,x,y])=>{ POS[id]={x,y}; });
+POS["Vinaya"]={x:360,y:680}; POS["Sutta"]={x:560,y:680}; POS["Abhidhamma"]={x:760,y:680};
+placeRoots();
+
+/* ===== render SVG ===== */
+const svg = document.getElementById("map");
+const NS = "http://www.w3.org/2000/svg";
+const byId = Object.fromEntries(NODES.map(n=>[n.id,n]));
+
+function edgePath(a,b){
+  const pa=POS[a], pb=POS[b];
+  const mx=(pa.x+pb.x)/2;
+  return `M ${pa.x} ${pa.y+22} C ${pa.x} ${(pa.y+pb.y)/2}, ${pb.x} ${(pa.y+pb.y)/2}, ${pb.x} ${pb.y-22}`;
+}
+
+// edges layer
+const edgeEls = [];
+const edgesG = document.createElementNS(NS,"g");
+EDGES.forEach(([a,b])=>{
+  const p = document.createElementNS(NS,"path");
+  p.setAttribute("d", edgePath(a,b));
+  p.setAttribute("class","edge");
+  p.dataset.from=a; p.dataset.to=b;
+  edgesG.appendChild(p); edgeEls.push(p);
+});
+svg.appendChild(edgesG);
+
+// nodes layer
+const nodeEls = [];
+NODES.forEach(n=>{
+  const p=POS[n.id]; if(!p) return;
+  const g = document.createElementNS(NS,"g");
+  g.setAttribute("class","node");
+  g.setAttribute("transform",`translate(${p.x},${p.y})`);
+  g.dataset.id=n.id; g.setAttribute("tabindex","0"); g.setAttribute("role","button");
+  g.setAttribute("aria-label",`${n.th} — ${n.role}`);
+  const isPitaka = n.axis==="pitaka";
+  const isConcept = n.axis==="concept";
+  const isRoot = !isPitaka && !isConcept;
+  const w = isPitaka?150 : (isConcept?150:150);
+  const fill = isPitaka ? "#f1e3c3" : (isConcept ? "#f7f0e2" : "#fdf6e8");
+  const stroke = isRoot ? AXIS_COLOR[n.axis] : "#b39a68";
+  const rect = document.createElementNS(NS,"rect");
+  rect.setAttribute("x",-w/2); rect.setAttribute("y",-22);
+  rect.setAttribute("width",w); rect.setAttribute("height",44);
+  rect.setAttribute("rx",9); rect.setAttribute("fill",fill);
+  rect.setAttribute("stroke",stroke); rect.setAttribute("stroke-width", isRoot?2.4:1.4);
+  g.appendChild(rect);
+  const t1 = document.createElementNS(NS,"text");
+  t1.setAttribute("y",-4); t1.setAttribute("text-anchor","middle");
+  t1.setAttribute("font-size","12.5"); t1.setAttribute("font-weight","600");
+  t1.setAttribute("fill", isRoot?"#3a2a12":"#4a3d26");
+  t1.textContent = n.th;
+  g.appendChild(t1);
+  const t2 = document.createElementNS(NS,"text");
+  t2.setAttribute("y",12); t2.setAttribute("text-anchor","middle");
+  t2.setAttribute("font-size","8.5"); t2.setAttribute("fill","#8a7a5a");
+  t2.textContent = n.id;
+  g.appendChild(t2);
+  // click/hover handlers
+  const show = ()=>showDetail(n.id);
+  const focus = ()=>highlight(n.id);
+  g.addEventListener("click", show);
+  g.addEventListener("mouseenter", focus);
+  g.addEventListener("mouseleave", clearHighlight);
+  g.addEventListener("focus", focus);
+  g.addEventListener("keydown", e=>{ if(e.key==="Enter"||e.key===" "){e.preventDefault(); show();} });
+  svg.appendChild(g); nodeEls.push(g);
+});
+
+/* axis column headers */
+const axisHeaderPos = {what:{x:180,y:72},index:{x:430,y:72},authority:{x:680,y:72},how:{x:930,y:72}};
+Object.keys(axisHeaderPos).forEach(ax=>{
+  const {x,y}=axisHeaderPos[ax];
+  const g=document.createElementNS(NS,"g");
+  g.setAttribute("transform",`translate(${x},${y})`);
+  const r=document.createElementNS(NS,"rect");
+  r.setAttribute("x",-150); r.setAttribute("y",-14); r.setAttribute("width",300); r.setAttribute("height",28); r.setAttribute("rx",6);
+  r.setAttribute("fill",AXIS_COLOR[ax]);
+  g.appendChild(r);
+  const t=document.createElementNS(NS,"text");
+  t.setAttribute("y",4); t.setAttribute("text-anchor","middle"); t.setAttribute("font-size","12"); t.setAttribute("font-weight","700"); t.setAttribute("fill","#fff");
+  t.textContent = AXIS_LABEL[ax];
+  g.appendChild(t);
+  svg.appendChild(g);
+});
+
+/* ===== interaction ===== */
+function neighborsOf(id){
+  return EDGES.filter(e=>e[0]===id||e[1]===id).flat().filter(x=>x!==id);
+}
+function highlight(id){
+  const nb = new Set(neighborsOf(id)); nb.add(id);
+  nodeEls.forEach(g=>{
+    const on = nb.has(g.dataset.id);
+    g.classList.toggle("dim",!on);
+  });
+  edgeEls.forEach(p=>{
+    const on = (p.dataset.from===id||p.dataset.to===id);
+    p.classList.toggle("lit",on);
+    p.classList.toggle("dim",!on);
+  });
+}
+function clearHighlight(){
+  nodeEls.forEach(g=>g.classList.remove("dim"));
+  edgeEls.forEach(p=>{p.classList.remove("lit");p.classList.remove("dim");});
+}
+function showDetail(id){
+  const n = byId[id]; if(!n) return;
+  highlight(id);
+  const d=document.getElementById("detail");
+  const nb = neighborsOf(id).map(x=>byId[x].th).join(" · ");
+  d.className="show";
+  d.innerHTML = `
+    <div class="role">${AXIS_LABEL[n.axis]||(n.axis==="pitaka"?"3 ปิฎก":"มโนทัศน์เชื่อม")}</div>
+    <h3>${n.th} <span class="sid" style="font-weight:400;color:#9a8f7d">(${n.id})</span></h3>
+    <p>${n.role||""}</p>
+    <p style="color:#6c6355;font-size:.88rem">เชื่อมกับ: ${nb}</p>
+    <div class="links">${n.report?`<a href="${n.report}">เปิดรายงานวิจัย</a>`:""}</div>`;
+}
+// filter buttons
+document.querySelectorAll(".map-toolbar button[data-axis]").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const ax = btn.dataset.axis;
+    document.querySelectorAll(".map-toolbar button[data-axis]").forEach(b=>b.setAttribute("aria-pressed", b===btn?"true":"false"));
+    if(ax==="clear"){ clearHighlight(); return; }
+    if(ax==="all"){ clearHighlight(); return; }
+    const ids = new Set(rootsByAxis[ax]||[]);
+    nodeEls.forEach(g=>{
+      const n=byId[g.dataset.id];
+      const on = n.axis===ax;
+      g.classList.toggle("dim",!on);
+    });
+    edgeEls.forEach(p=>p.classList.add("dim"));
+  });
+});
+document.getElementById("clearBtn").addEventListener("click",()=>{ clearHighlight(); });
+
+/* ===== root cards ===== */
+const rootsGrid = document.getElementById("rootsGrid");
+NODES.filter(n=>["what","index","authority","how"].includes(n.axis)).forEach(n=>{
+  const c=document.createElement("a");
+  c.className="root-card";
+  c.href=n.report||"#";
+  c.style.borderLeftColor=AXIS_COLOR[n.axis];
+  c.innerHTML = `<span class="axis" style="background:${AXIS_COLOR[n.axis]}">${AXIS_LABEL[n.axis]}</span>
+    <h3>${n.th}</h3><div class="sid">${n.id} · ${n.pitaka}</div><p>${n.role}</p>`;
+  rootsGrid.appendChild(c);
+});
+
+/* ===== studies table ===== */
+const studies = [
+  ["ธัมมจักกัปปวัตตนสูตร","SN 56.11","WHAT","dhammacakka-mapping"],
+  ["สามัญญผลสูตร","DN 2","WHAT","samannaphala-mapping"],
+  ["มหาสติปัฏฐานสูตร","DN 22","HOW","mahasatipatthana-mapping"],
+  ["อานาปานสติสูตร","MN 118","HOW","anapanasati-mapping"],
+  ["มหาจัตตารีสกสูตร","MN 117","HOW","mahacattarisaka-mapping"],
+  ["สังคีติ + ทสุตตรสูตร","DN 33/34","INDEX","sangiti-dasuttara-mapping"],
+  ["มหาปรินิพพานสูตร","DN 16","AUTHORITY","mahaparinibbana-mapping"],
+  ["มหาราหุโลวาทสูตร","MN 62","HOW","rahulovada-mapping"],
+  ["สัมมาทิฏฐิสูตร","MN 9","HOW","sammaditthi-mapping"],
+];
+const tb = document.getElementById("studiesBody");
+studies.forEach(([th,sid,axis,dir],i)=>{
+  const tr=document.createElement("tr");
+  tr.innerHTML=`<td>${i+1}</td><td><strong>${th}</strong> <span style="color:#9a8f7d">(${sid})</span></td><td>${axis}</td>
+    <td><a href="${dir}/report.md">report.md</a></td>
+    <td><a href="${dir}/survey_data.csv">csv</a></td>
+    <td><a href="${dir}/map.png">png</a> / <a href="${dir}/map.svg">svg</a></td>`;
+  tb.appendChild(tr);
+});
+// add meta/karuna surveys + combined
+const extra=[
+  ["สำรวจ: เมตตา (mettā)","KN","—","metta-research"],
+  ["สำรวจ: กรุณา (karuṇā)","KN","—","karuna-research"],
+  ["แผนที่รวม (combined map)","—","—","combined-map"],
+];
+extra.forEach(([th,sid,axis,dir])=>{
+  const tr=document.createElement("tr");
+  const reportMap = {"metta-research":"metta-research/metta_research_report.md","karuna-research":"karuna-research/karuna_research_report.md","combined-map":"combined-map/report.md"};
+  const reportFile = reportMap[dir] || "report.md";
+  tr.innerHTML=`<td>•</td><td><strong>${th}</strong></td><td>${axis||"—"}</td>
+    <td><a href="${reportFile}">report</a></td><td>—</td><td>—</td>`;
+  tb.appendChild(tr);
+});
+</script>
 </body>
 </html>
