@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>แผนที่พระธรรม — ค้นหา & นำทางด้วยศัพท์บาลี</title>
+<meta name="description" content="แผนที่พระธรรม: ค้นหาและนำทางพระไตรปิฎกด้วยศัพท์บาลี (index เชิงความหมาย) — พระสูตร ↔ ศัพท์ ↔ หมายเลขท่อน">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;600;700&family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#faf6ee; --surface:#fffdf7; --surface-2:#f5efe2;
+    --ink:#2b2620; --muted:#6c6355; --faint:#9a8f7d;
+    --primary:#7a2e2e; --primary-strong:#5b1d1d; --primary-soft:#f0e2d8;
+    --accent:#a97f2e; --accent-soft:#f3e8cd;
+    --border:#e6dcc6; --border-strong:#cdbfa2;
+    --focus:#2f6b4f;
+    --radius:12px; --radius-sm:8px;
+    --shadow:0 1px 2px rgba(60,45,20,.05),0 8px 24px -12px rgba(60,45,20,.18);
+    --serif:"Noto Serif Thai",Georgia,"Times New Roman",serif;
+    --sans:"Sarabun",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box}
+  @media (prefers-reduced-motion:reduce){ *{transition:none!important;animation:none!important} }
+  body{margin:0;font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.7;font-size:16px}
+  a{color:var(--primary);text-decoration:none;border-bottom:1px solid transparent}
+  a:hover{color:var(--primary-strong);border-bottom-color:var(--primary)}
+  a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
+  h1,h2,h3{font-family:var(--serif);color:var(--primary-strong);line-height:1.3;font-weight:600}
+  .icon{width:20px;height:20px;flex:none;color:var(--accent)}
+  .container{max-width:1120px;margin:0 auto;padding:0 1.2rem}
+
+  header{background:linear-gradient(160deg,#5b1d1d,#7a2e2e 60%,#8a3a2f);color:#fdf6ec;padding:2.6rem 1rem 2rem;text-align:center;border-bottom:4px solid var(--accent)}
+  header h1{color:#fffdf5;font-weight:700;margin:.2rem 0 .4rem;font-size:clamp(1.6rem,4vw,2.4rem)}
+  header .sub{max-width:760px;margin:.4rem auto 0;color:#f2e3cf}
+  header .pali-note{display:inline-block;margin-top:.8rem;font-size:.82rem;color:#e8c88a;border:1px solid rgba(232,200,138,.4);padding:.2rem .8rem;border-radius:999px}
+
+  section{padding:2.2rem 0}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.4rem 1.5rem}
+
+  /* search */
+  .search-wrap{position:relative;max-width:720px;margin:0 auto}
+  .search-wrap input{width:100%;font-family:var(--sans);font-size:1.05rem;padding:.85rem 1rem .85rem 2.8rem;border:1.5px solid var(--border-strong);border-radius:999px;background:var(--surface);color:var(--ink)}
+  .search-wrap input:focus{border-color:var(--primary);outline:none;box-shadow:0 0 0 3px var(--primary-soft)}
+  .search-wrap svg{position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:var(--faint)}
+  .search-filters{display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center;margin-top:.9rem}
+  .search-filters button{font-family:var(--sans);font-size:.85rem;background:var(--surface);border:1px solid var(--border-strong);border-radius:999px;padding:.3rem .9rem;cursor:pointer;color:var(--ink)}
+  .search-filters button[aria-pressed="true"]{background:var(--primary);color:#fff;border-color:var(--primary)}
+
+  /* results layout */
+  .layout{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.2rem}
+  @media (max-width:800px){ .layout{grid-template-columns:1fr} }
+  .results-title{font-size:.9rem;color:var(--muted);margin:.2rem 0 .6rem;font-weight:600}
+  .result{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:.7rem .9rem;margin-bottom:.6rem;cursor:pointer;transition:transform .12s,box-shadow .12s}
+  .result:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
+  .result .pali{font-family:var(--serif);font-size:1.05rem;color:var(--primary-strong);font-weight:600}
+  .result .th{font-size:.9rem;color:var(--muted)}
+  .result .meta{font-size:.78rem;color:var(--faint);margin-top:.2rem}
+  .result .seg-id{font-family:ui-monospace,monospace;font-size:.8rem;color:var(--accent)}
+  .term-counts{display:flex;gap:.5rem;margin-top:.35rem;flex-wrap:wrap}
+  .term-counts span{font-size:.72rem;background:var(--accent-soft);color:#7a5e1e;border-radius:6px;padding:.05rem .5rem}
+
+  /* detail */
+  #detail{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem 1.3rem;margin-top:1.2rem}
+  #detail h3{margin:.2rem 0 .3rem;font-size:1.25rem}
+  #detail .links{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem}
+  #detail .links a{font-size:.85rem;background:var(--primary);color:#fff;padding:.25rem .75rem;border-radius:999px;border:none}
+  #detail .links a:hover{background:var(--primary-strong)}
+  .seg{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:.7rem .9rem;margin-top:.6rem}
+  .seg .pali{font-family:var(--serif);color:#3a2a12;font-size:.95rem}
+  .seg .th{font-size:.88rem;color:var(--muted)}
+  .seg .open{font-size:.8rem}
+
+  .purposes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.8rem;margin-top:1rem}
+  .purpose{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:.9rem 1rem}
+  .purpose b{color:var(--primary-strong);font-family:var(--serif)}
+  .purpose p{font-size:.86rem;color:var(--muted);margin:.3rem 0 0}
+
+  .empty{color:var(--faint);text-align:center;padding:1.5rem;font-size:.9rem}
+  footer{text-align:center;font-size:.85rem;color:var(--muted);padding:2rem 1rem;border-top:1px solid var(--border);margin-top:2rem}
+  footer a{color:var(--primary)}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>แผนที่พระธรรม (Dhamma Map)</h1>
+  <p class="sub">ค้นหาและนำทางพระไตรปิฎกด้วย<strong style="color:#fff">ศัพท์บาลี</strong> — index เชิงความหมายที่เชื่อม <em>พระสูตร ↔ ศัพท์ ↔ หมายเลขท่อน (segment)</em></p>
+  <span class="pali-note">Pāli index · ไม่พึ่ง index ภาษาอังกฤษ · ตัวบทบาลีโรมันเท่านั้น</span>
+</header>
+
+<main class="container">
+
+  <section id="search-section">
+    <div class="search-wrap">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input type="search" id="searchBox" placeholder="ค้นหา: ariyasacca · อริยสัจ · สติปัฏฐาน · SN 56.11 · ธัมมจักกัปปวัตตนสูตร · sn56.11:4.1 …" aria-label="ค้นหาศัพท์ พระสูตร หรือหมายเลขท่อน">
+    </div>
+    <div class="search-filters" role="group" aria-label="ประเภทผลลัพธ์">
+      <button type="button" data-type="all" aria-pressed="true">ทั้งหมด</button>
+      <button type="button" data-type="term">ศัพท์ (46)</button>
+      <button type="button" data-type="sutta">พระสูตร (15)</button>
+      <button type="button" data-type="segment">ท่อนข้อความ (42)</button>
+    </div>
+  </section>
+
+  <section id="purposes-section">
+    <h2 style="display:flex;align-items:center;gap:.6rem">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg>
+      เครื่องมือนี้ใช้ทำอะไรได้
+    </h2>
+    <div class="purposes">
+      <div class="purpose"><b>1. ระบบค้นหา</b><p>ค้นศัพท์/พระสูตร/ท่อน ได้ทันที พร้อมลิงก์ลึกถึงข้อความต้นฉบับ</p></div>
+      <div class="purpose"><b>2. Embedded index เชิงความหมาย</b><p>index ด้วยศัพท์บาลี + คำแปลไทย (ไม่ใช้ index ภาษาอังกฤษที่คลาดเคลื่อน)</p></div>
+      <div class="purpose"><b>3. แผนที่พระธรรม</b><p>เห็นว่าแต่ละศัพท์เชื่อมพระสูตร/ปิฎกใด ด้วยขอบเชื่อมที่มีหลักฐาน</p></div>
+      <div class="purpose"><b>4. แปลตาม root</b><p>ไล่แปลจาก "ใจกลาง" (root) แผ่ออก — สแกนหาการแปลที่ผิดได้เร็ว</p></div>
+    </div>
+  </section>
+
+  <section id="results-section">
+    <div class="layout">
+      <div>
+        <div class="results-title" id="termsTitle">ศัพท์ที่พบ</div>
+        <div id="termsResults"></div>
+      </div>
+      <div>
+        <div class="results-title" id="suttasTitle">พระสูตร / ท่อนข้อความ</div>
+        <div id="suttaResults"></div>
+      </div>
+    </div>
+    <div id="detail" aria-live="polite"></div>
+  </section>
+
+</main>
+
+<footer>
+  <p>งานวิจัยนี้ใช้ข้อมูลเพื่อการศึกษา (Dhamma Dāna) เท่านั้น · SuttaCentral <code>bilara-data</code> (CC0) · โปรดสอบทานกับฉบับพิมพ์ล่าสุดก่อนอ้างอิงทางวิชาการ</p>
+  <p><a href="https://github.com/dhamma-seeker/tipitaka-map">github.com/dhamma-seeker/tipitaka-map</a> · <a href="index.html">หน้ารวม</a> · <a href="SKILL.md">ระเบียบวิธี</a></p>
+</footer>
+
+<script>
+let DATA = null;
+const normalize = s => (s||"").toLowerCase()
+  .replace(/ā/g,"a").replace(/ī/g,"i").replace(/ū/g,"u")
+  .replace(/ṅ/g,"n").replace(/ñ/g,"n").replace(/ṭ/g,"t")
+  .replace(/ḍ/g,"d").replace(/ṇ/g,"n").replace(/ḷ/g,"l").replace(/ṁ/g,"m")
+  .replace(/[·.,;:"'()]/g," ");
+const readerUrl = (sid)=>`https://tripitaka-mcp.com/read/${sid.split(":")[0]}#${sid}`;
+
+fetch("dhamma-map/dhamma-map.json").then(r=>r.json()).then(d=>{
+  DATA=d;
+  renderAll();
+}).catch(e=>{
+  document.getElementById("termsResults").innerHTML=`<div class="empty">โหลดข้อมูลไม่สำเร็จ — เปิดผ่าน GitHub Pages (https://dhamma-seeker.github.io/tipitaka-map/map.html) หรือเปิด repo ที่มีไฟล์ dhamma-map/dhamma-map.json</div>`;
+});
+
+let filter="all";
+document.querySelectorAll(".search-filters button").forEach(b=>{
+  b.addEventListener("click",()=>{
+    filter=b.dataset.type;
+    document.querySelectorAll(".search-filters button").forEach(x=>x.setAttribute("aria-pressed",x===b?"true":"false"));
+    renderAll();
+  });
+});
+
+function renderAll(){
+  if(!DATA) return;
+  const q = normalize(document.getElementById("searchBox").value.trim());
+  const terms = DATA.terms.filter(t=>!q || normalize(t.pali+" "+t.th).includes(q));
+  const suttas = DATA.suttas.filter(s=>!q || normalize(s.pali+" "+s.th+" "+s.num+" "+s.id).includes(q));
+  const segs = DATA.segments.filter(s=>!q || normalize(s.pali+" "+s.th+" "+s.segment_id).includes(q));
+  renderTerms(terms);
+  renderSuttas(suttas, segs, q);
+}
+function renderTerms(terms){
+  const el=document.getElementById("termsResults");
+  document.getElementById("termsTitle").textContent = `ศัพท์ที่พบ (${terms.length})`;
+  if(!terms.length){el.innerHTML=`<div class="empty">ไม่พบศัพท์</div>`;return;}
+  const show = filter==="all"||filter==="term";
+  el.innerHTML = terms.map(t=>`
+    <div class="result" tabindex="0" role="button" data-term="${t.pali}" onclick="showTerm('${t.pali}')" onkeydown="if(event.key==='Enter')showTerm('${t.pali}')">
+      <div class="pali">${t.pali}</div>
+      <div class="th">${t.th}</div>
+      <div class="term-counts"><span>สุตตันตะ ${t.sutta}</span><span>วินัย ${t.vinaya}</span><span>อภิธรรม ${t.abhidhamma}</span></div>
+    </div>`).join("");
+}
+function renderSuttas(suttas, segs, q){
+  const el=document.getElementById("suttaResults");
+  const showS = filter==="all"||filter==="sutta";
+  const showSeg = filter==="all"||filter==="segment";
+  let html="";
+  if(showS){
+    html += `<div class="results-title">พระสูตร (${suttas.length})</div>`;
+    html += suttas.map(s=>`
+      <div class="result" tabindex="0" role="button" onclick="showSutta('${s.id}')" onkeydown="if(event.key==='Enter')showSutta('${s.id}')">
+        <div class="pali">${s.th}</div>
+        <div class="meta">${s.num} · ${s.pali} · ${s.role}</div>
+      </div>`).join("") || `<div class="empty">ไม่พบพระสูตร</div>`;
+  }
+  if(showSeg){
+    html += `<div class="results-title">ท่อนข้อความ (${segs.length})</div>`;
+    html += segs.map(s=>`
+      <div class="result" tabindex="0" role="button" onclick="showSegment('${s.segment_id}')" onkeydown="if(event.key==='Enter')showSegment('${s.segment_id}')">
+        <div class="seg-id">${s.segment_id}</div>
+        <div class="pali" style="font-size:.95rem">${s.pali}</div>
+        <div class="th">${s.th}</div>
+      </div>`).join("") || `<div class="empty">ไม่พบท่อนข้อความ</div>`;
+  }
+  el.innerHTML = html;
+}
+window.showTerm = function(pali){
+  const t = DATA.terms.find(x=>x.pali===pali);
+  const connectedSuttas = DATA.edges.filter(e=>e.to===pali||e.from===pali)
+    .map(e=>({suttaId:e.from===pali?e.to:e.from, type:e.type, ev:e.evidence}))
+    .filter(x=>DATA.suttas.some(s=>s.id===x.suttaId));
+  const segs = DATA.segments.filter(s=>s.term===pali);
+  const d=document.getElementById("detail");
+  d.innerHTML=`
+    <h3>${t.pali} <span style="font-weight:400;color:#9a8f7d;font-size:1rem">— ${t.th}</span></h3>
+    <div class="term-counts" style="margin:.4rem 0"><span>สุตตันตะ ${t.sutta}</span><span>วินัย ${t.vinaya}</span><span>อภิธรรม ${t.abhidhamma}</span><span>รวม ${t.total}</span></div>
+    <p style="color:#6c6355;font-size:.9rem">พระสูตรที่เชื่อม (${connectedSuttas.length}):</p>
+    <div class="links">${connectedSuttas.map(c=>{const s=DATA.suttas.find(x=>x.id===c.suttaId);return s?`<a href="${s.report||readerUrl(c.ev)}">${s.num} ${s.th}</a>`:"";}).join("")}</div>
+    <p style="color:#6c6355;font-size:.9rem;margin-top:.8rem">ท่อนข้อความสำคัญ (${segs.length}):</p>
+    ${segs.map(s=>`
+      <div class="seg">
+        <div class="seg-id">${s.segment_id}</div>
+        <div class="pali">${s.pali}</div>
+        <div class="th">${s.th}</div>
+        <a class="open" href="${readerUrl(s.segment_id)}" target="_blank" rel="noopener">เปิดตัวบทต้นฉบับ ↗</a>
+      </div>`).join("") || `<div class="empty">ไม่มีท่อนข้อความในฐานข้อมูลนี้</div>`}
+  `;
+  d.scrollIntoView({behavior:"smooth",block:"nearest"});
+};
+window.showSutta = function(id){
+  const s = DATA.suttas.find(x=>x.id===id);
+  const segs = DATA.segments.filter(x=>x.sutta_id===id);
+  const linkedTerms = DATA.edges.filter(e=>e.from===id).map(e=>e.to);
+  const d=document.getElementById("detail");
+  d.innerHTML=`
+    <h3>${s.th} <span style="font-weight:400;color:#9a8f7d;font-size:1rem">(${s.num} · ${s.pali})</span></h3>
+    <p style="color:#6c6355">นิกาย: ${s.nikaya} · บทบาท: ${s.role}</p>
+    <p style="color:#6c6355;font-size:.9rem">ศัพท์ที่พระสูตรนี้นิยาม/บรรจุ (${linkedTerms.length}):</p>
+    <div class="links">${linkedTerms.map(t=>{const tt=DATA.terms.find(x=>x.pali===t);return tt?`<a href="#" onclick="showTerm('${tt.pali}');return false;">${tt.pali} (${tt.th})</a>`:"";}).join("")}</div>
+    ${s.report?`<div class="links"><a href="${s.report}" style="background:var(--accent)">เปิดรายงานวิจัย</a></div>`:""}
+    <p style="color:#6c6355;font-size:.9rem;margin-top:.8rem">ท่อนข้อความ (${segs.length}):</p>
+    ${segs.map(s=>`<div class="seg"><div class="seg-id">${s.segment_id}</div><div class="pali">${s.pali}</div><div class="th">${s.th}</div><a class="open" href="${readerUrl(s.segment_id)}" target="_blank" rel="noopener">เปิดตัวบท ↗</a></div>`).join("") || `<div class="empty">ไม่มีท่อนข้อความในฐานข้อมูลนี้</div>`}
+  `;
+  d.scrollIntoView({behavior:"smooth",block:"nearest"});
+};
+window.showSegment = function(sid){
+  const s = DATA.segments.find(x=>x.segment_id===sid);
+  const su = DATA.suttas.find(x=>x.id===s.sutta_id);
+  const d=document.getElementById("detail");
+  d.innerHTML=`
+    <h3><span style="font-family:ui-monospace,monospace;font-size:1rem;color:var(--accent)">${s.segment_id}</span></h3>
+    <div class="seg"><div class="pali">${s.pali}</div><div class="th">${s.th}</div></div>
+    <p style="color:#6c6355;font-size:.9rem;margin-top:.6rem">จาก: ${su?su.num+" "+su.th:""}</p>
+    <div class="links"><a href="${readerUrl(s.segment_id)}" target="_blank" rel="noopener">เปิดตัวบทต้นฉบับ ↗</a>${su&&su.report?`<a href="${su.report}" style="background:var(--accent)">รายงานวิจัย</a>`:""}</div>
+  `;
+  d.scrollIntoView({behavior:"smooth",block:"nearest"});
+};
+document.getElementById("searchBox").addEventListener("input", renderAll);
+</script>
+</body>
+</html>

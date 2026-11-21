@@ -1,0 +1,1165 @@
+{
+ "meta": {
+  "title": "แผนที่พระธรรม (Dhamma Map)",
+  "description": "กราฟความรู้เชื่อม พระสูตร ↔ ศัพท์บาลี ↔ หมายเลขท่อน (segment) — index เชิงความหมายด้วยศัพท์บาลี (ไม่ใช้ภาษาอังกฤษ)",
+  "purposes": [
+   "search",
+   "embedded-pali-index",
+   "dhamma-map",
+   "translate-by-root"
+  ],
+  "method": "Pāli-only · tripitaka-mcp survey_corpus exhaustive · cross-check local/online",
+  "data_scope": "10 root + 5 bridge suttas; 46 terms; 43 key segments; 45 edges"
+ },
+ "suttas": [
+  {
+   "id": "sn56.11",
+   "num": "SN 56.11",
+   "pali": "Dhammacakkappavattanasutta",
+   "th": "ธัมมจักกัปปวัตตนสูตร",
+   "nikaya": "Saṁyutta",
+   "role": "WHAT",
+   "report": "dhammacakka-mapping/report.md"
+  },
+  {
+   "id": "dn2",
+   "num": "DN 2",
+   "pali": "Sāmaññaphalasutta",
+   "th": "สามัญญผลสูตร",
+   "nikaya": "Dīgha",
+   "role": "PATH",
+   "report": "samannaphala-mapping/report.md"
+  },
+  {
+   "id": "dn22",
+   "num": "DN 22",
+   "pali": "Mahāsatipaṭṭhānasutta",
+   "th": "มหาสติปัฏฐานสูตร",
+   "nikaya": "Dīgha",
+   "role": "WHO",
+   "report": "mahasatipatthana-mapping/report.md"
+  },
+  {
+   "id": "mn118",
+   "num": "MN 118",
+   "pali": "Ānāpānassatisutta",
+   "th": "อานาปานสติสูตร",
+   "nikaya": "Majjhima",
+   "role": "HOW",
+   "report": "anapanasati-mapping/report.md"
+  },
+  {
+   "id": "mn117",
+   "num": "MN 117",
+   "pali": "Mahācattārīsakasutta",
+   "th": "มหาจัตตารีสกสูตร",
+   "nikaya": "Majjhima",
+   "role": "WHICH",
+   "report": "mahacattarisaka-mapping/report.md"
+  },
+  {
+   "id": "dn33",
+   "num": "DN 33",
+   "pali": "Saṅgītisutta",
+   "th": "สังคีติสูตร",
+   "nikaya": "Dīgha",
+   "role": "INDEX",
+   "report": "sangiti-dasuttara-mapping/report.md"
+  },
+  {
+   "id": "dn34",
+   "num": "DN 34",
+   "pali": "Dasuttarasutta",
+   "th": "ทสุตตรสูตร",
+   "nikaya": "Dīgha",
+   "role": "INDEX",
+   "report": "sangiti-dasuttara-mapping/report.md"
+  },
+  {
+   "id": "dn16",
+   "num": "DN 16",
+   "pali": "Mahāparinibbānasutta",
+   "th": "มหาปรินิพพานสูตร",
+   "nikaya": "Dīgha",
+   "role": "AUTHORITY",
+   "report": "mahaparinibbana-mapping/report.md"
+  },
+  {
+   "id": "mn62",
+   "num": "MN 62",
+   "pali": "Mahārāhulovādasutta",
+   "th": "มหาราหุโลวาทสูตร",
+   "nikaya": "Majjhima",
+   "role": "CURRICULUM",
+   "report": "rahulovada-mapping/report.md"
+  },
+  {
+   "id": "mn9",
+   "num": "MN 9",
+   "pali": "Sammādiṭṭhisutta",
+   "th": "สัมมาทิฏฐิสูตร",
+   "nikaya": "Majjhima",
+   "role": "สัมมาทิฏฐิ",
+   "report": "sammaditthi-mapping/report.md"
+  },
+  {
+   "id": "sn45.8",
+   "num": "SN 45.8",
+   "pali": "Vibhaṅgasutta",
+   "th": "วิภังคสูตร (นิยามมรรค 8)",
+   "nikaya": "Saṁyutta",
+   "role": "BRIDGE",
+   "report": null
+  },
+  {
+   "id": "mn44",
+   "num": "MN 44",
+   "pali": "Cūḷavedallasutta",
+   "th": "จูฬเวทัลลสูตร (ไตรสิกขา)",
+   "nikaya": "Majjhima",
+   "role": "BRIDGE",
+   "report": null
+  },
+  {
+   "id": "an3.89",
+   "num": "AN 3.89",
+   "pali": "Paṭhamasikkhattayasutta",
+   "th": "สิกขัตตยสูตร (ไตรสิกขา)",
+   "nikaya": "Aṅguttara",
+   "role": "BRIDGE",
+   "report": null
+  },
+  {
+   "id": "mn141",
+   "num": "MN 141",
+   "pali": "Saccavibhaṅgasutta",
+   "th": "สัจจวิภังคสูตร (วิเคราะห์อริยสัจ)",
+   "nikaya": "Majjhima",
+   "role": "BRIDGE",
+   "report": null
+  },
+  {
+   "id": "mn10",
+   "num": "MN 10",
+   "pali": "Satipaṭṭhānasutta",
+   "th": "สติปัฏฐานสูตร (มัชฌิมนิกาย)",
+   "nikaya": "Majjhima",
+   "role": "BRIDGE",
+   "report": null
+  }
+ ],
+ "terms": [
+  {
+   "id": "t00",
+   "pali": "ariyasacca",
+   "th": "อริยสัจ 4",
+   "sutta": 344,
+   "vinaya": 23,
+   "abhidhamma": 34,
+   "total": 401
+  },
+  {
+   "id": "t01",
+   "pali": "aṭṭhaṅgika magga",
+   "th": "มรรคมีองค์ 8",
+   "sutta": 244,
+   "vinaya": 17,
+   "abhidhamma": 0,
+   "total": 261
+  },
+  {
+   "id": "t02",
+   "pali": "sammādiṭṭhi",
+   "th": "สัมมาทิฏฐิ",
+   "sutta": 826,
+   "vinaya": 5,
+   "abhidhamma": 235,
+   "total": 1066
+  },
+  {
+   "id": "t03",
+   "pali": "sammāsaṅkappa",
+   "th": "สัมมาสังกัปปะ",
+   "sutta": 85,
+   "vinaya": 0,
+   "abhidhamma": 2,
+   "total": 87
+  },
+  {
+   "id": "t04",
+   "pali": "sammāvācā",
+   "th": "สัมมาวาจา",
+   "sutta": 169,
+   "vinaya": 2,
+   "abhidhamma": 46,
+   "total": 217
+  },
+  {
+   "id": "t05",
+   "pali": "sammākammanta",
+   "th": "สัมมากัมมันตะ",
+   "sutta": 61,
+   "vinaya": 0,
+   "abhidhamma": 2,
+   "total": 63
+  },
+  {
+   "id": "t06",
+   "pali": "sammāājīva",
+   "th": "สัมมาอาชีวะ",
+   "sutta": 58,
+   "vinaya": 0,
+   "abhidhamma": 2,
+   "total": 60
+  },
+  {
+   "id": "t07",
+   "pali": "sammāvāyāma",
+   "th": "สัมมาวายามะ",
+   "sutta": 53,
+   "vinaya": 0,
+   "abhidhamma": 2,
+   "total": 55
+  },
+  {
+   "id": "t08",
+   "pali": "sammāsati",
+   "th": "สัมมาสติ",
+   "sutta": 195,
+   "vinaya": 2,
+   "abhidhamma": 104,
+   "total": 301
+  },
+  {
+   "id": "t09",
+   "pali": "sammāsamādhi",
+   "th": "สัมมาสมาธิ",
+   "sutta": 463,
+   "vinaya": 2,
+   "abhidhamma": 126,
+   "total": 591
+  },
+  {
+   "id": "t10",
+   "pali": "tisso sikkhā",
+   "th": "ไตรสิกขา",
+   "sutta": 876,
+   "vinaya": 1267,
+   "abhidhamma": 94,
+   "total": 2237
+  },
+  {
+   "id": "t11",
+   "pali": "sīla",
+   "th": "ศีล",
+   "sutta": 2296,
+   "vinaya": 310,
+   "abhidhamma": 633,
+   "total": 3239
+  },
+  {
+   "id": "t12",
+   "pali": "samādhi",
+   "th": "สมาธิ",
+   "sutta": 1847,
+   "vinaya": 83,
+   "abhidhamma": 374,
+   "total": 2304
+  },
+  {
+   "id": "t13",
+   "pali": "paññā",
+   "th": "ปัญญา",
+   "sutta": 5351,
+   "vinaya": 1963,
+   "abhidhamma": 1147,
+   "total": 8461
+  },
+  {
+   "id": "t14",
+   "pali": "pātimokkha",
+   "th": "ปาติโมกข์",
+   "sutta": 127,
+   "vinaya": 364,
+   "abhidhamma": 5,
+   "total": 496
+  },
+  {
+   "id": "t15",
+   "pali": "sikkhāpada",
+   "th": "สิกขาบท",
+   "sutta": 107,
+   "vinaya": 555,
+   "abhidhamma": 55,
+   "total": 717
+  },
+  {
+   "id": "t16",
+   "pali": "taṇhā",
+   "th": "ตัณหา",
+   "sutta": 1818,
+   "vinaya": 17,
+   "abhidhamma": 275,
+   "total": 2110
+  },
+  {
+   "id": "t17",
+   "pali": "nibbāna",
+   "th": "นิพพาน",
+   "sutta": 1408,
+   "vinaya": 14,
+   "abhidhamma": 377,
+   "total": 1799
+  },
+  {
+   "id": "t18",
+   "pali": "satipaṭṭhāna",
+   "th": "สติปัฏฐาน 4",
+   "sutta": 369,
+   "vinaya": 4,
+   "abhidhamma": 96,
+   "total": 469
+  },
+  {
+   "id": "t19",
+   "pali": "nīvaraṇa",
+   "th": "นิวรณ์ 5",
+   "sutta": 232,
+   "vinaya": 0,
+   "abhidhamma": 387,
+   "total": 619
+  },
+  {
+   "id": "t20",
+   "pali": "khandha",
+   "th": "ขันธ์ 5",
+   "sutta": 292,
+   "vinaya": 32,
+   "abhidhamma": 4963,
+   "total": 5287
+  },
+  {
+   "id": "t21",
+   "pali": "āyatana",
+   "th": "อายตนะ 6",
+   "sutta": 241,
+   "vinaya": 1,
+   "abhidhamma": 298,
+   "total": 540
+  },
+  {
+   "id": "t22",
+   "pali": "bojjhaṅga",
+   "th": "โพชฌงค์ 7",
+   "sutta": 629,
+   "vinaya": 12,
+   "abhidhamma": 119,
+   "total": 760
+  },
+  {
+   "id": "t23",
+   "pali": "indriya",
+   "th": "อินทรีย์",
+   "sutta": 689,
+   "vinaya": 17,
+   "abhidhamma": 1849,
+   "total": 2555
+  },
+  {
+   "id": "t24",
+   "pali": "dhātu",
+   "th": "ธาตุ",
+   "sutta": 473,
+   "vinaya": 0,
+   "abhidhamma": 1735,
+   "total": 2208
+  },
+  {
+   "id": "t25",
+   "pali": "vedanā",
+   "th": "เวทนา",
+   "sutta": 2805,
+   "vinaya": 83,
+   "abhidhamma": 2937,
+   "total": 5825
+  },
+  {
+   "id": "t26",
+   "pali": "paṭiccasamuppāda",
+   "th": "ปฏิจจสมุปบาท",
+   "sutta": 39,
+   "vinaya": 3,
+   "abhidhamma": 10,
+   "total": 52
+  },
+  {
+   "id": "t27",
+   "pali": "ānāpāna",
+   "th": "อานาปาน",
+   "sutta": 176,
+   "vinaya": 4,
+   "abhidhamma": 2,
+   "total": 182
+  },
+  {
+   "id": "t28",
+   "pali": "jhāna",
+   "th": "ฌาน",
+   "sutta": 1246,
+   "vinaya": 248,
+   "abhidhamma": 1565,
+   "total": 3059
+  },
+  {
+   "id": "t29",
+   "pali": "sammappadhāna",
+   "th": "สัมมัปปธาน 4",
+   "sutta": 155,
+   "vinaya": 5,
+   "abhidhamma": 53,
+   "total": 213
+  },
+  {
+   "id": "t30",
+   "pali": "iddhipāda",
+   "th": "อิทธิบาท 4",
+   "sutta": 384,
+   "vinaya": 11,
+   "abhidhamma": 80,
+   "total": 475
+  },
+  {
+   "id": "t31",
+   "pali": "bodhipakkhiya",
+   "th": "โพธิปักขิยธรรม 37",
+   "sutta": 56,
+   "vinaya": 0,
+   "abhidhamma": 0,
+   "total": 56
+  },
+  {
+   "id": "t32",
+   "pali": "mātikā",
+   "th": "มาติกา (แม่บท)",
+   "sutta": 30,
+   "vinaya": 46,
+   "abhidhamma": 22,
+   "total": 98
+  },
+  {
+   "id": "t33",
+   "pali": "mahāpadesa",
+   "th": "จตุมหาปเทส",
+   "sutta": 13,
+   "vinaya": 0,
+   "abhidhamma": 0,
+   "total": 13
+  },
+  {
+   "id": "t34",
+   "pali": "lokuttara",
+   "th": "โลกุตตร",
+   "sutta": 160,
+   "vinaya": 0,
+   "abhidhamma": 476,
+   "total": 636
+  },
+  {
+   "id": "t35",
+   "pali": "lokiya",
+   "th": "โลกิย",
+   "sutta": 22,
+   "vinaya": 0,
+   "abhidhamma": 270,
+   "total": 292
+  },
+  {
+   "id": "t36",
+   "pali": "sāsava",
+   "th": "สาสว (มีอาสวะ)",
+   "sutta": 75,
+   "vinaya": 0,
+   "abhidhamma": 300,
+   "total": 375
+  },
+  {
+   "id": "t37",
+   "pali": "anāsava",
+   "th": "อนาสว (ไม่มีอาสวะ)",
+   "sutta": 365,
+   "vinaya": 8,
+   "abhidhamma": 163,
+   "total": 536
+  },
+  {
+   "id": "t38",
+   "pali": "vimokkha",
+   "th": "วิโมกข์ 8",
+   "sutta": 324,
+   "vinaya": 42,
+   "abhidhamma": 3,
+   "total": 369
+  },
+  {
+   "id": "t39",
+   "pali": "appamāda",
+   "th": "อัปปมาทะ",
+   "sutta": 186,
+   "vinaya": 1,
+   "abhidhamma": 0,
+   "total": 187
+  },
+  {
+   "id": "t40",
+   "pali": "tiparivaṭṭa",
+   "th": "ติปริวัฏฏ์ (3 รอบ 12 อาการ)",
+   "sutta": 5,
+   "vinaya": 2,
+   "abhidhamma": 0,
+   "total": 7
+  },
+  {
+   "id": "t41",
+   "pali": "dhammacakka",
+   "th": "ธรรมจักร",
+   "sutta": 234,
+   "vinaya": 3,
+   "abhidhamma": 3,
+   "total": 240
+  },
+  {
+   "id": "t42",
+   "pali": "brahmavihāra",
+   "th": "พรหมวิหาร 4",
+   "sutta": 2,
+   "vinaya": 0,
+   "abhidhamma": 2,
+   "total": 4
+  },
+  {
+   "id": "t43",
+   "pali": "kusala",
+   "th": "กุศล",
+   "sutta": 1652,
+   "vinaya": 161,
+   "abhidhamma": 3723,
+   "total": 5536
+  },
+  {
+   "id": "t44",
+   "pali": "akusala",
+   "th": "อกุศล",
+   "sutta": 1467,
+   "vinaya": 72,
+   "abhidhamma": 2142,
+   "total": 3681
+  },
+  {
+   "id": "t45",
+   "pali": "mahābhūta",
+   "th": "มหาภูต 4",
+   "sutta": 82,
+   "vinaya": 0,
+   "abhidhamma": 659,
+   "total": 741
+  }
+ ],
+ "segments": [
+  {
+   "id": "s000",
+   "segment_id": "sn56.11:2.4",
+   "sutta_id": "sn56.11",
+   "pali": "Ete kho … majjhimā paṭipadā … nibbānāya saṁvattati",
+   "th": "มัชฌิมาปฏิปทาเป็นไปเพื่อนิพพาน",
+   "term": "majjhimā paṭipadā"
+  },
+  {
+   "id": "s001",
+   "segment_id": "sn56.11:3.3",
+   "sutta_id": "sn56.11",
+   "pali": "sammādiṭṭhi sammāsaṅkappo … sammāsamādhi",
+   "th": "มรรคมีองค์ 8 (รายชื่อ 8 องค์)",
+   "term": "aṭṭhaṅgika magga"
+  },
+  {
+   "id": "s002",
+   "segment_id": "sn56.11:4.1",
+   "sutta_id": "sn56.11",
+   "pali": "Idaṁ kho pana, bhikkhave, dukkhaṁ ariyasaccaṁ—",
+   "th": "ทุกขอริยสัจ (สัจจะที่ 1)",
+   "term": "ariyasacca"
+  },
+  {
+   "id": "s003",
+   "segment_id": "sn56.11:4.2",
+   "sutta_id": "sn56.11",
+   "pali": "jātipi dukkhā … saṅkhittena pañcupādānakkhandhā dukkhā",
+   "th": "ทุกข์ = ชาติ…โดยย่อคืออุปาทานขันธ์ 5",
+   "term": "khandha"
+  },
+  {
+   "id": "s004",
+   "segment_id": "sn56.11:4.4",
+   "sutta_id": "sn56.11",
+   "pali": "yāyaṁ taṇhā ponobbhavikā nandirāgasahagatā …",
+   "th": "สมุทัย = ตัณหา",
+   "term": "taṇhā"
+  },
+  {
+   "id": "s005",
+   "segment_id": "sn56.11:4.5",
+   "sutta_id": "sn56.11",
+   "pali": "kāmataṇhā, bhavataṇhā, vibhavataṇhā",
+   "th": "ตัณหา 3: กาม/ภว/วิภว",
+   "term": "taṇhā"
+  },
+  {
+   "id": "s006",
+   "segment_id": "sn56.11:4.7",
+   "sutta_id": "sn56.11",
+   "pali": "asesavirāganirodho cāgo paṭinissaggo mutti anālayo",
+   "th": "นิโรธ = ความดับตัณหาไม่มีเหลือ",
+   "term": "nibbāna"
+  },
+  {
+   "id": "s007",
+   "segment_id": "sn56.11:4.9",
+   "sutta_id": "sn56.11",
+   "pali": "ayameva ariyo aṭṭhaṅgiko maggo …",
+   "th": "มรรค = อริยอัฏฐังคิกมรรค",
+   "term": "aṭṭhaṅgika magga"
+  },
+  {
+   "id": "s008",
+   "segment_id": "sn56.11:9.1",
+   "sutta_id": "sn56.11",
+   "pali": "tiparivaṭṭaṁ dvādasākāraṁ … ñāṇadassanaṁ",
+   "th": "ติปริวัฏฏ์ ทวาทสาการ (วิธี 3 รอบ 12 อาการ)",
+   "term": "tiparivaṭṭa"
+  },
+  {
+   "id": "s009",
+   "segment_id": "sn56.11:11.2",
+   "sutta_id": "sn56.11",
+   "pali": "yaṁ kiñci samudayadhammaṁ sabbaṁ taṁ nirodhadhamman”ti",
+   "th": "ธรรมตา: สิ่งใดเกิด สิ่งนั้นดับ (ธัมมจักษุ)",
+   "term": "dhammacakka"
+  },
+  {
+   "id": "s010",
+   "segment_id": "sn45.8:3.2",
+   "sutta_id": "sn45.8",
+   "pali": "dukkhe ñāṇaṁ, dukkhasamudaye ñāṇaṁ … paṭipadāya ñāṇaṁ",
+   "th": "สัมมาทิฏฐิ = ญาณในอริยสัจ 4",
+   "term": "sammādiṭṭhi"
+  },
+  {
+   "id": "s011",
+   "segment_id": "sn45.8:9.2",
+   "sutta_id": "sn45.8",
+   "pali": "kāye kāyānupassī … dhammesu dhammānupassī viharati",
+   "th": "สัมมาสติ = สติปัฏฐาน 4",
+   "term": "satipaṭṭhāna"
+  },
+  {
+   "id": "s012",
+   "segment_id": "sn45.8:10.2",
+   "sutta_id": "sn45.8",
+   "pali": "vivicceva kāmehi … paṭhamaṁ jhānaṁ upasampajja",
+   "th": "สัมมาสมาธิ = ฌาน 1",
+   "term": "jhāna"
+  },
+  {
+   "id": "s013",
+   "segment_id": "mn44:11.3",
+   "sutta_id": "mn44",
+   "pali": "sammāvācā … sammāājīvo ime dhammā sīlakkhandhe saṅgahitā",
+   "th": "วาจา/กัมมันตะ/อาชีวะ = ศีล",
+   "term": "sīla"
+  },
+  {
+   "id": "s014",
+   "segment_id": "mn44:11.4",
+   "sutta_id": "mn44",
+   "pali": "sammāvāyāmo … sammāsamādhi ime dhammā samādhikkhandhe saṅgahitā",
+   "th": "วายามะ/สติ/สมาธิ = สมาธิ",
+   "term": "samādhi"
+  },
+  {
+   "id": "s015",
+   "segment_id": "mn44:11.5",
+   "sutta_id": "mn44",
+   "pali": "sammādiṭṭhi … sammāsaṅkappo ime dhammā paññākkhandhe saṅgahitā",
+   "th": "ทิฏฐิ/สังกัปปะ = ปัญญา",
+   "term": "paññā"
+  },
+  {
+   "id": "s016",
+   "segment_id": "mn44:12.3",
+   "sutta_id": "mn44",
+   "pali": "cattāro satipaṭṭhānā samādhinimittā",
+   "th": "สติปัฏฐาน 4 = นิมิตต์ของสมาธิ",
+   "term": "satipaṭṭhāna"
+  },
+  {
+   "id": "s017",
+   "segment_id": "mn44:29.12",
+   "sutta_id": "mn44",
+   "pali": "Vimuttiyā kho … nibbānaṁ paṭibhāgo",
+   "th": "วิมุตติมีนิพพานเป็นที่ไป",
+   "term": "nibbāna"
+  },
+  {
+   "id": "s018",
+   "segment_id": "an3.89:1.3",
+   "sutta_id": "an3.89",
+   "pali": "Adhisīlasikkhā, adhicittasikkhā, adhipaññāsikkhā",
+   "th": "ไตรสิกขา 3",
+   "term": "tisso sikkhā"
+  },
+  {
+   "id": "s019",
+   "segment_id": "an3.89:4.2",
+   "sutta_id": "an3.89",
+   "pali": "‘idaṁ dukkhan’ti yathābhūtaṁ pajānāti …",
+   "th": "อธิปัญญาสิกขา = รู้แจ้งอริยสัจ 4",
+   "term": "ariyasacca"
+  },
+  {
+   "id": "s020",
+   "segment_id": "dn16:3.50.5",
+   "sutta_id": "dn16",
+   "pali": "cattāro satipaṭṭhānā … ariyo aṭṭhaṅgiko maggo",
+   "th": "โพธิปักขิยธรรม 37 (รายชื่อ 7 หมวด)",
+   "term": "bodhipakkhiya"
+  },
+  {
+   "id": "s021",
+   "segment_id": "dn16:4.8.13",
+   "sutta_id": "dn16",
+   "pali": "Idaṁ, bhikkhave, paṭhamaṁ mahāpadesaṁ dhāreyyātha",
+   "th": "มหาปเทสที่ 1 (เกณฑ์วินิจฉัยพุทธวจนะ)",
+   "term": "mahāpadesa"
+  },
+  {
+   "id": "s022",
+   "segment_id": "dn16:4.10.2",
+   "sutta_id": "dn16",
+   "pali": "dhammadharā vinayadharā mātikādharā",
+   "th": "ผู้ทรงธรรม/วินัย/มาติกา",
+   "term": "mātikā"
+  },
+  {
+   "id": "s023",
+   "segment_id": "mn117:3.2",
+   "sutta_id": "mn117",
+   "pali": "sammādiṭṭhi … sammāsati",
+   "th": "องค์ 7 ของสัมมาสมาธิ",
+   "term": "aṭṭhaṅgika magga"
+  },
+  {
+   "id": "s024",
+   "segment_id": "mn117:6.4",
+   "sutta_id": "mn117",
+   "pali": "sammādiṭṭhi ariyā anāsavā lokuttarā maggaṅgā",
+   "th": "สัมมาทิฏฐิ 2 ระดับ (โลกุตตระ)",
+   "term": "lokuttara"
+  },
+  {
+   "id": "s025",
+   "segment_id": "mn117:34.4",
+   "sutta_id": "mn117",
+   "pali": "aṭṭhaṅgasamannāgato sekkho, dasaṅgasamannāgato arahā",
+   "th": "มรรค 8 = เสขะ, 10 = อรหันต์",
+   "term": "aṭṭhaṅgika magga"
+  },
+  {
+   "id": "s026",
+   "segment_id": "mn118:15.2",
+   "sutta_id": "mn118",
+   "pali": "Ānāpānassati … cattāro satipaṭṭhāne paripūreti",
+   "th": "อานาปานสติ → สติปัฏฐาน 4",
+   "term": "ānāpāna"
+  },
+  {
+   "id": "s027",
+   "segment_id": "mn118:15.3",
+   "sutta_id": "mn118",
+   "pali": "Cattāro satipaṭṭhānā … satta bojjhaṅge paripūrenti",
+   "th": "สติปัฏฐาน → โพชฌงค์ 7",
+   "term": "bojjhaṅga"
+  },
+  {
+   "id": "s028",
+   "segment_id": "mn118:15.4",
+   "sutta_id": "mn118",
+   "pali": "Satta bojjhaṅgā … vijjāvimuttiṁ paripūrenti",
+   "th": "โพชฌงค์ → วิชชาวิมุตติ",
+   "term": "bojjhaṅga"
+  },
+  {
+   "id": "s029",
+   "segment_id": "dn22:1.7",
+   "sutta_id": "dn22",
+   "pali": "Ekāyano ayaṁ … yadidaṁ cattāro satipaṭṭhānā",
+   "th": "เอกายนมรรค = สติปัฏฐาน 4",
+   "term": "satipaṭṭhāna"
+  },
+  {
+   "id": "s030",
+   "segment_id": "dn22:13.12",
+   "sutta_id": "dn22",
+   "pali": "dhammesu dhammānupassī viharati pañcasu nīvaraṇesu",
+   "th": "ธัมมานุปัสสนาในนิวรณ์ 5",
+   "term": "nīvaraṇa"
+  },
+  {
+   "id": "s031",
+   "segment_id": "dn22:14.1",
+   "sutta_id": "dn22",
+   "pali": "dhammesu dhammānupassī viharati pañcasu upādānakkhandhesu",
+   "th": "ธัมมานุปัสสนาในอุปาทานขันธ์ 5",
+   "term": "khandha"
+  },
+  {
+   "id": "s032",
+   "segment_id": "dn22:15.1",
+   "sutta_id": "dn22",
+   "pali": "dhammesu dhammānupassī viharati chasu … āyatanesu",
+   "th": "ธัมมานุปัสสนาในอายตนะ 6",
+   "term": "āyatana"
+  },
+  {
+   "id": "s033",
+   "segment_id": "dn22:21.2",
+   "sutta_id": "dn22",
+   "pali": "Ayameva ariyo aṭṭhaṅgiko maggo …",
+   "th": "มรรค 8 (ในมหาสติปัฏฐาน)",
+   "term": "aṭṭhaṅgika magga"
+  },
+  {
+   "id": "s034",
+   "segment_id": "dn2:42.1",
+   "sutta_id": "dn2",
+   "pali": "pātimokkhasaṁvarasaṁvuto viharati … samādāya sikkhati sikkhāpadesu",
+   "th": "ปาติโมกขสังวร (ขั้นแรกของมรรค)",
+   "term": "pātimokkha"
+  },
+  {
+   "id": "s035",
+   "segment_id": "vb4:1.1",
+   "sutta_id": "vb4",
+   "pali": "Cattāri ariyasaccāni—",
+   "th": "อริยสัจ 4 (อภิธรรม สัจจวิภังค์)",
+   "term": "ariyasacca"
+  },
+  {
+   "id": "s036",
+   "segment_id": "pli-tv-kd1:6.19.1",
+   "sutta_id": "pli-tv-kd1",
+   "pali": "Idaṁ kho pana, bhikkhave, dukkhaṁ ariyasaccaṁ",
+   "th": "อริยสัจ 4 (วินัย มหาวรรค ปฐมเทศนา)",
+   "term": "ariyasacca"
+  },
+  {
+   "id": "s037",
+   "segment_id": "dn33:1.7.6",
+   "sutta_id": "dn33",
+   "pali": "sabbeheva saṅgāyitabbaṁ na vivaditabbaṁ",
+   "th": "สังคายนาร่วมไม่วิวาท (จุดประสงค์สังคีติ)",
+   "term": "mātikā"
+  },
+  {
+   "id": "s038",
+   "segment_id": "dn34:1.2.1",
+   "sutta_id": "dn34",
+   "pali": "dhammo nipphāna-patthiyā …",
+   "th": "ธรรมเพื่อนิพพาน (จุดประสงค์ทสุตตร)",
+   "term": "mātikā"
+  },
+  {
+   "id": "s039",
+   "segment_id": "mn62:8.2",
+   "sutta_id": "mn62",
+   "pali": "pathavī … ayaṁ pathavīdhātu",
+   "th": "ปฐวีธาตุ (กาย 31 ส่วน)",
+   "term": "dhātu"
+  },
+  {
+   "id": "s040",
+   "segment_id": "mn9:11.5",
+   "sutta_id": "mn9",
+   "pali": "… samudayo … nirodho … ariyo aṭṭhaṅgiko maggo",
+   "th": "กรอบ 5 ชั้นของสัมมาทิฏฐิ",
+   "term": "sammādiṭṭhi"
+  },
+  {
+   "id": "s041",
+   "segment_id": "mn9:14.2",
+   "sutta_id": "mn9",
+   "pali": "sammādiṭṭhi … ariyasaccaṁ",
+   "th": "สัมมาทิฏฐิ = ญาณในอริยสัจ",
+   "term": "sammādiṭṭhi"
+  }
+ ],
+ "edges": [
+  {
+   "from": "sn56.11",
+   "to": "ariyasacca",
+   "type": "defines",
+   "evidence": "sn56.11:4.1"
+  },
+  {
+   "from": "sn56.11",
+   "to": "aṭṭhaṅgika magga",
+   "type": "defines",
+   "evidence": "sn56.11:3.3"
+  },
+  {
+   "from": "sn56.11",
+   "to": "taṇhā",
+   "type": "defines",
+   "evidence": "sn56.11:4.4"
+  },
+  {
+   "from": "sn56.11",
+   "to": "nibbāna",
+   "type": "defines",
+   "evidence": "sn56.11:4.7"
+  },
+  {
+   "from": "sn56.11",
+   "to": "tiparivaṭṭa",
+   "type": "defines",
+   "evidence": "sn56.11:9.1"
+  },
+  {
+   "from": "sn45.8",
+   "to": "aṭṭhaṅgika magga",
+   "type": "defines",
+   "evidence": "sn45.8:1.2"
+  },
+  {
+   "from": "sn45.8",
+   "to": "sammādiṭṭhi",
+   "type": "defines",
+   "evidence": "sn45.8:3.2"
+  },
+  {
+   "from": "sn45.8",
+   "to": "satipaṭṭhāna",
+   "type": "defines",
+   "evidence": "sn45.8:9.2"
+  },
+  {
+   "from": "sn45.8",
+   "to": "jhāna",
+   "type": "defines",
+   "evidence": "sn45.8:10.2"
+  },
+  {
+   "from": "mn44",
+   "to": "tisso sikkhā",
+   "type": "defines",
+   "evidence": "mn44:11.3"
+  },
+  {
+   "from": "mn44",
+   "to": "satipaṭṭhāna",
+   "type": "defines",
+   "evidence": "mn44:12.3"
+  },
+  {
+   "from": "an3.89",
+   "to": "tisso sikkhā",
+   "type": "defines",
+   "evidence": "an3.89:1.3"
+  },
+  {
+   "from": "an3.89",
+   "to": "ariyasacca",
+   "type": "defines",
+   "evidence": "an3.89:4.2"
+  },
+  {
+   "from": "dn16",
+   "to": "bodhipakkhiya",
+   "type": "defines",
+   "evidence": "dn16:3.50.5"
+  },
+  {
+   "from": "dn16",
+   "to": "mahāpadesa",
+   "type": "defines",
+   "evidence": "dn16:4.8.13"
+  },
+  {
+   "from": "dn16",
+   "to": "mātikā",
+   "type": "mentions",
+   "evidence": "dn16:4.10.2"
+  },
+  {
+   "from": "dn33",
+   "to": "mātikā",
+   "type": "defines",
+   "evidence": "dn33:1.7.6"
+  },
+  {
+   "from": "dn34",
+   "to": "mātikā",
+   "type": "defines",
+   "evidence": "dn34:1.2.1"
+  },
+  {
+   "from": "mn117",
+   "to": "aṭṭhaṅgika magga",
+   "type": "defines",
+   "evidence": "mn117:3.2"
+  },
+  {
+   "from": "mn117",
+   "to": "lokuttara",
+   "type": "defines",
+   "evidence": "mn117:6.4"
+  },
+  {
+   "from": "mn118",
+   "to": "ānāpāna",
+   "type": "defines",
+   "evidence": "mn118:17.2"
+  },
+  {
+   "from": "mn118",
+   "to": "satipaṭṭhāna",
+   "type": "fulfills",
+   "evidence": "mn118:15.2"
+  },
+  {
+   "from": "mn118",
+   "to": "bojjhaṅga",
+   "type": "fulfills",
+   "evidence": "mn118:15.3"
+  },
+  {
+   "from": "dn22",
+   "to": "satipaṭṭhāna",
+   "type": "defines",
+   "evidence": "dn22:1.7"
+  },
+  {
+   "from": "dn22",
+   "to": "nīvaraṇa",
+   "type": "contains",
+   "evidence": "dn22:13.12"
+  },
+  {
+   "from": "dn22",
+   "to": "khandha",
+   "type": "contains",
+   "evidence": "dn22:14.1"
+  },
+  {
+   "from": "dn22",
+   "to": "āyatana",
+   "type": "contains",
+   "evidence": "dn22:15.1"
+  },
+  {
+   "from": "dn22",
+   "to": "ariyasacca",
+   "type": "contains",
+   "evidence": "dn22:21.2"
+  },
+  {
+   "from": "dn2",
+   "to": "tisso sikkhā",
+   "type": "contains",
+   "evidence": "dn2:42.1"
+  },
+  {
+   "from": "dn2",
+   "to": "pātimokkha",
+   "type": "defines",
+   "evidence": "dn2:42.1"
+  },
+  {
+   "from": "mn62",
+   "to": "ānāpāna",
+   "type": "contains",
+   "evidence": "mn62:25.1"
+  },
+  {
+   "from": "mn62",
+   "to": "dhātu",
+   "type": "contains",
+   "evidence": "mn62:8.2"
+  },
+  {
+   "from": "mn9",
+   "to": "sammādiṭṭhi",
+   "type": "defines",
+   "evidence": "mn9:11.5"
+  },
+  {
+   "from": "mn9",
+   "to": "ariyasacca",
+   "type": "defines",
+   "evidence": "mn9:14.2"
+  },
+  {
+   "from": "aṭṭhaṅgika magga",
+   "to": "tisso sikkhā",
+   "type": "maps_to",
+   "evidence": "mn44:11.3-11.5"
+  },
+  {
+   "from": "tisso sikkhā",
+   "to": "Vinaya",
+   "type": "maps_to_pitaka",
+   "evidence": "mn44:11.3"
+  },
+  {
+   "from": "tisso sikkhā",
+   "to": "Sutta",
+   "type": "maps_to_pitaka",
+   "evidence": "mn44:11.4"
+  },
+  {
+   "from": "tisso sikkhā",
+   "to": "Abhidhamma",
+   "type": "maps_to_pitaka",
+   "evidence": "mn44:11.5"
+  },
+  {
+   "from": "ariyasacca",
+   "to": "Vinaya",
+   "type": "appears_in",
+   "evidence": "pli-tv-kd1:6.19.1"
+  },
+  {
+   "from": "ariyasacca",
+   "to": "Abhidhamma",
+   "type": "appears_in",
+   "evidence": "vb4:1.1"
+  },
+  {
+   "from": "bodhipakkhiya",
+   "to": "aṭṭhaṅgika magga",
+   "type": "includes",
+   "evidence": "dn16:3.50.5"
+  },
+  {
+   "from": "bodhipakkhiya",
+   "to": "satipaṭṭhāna",
+   "type": "includes",
+   "evidence": "dn16:3.50.5"
+  },
+  {
+   "from": "bodhipakkhiya",
+   "to": "bojjhaṅga",
+   "type": "includes",
+   "evidence": "dn16:3.50.5"
+  }
+ ]
+}

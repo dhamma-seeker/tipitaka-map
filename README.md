@@ -23,10 +23,11 @@
 ## 🗺️ แผนที่ฉบับรวม (Combined Map)
 
 - 📄 **หน้ารวมงานวิจัย:** [`index.html`](index.html) (เปิดใน GitHub Pages หรือคลิกใน repo)
+- 🔍 **เครื่องมือค้นหาแผนที่พระธรรม (map.html):** [`map.html`](map.html) — ค้นหาด้วยศัพท์บาลี/ไทย/หมายเลขท่อน พร้อมลิงก์ลึกถึงตัวบท
+- 🧭 **ฐานข้อมูลกราฟ (dhamma-map.json):** [`dhamma-map/dhamma-map.json`](dhamma-map/dhamma-map.json) — 15 สูตร · 46 ศัพท์ · 42 ท่อนข้อความ · 43 ขอบเชื่อม (index เชิงความหมายด้วยศัพท์บาลี)
 - 📄 **รายงานฉบับรวม:** [`combined-map/report.md`](combined-map/report.md)
 - 🔗 **โครงสร้าง node–edge รวม:** [`combined-map/combined_graph.json`](combined-map/combined_graph.json) (28 โหนด, 31 ขอบ พร้อมหลักฐาน)
 - 🖼️ **แผนภาพรวม 4 แกน + 10 root:** [`combined_map_4axes.svg`](combined-map/combined_map_4axes.svg) / [`png`](combined-map/combined_map_4axes.png)
-- 🖼️ **แผนภาพ 3 คอลัมน์ (เดิม):** [`combined_map.svg`](combined-map/combined_map.svg)
 
 ![แผนที่พระไตรปิฎกฉบับสมบูรณ์ (4 แกน + 10 root)](combined-map/combined_map_4axes.svg)
 
