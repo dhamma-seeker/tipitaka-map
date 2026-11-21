@@ -1,0 +1,135 @@
+{
+ "root": "MN62",
+ "title": "มหาราหุโลวาทสูตร (หลักสูตรกรรมฐานครบวงจร)",
+ "nodes": [
+  "5 dhatu",
+  "5 dhatu (pathavi/apo/tejo/vayo/akasa)",
+  "ABHIDHAMMA (มหาภูต 659)",
+  "DN22 patikulamanasikara",
+  "MN118 จตุรกะ 4 (อนิจจานุปสฺสี)",
+  "MN62",
+  "anapanassati 16 ขั้น",
+  "aniccasanna",
+  "aniccasanna (อนิจจสัญญา)",
+  "asubha",
+  "asubha (อสุภ)",
+  "brahmavihara 4 (metta/karuna/mudita/upekkha)",
+  "carimaka assasa viditava nirujjhanti",
+  "dhatu-upama (ปฐวีสม/อาโปสม/เตโชสม/วาโยสม/อากาสสม)",
+  "karuna",
+  "metta",
+  "mudita",
+  "pathavidhatu = 31 กายส่วน",
+  "satipatthana 4",
+  "satta bojjhanga",
+  "upekkha",
+  "ละ ปฏิฆะ (patigha)",
+  "ละ พยาบาท (byapada)",
+  "ละ วิเหสา (vihesa)",
+  "ละ อรติ (arati)"
+ ],
+ "edges": [
+  {
+   "from": "MN62",
+   "to": "5 dhatu (pathavi/apo/tejo/vayo/akasa)",
+   "type": "หมวดที่ 1 (อนัตตา)",
+   "evidence": "mn62:8-12"
+  },
+  {
+   "from": "5 dhatu",
+   "to": "pathavidhatu = 31 กายส่วน",
+   "type": "เหมือน DN22 ปฏิกูลมนสิการ",
+   "evidence": "mn62:8.2; dn22:5"
+  },
+  {
+   "from": "5 dhatu",
+   "to": "ABHIDHAMMA (มหาภูต 659)",
+   "type": "สะพานอภิธรรม",
+   "evidence": "mahābhūta"
+  },
+  {
+   "from": "MN62",
+   "to": "dhatu-upama (ปฐวีสม/อาโปสม/เตโชสม/วาโยสม/อากาสสม)",
+   "type": "หมวดที่ 2 (อุเบกขา)",
+   "evidence": "mn62:13-17"
+  },
+  {
+   "from": "MN62",
+   "to": "brahmavihara 4 (metta/karuna/mudita/upekkha)",
+   "type": "หมวดที่ 3 (ละอกุศล)",
+   "evidence": "mn62:18-21"
+  },
+  {
+   "from": "metta",
+   "to": "ละ พยาบาท (byapada)",
+   "type": "ผลของเมตตา",
+   "evidence": "mn62:18.2"
+  },
+  {
+   "from": "karuna",
+   "to": "ละ วิเหสา (vihesa)",
+   "type": "ผลของกรุณา",
+   "evidence": "mn62:19.2"
+  },
+  {
+   "from": "mudita",
+   "to": "ละ อรติ (arati)",
+   "type": "ผลของมุทิตา",
+   "evidence": "mn62:20.2"
+  },
+  {
+   "from": "upekkha",
+   "to": "ละ ปฏิฆะ (patigha)",
+   "type": "ผลของอุเบกขา",
+   "evidence": "mn62:21.2"
+  },
+  {
+   "from": "MN62",
+   "to": "asubha (อสุภ)",
+   "type": "หมวดที่ 4 (ละราคะ)",
+   "evidence": "mn62:22"
+  },
+  {
+   "from": "MN62",
+   "to": "aniccasanna (อนิจจสัญญา)",
+   "type": "หมวดที่ 5 (ละอัสมิมานะ)",
+   "evidence": "mn62:23"
+  },
+  {
+   "from": "MN62",
+   "to": "anapanassati 16 ขั้น",
+   "type": "หมวดที่ 6 (= MN118)",
+   "evidence": "mn62:24-30"
+  },
+  {
+   "from": "anapanassati 16 ขั้น",
+   "to": "satipatthana 4",
+   "type": "= สัมมาสติ (SN45.8:9.2)",
+   "evidence": "sn45.8:9.2"
+  },
+  {
+   "from": "anapanassati 16 ขั้น",
+   "to": "satta bojjhanga",
+   "type": "→ วิชชาวิมุตติ (MN118:15)",
+   "evidence": "mn118:15.3-15.4"
+  },
+  {
+   "from": "anapanassati 16 ขั้น",
+   "to": "carimaka assasa viditava nirujjhanti",
+   "type": "ปัจฉิมบท",
+   "evidence": "mn62:30.2"
+  },
+  {
+   "from": "asubha",
+   "to": "DN22 patikulamanasikara",
+   "type": "เชื่อม DN22",
+   "evidence": "dn22:5"
+  },
+  {
+   "from": "aniccasanna",
+   "to": "MN118 จตุรกะ 4 (อนิจจานุปสฺสี)",
+   "type": "เชื่อม MN118",
+   "evidence": "mn118:21.1"
+  }
+ ]
+}

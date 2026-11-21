@@ -1,0 +1,13 @@
+from_node,to_node,edge_type,evidence
+DN16,mahāpadesa (จตุมหาปเทส),เกณฑ์วินิจฉัยพุทธวจนะ,dn16:4.8.13
+mahāpadesa,sutte osāretabbāni vinaye sandassetabbāni,เกณฑ์ = เทียบกับสูตร+วินัย,dn16:4.8.5
+mahāpadesa,4 แหล่ง: พุทธวจนะ/สงฆ์/คณะเถระ/เถระรูปเดียว,แหล่งอ้าง,dn16:4.8-4.11
+DN16,bodhipakkhiya 37 (สติปัฏฐาน4·สมฺมปฺปธาน4·อิทธิปาท4·อินฺทรีย5·พล5·โพชฺฌงฺค7·มคฺค8),บทสรุปพระธรรม,dn16:3.50.5
+bodhipakkhiya 37,satipaṭṭhāna 4,= รากของ DN22,dn16:3.50.5
+bodhipakkhiya 37,bojjhaṅga 7,= รากของ MN118,dn16:3.50.5
+bodhipakkhiya 37,ariyo aṭṭhaṅgiko maggo,= รากของ SN56.11/MN117,dn16:3.50.5
+DN16,ariyasacca 4 (อริยสัจกถา §8),บทสรุปธรรม,dn16:2.1.0
+DN16,dhammādāsa (ธรรมาทาส §10),กระจกแห่งธรรม (โสดาบันพิจารณาตน),dn16:2.8.0
+DN16,aṭṭha vimokkhā (อัฏฐวิโมกข์ §19),วิโมกข์ 8,dn16:3.33.0
+DN16,dhammo ca vinayo ca ... so vo mamaccayena satthā,ปัจฉิมวาจา: ธมฺมวินัย = ศาสดา,dn16:6.1.5
+DN16,appamādena sampādetha,ปัจฉิมวาจา (อปฺปมาเทน),dn16:3.51.4

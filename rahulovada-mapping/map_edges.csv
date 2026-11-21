@@ -1,0 +1,18 @@
+from_node,to_node,edge_type,evidence
+MN62,5 dhatu (pathavi/apo/tejo/vayo/akasa),หมวดที่ 1 (อนัตตา),mn62:8-12
+5 dhatu,pathavidhatu = 31 กายส่วน,เหมือน DN22 ปฏิกูลมนสิการ,mn62:8.2; dn22:5
+5 dhatu,ABHIDHAMMA (มหาภูต 659),สะพานอภิธรรม,mahābhūta
+MN62,dhatu-upama (ปฐวีสม/อาโปสม/เตโชสม/วาโยสม/อากาสสม),หมวดที่ 2 (อุเบกขา),mn62:13-17
+MN62,brahmavihara 4 (metta/karuna/mudita/upekkha),หมวดที่ 3 (ละอกุศล),mn62:18-21
+metta,ละ พยาบาท (byapada),ผลของเมตตา,mn62:18.2
+karuna,ละ วิเหสา (vihesa),ผลของกรุณา,mn62:19.2
+mudita,ละ อรติ (arati),ผลของมุทิตา,mn62:20.2
+upekkha,ละ ปฏิฆะ (patigha),ผลของอุเบกขา,mn62:21.2
+MN62,asubha (อสุภ),หมวดที่ 4 (ละราคะ),mn62:22
+MN62,aniccasanna (อนิจจสัญญา),หมวดที่ 5 (ละอัสมิมานะ),mn62:23
+MN62,anapanassati 16 ขั้น,หมวดที่ 6 (= MN118),mn62:24-30
+anapanassati 16 ขั้น,satipatthana 4,= สัมมาสติ (SN45.8:9.2),sn45.8:9.2
+anapanassati 16 ขั้น,satta bojjhanga,→ วิชชาวิมุตติ (MN118:15),mn118:15.3-15.4
+anapanassati 16 ขั้น,carimaka assasa viditava nirujjhanti,ปัจฉิมบท,mn62:30.2
+asubha,DN22 patikulamanasikara,เชื่อม DN22,dn22:5
+aniccasanna,MN118 จตุรกะ 4 (อนิจจานุปสฺสี),เชื่อม MN118,mn118:21.1

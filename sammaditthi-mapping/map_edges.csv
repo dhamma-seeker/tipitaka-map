@@ -1,0 +1,11 @@
+from_node,to_node,edge_type,evidence
+MN9,akusala/kusala + mula,นิยามสัมมาทิฏฐิ (ฐานที่ 1),mn9:3.1
+MN9,ahara 4,นิยามสัมมาทิฏฐิ (ฐานที่ 2),mn9:11.2-11.4
+MN9,ariyasacca 4,นิยามสัมมาทิฏฐิ (ฐานที่ 3),mn9:14.2
+MN9,paticcasamuppada,นิยามสัมมาทิฏฐิ (ฐานที่ 4),mn9:21.2
+MN9,asava 3,นิยามสัมมาทิฏฐิ (ฐานที่ 5),mn9:59-71
+ahara 4,tanha -> ariya atthangika magga,สมุทย/นิโรธ/มรรค,mn9:11.5
+ariyasacca 4,SN56.11 (อริยสัจ 4),= วนกลับ (วงปิด),mn9:14.2 = sn45.8:3.2
+paticcasamuppada,jati -> ... -> avijja,สมุทย/นิโรธ/มรรค (12 ปัจจัย),"mn9:22.9, 62.4"
+sammaditthi,nana in 4 truths,= (SN45.8),sn45.8:3.2
+kusala/akusala/asava,ABHIDHAMMA (กุสลติกะ/อาสวโคจฉกะ),สะพานอภิธรรม,"kusala 3723, akusala 2142, asava 944"

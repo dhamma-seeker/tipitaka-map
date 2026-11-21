@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1414 394" font-family="Georgia, serif">
+<rect width="100%" height="100%" fill="#fffdf5"/>
+<path d="M 677 60 C 677 105, 244 105, 244 152" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 677 60 C 677 105, 608 105, 608 138" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 677 60 C 677 105, 1128 105, 1128 144" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 244 208 C 244 255, 119 255, 119 296" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 244 208 C 244 255, 328 255, 328 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 608 222 C 608 255, 498 255, 498 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 608 222 C 608 255, 677 255, 677 302" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1128 216 C 1128 255, 898 255, 898 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1128 216 C 1128 255, 1122 255, 1122 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1128 216 C 1128 255, 1319 255, 1319 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<rect x="597" y="-0" width="160" height="61" rx="8" fill="#8a1f1f" stroke="#6b1a1a" stroke-width="1.3"/>
+<text x="677" y="22" text-anchor="middle" font-size="12.5px" fill="#ffffff" font-weight="bold">DN33 + DN34 (numerical</text>
+<text x="677" y="36" text-anchor="middle" font-size="12.5px" fill="#ffffff" font-weight="bold">index)</text>
+<text x="677" y="52" text-anchor="middle" font-size="10px" fill="#7a5a2a">the root sutta</text>
+<rect x="160" y="152" width="166" height="57" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="244" y="174" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">DN33 Sangiti: 1s to 10s</text>
+<text x="244" y="188" text-anchor="middle" font-size="10px" fill="#7a5a2a">สพฺเพเหว สงฺคายิตพฺพํ น</text>
+<text x="244" y="200" text-anchor="middle" font-size="10px" fill="#7a5a2a">วิวทิตพฺพํ (dn33:1.7.6)</text>
+<rect x="30" y="296" width="178" height="68" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="119" y="318" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">ekaka (1)</text>
+<text x="119" y="333" text-anchor="middle" font-size="10px" fill="#7a5a2a">สพฺเพ สตฺตา อาหารฏฺฐิติกา</text>
+<text x="119" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">· สงฺขารฏฺฐิติกา</text>
+<text x="119" y="355" text-anchor="middle" font-size="10px" fill="#7a5a2a">(dn33:1.8.2)</text>
+<rect x="248" y="307" width="160" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="328" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">duka(2) ... dasaka(10)</text>
+<text x="328" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">1167 ข้อความ, 10 หมวด</text>
+<rect x="528" y="138" width="160" height="83" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="608" y="160" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">DN34 Dasuttara: 10x10</text>
+<text x="608" y="176" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">matrix</text>
+<text x="608" y="190" text-anchor="middle" font-size="10px" fill="#7a5a2a">ธมฺมํ นิพฺพานปตฺติยา ·</text>
+<text x="608" y="202" text-anchor="middle" font-size="10px" fill="#7a5a2a">ทุกฺขสฺสนฺตกิริยาย</text>
+<text x="608" y="212" text-anchor="middle" font-size="10px" fill="#7a5a2a">(dn34:1.1.7)</text>
+<rect x="448" y="307" width="100" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="498" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">numbers 1-10</text>
+<text x="498" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">894 ข้อความ</text>
+<rect x="588" y="302" width="178" height="57" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="677" y="324" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">10 categories</text>
+<text x="677" y="338" text-anchor="middle" font-size="10px" fill="#7a5a2a">หานภาคิย · วิเสสภาคิย · …</text>
+<text x="677" y="350" text-anchor="middle" font-size="10px" fill="#7a5a2a">· สจฺฉิกาตพพ (dn34:1.2.1)</text>
+<rect x="1046" y="144" width="166" height="72" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="1128" y="166" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">matika across 3 pitakas</text>
+<text x="1128" y="181" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">(98)</text>
+<text x="1128" y="196" text-anchor="middle" font-size="10px" fill="#7a5a2a">ต้นแบบ 'แม่บท'</text>
+<text x="1128" y="207" text-anchor="middle" font-size="10px" fill="#7a5a2a">ของการจัดหมวดธรรม</text>
+<rect x="806" y="307" width="184" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="898" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">Vinaya 46</text>
+<text x="898" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">โครงสร้างปาติโมกข์/วิภังค์</text>
+<rect x="1030" y="307" width="184" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="1122" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">Sutta 30</text>
+<text x="1122" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">อังคุตตรนิกาย (เชิงตัวเลข)</text>
+<rect x="1254" y="307" width="130" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="1319" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">Abhidhamma 22</text>
+<text x="1319" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">ธัมมสังคณี มาติกา</text>
+</svg>

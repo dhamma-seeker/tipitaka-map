@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1038 248" font-family="Georgia, serif">
+<rect width="100%" height="100%" fill="#fffdf5"/>
+<path d="M 557 82 C 557 110, 128 110, 128 162" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 557 82 C 557 110, 340 110, 340 167" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 557 82 C 557 110, 552 110, 552 162" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 557 82 C 557 110, 767 110, 767 167" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 557 82 C 557 110, 946 110, 946 167" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<rect x="453" y="-22" width="208" height="105" rx="8" fill="#8a1f1f" stroke="#6b1a1a" stroke-width="1.3"/>
+<text x="557" y="-0" text-anchor="middle" font-size="12.5px" fill="#ffffff" font-weight="bold">MN 9 Sammādiṭṭhi (map of right</text>
+<text x="557" y="14" text-anchor="middle" font-size="12.5px" fill="#ffffff" font-weight="bold">view)</text>
+<text x="557" y="30" text-anchor="middle" font-size="10px" fill="#7a5a2a">ทุกหัวข้อ:</text>
+<text x="557" y="40" text-anchor="middle" font-size="10px" fill="#7a5a2a">สมุทย/นิโรธ/นิโรธคามินี =</text>
+<text x="557" y="52" text-anchor="middle" font-size="10px" fill="#7a5a2a">อริยอฏฺฐงฺคิโก มคฺโค</text>
+<text x="557" y="62" text-anchor="middle" font-size="10px" fill="#7a5a2a">(mn9:11.5, 22.9) · สมฺมาทิฏฺฐิ</text>
+<text x="557" y="74" text-anchor="middle" font-size="10px" fill="#7a5a2a">= ญาณในอริยสัจ 4 (sn45.8:3.2)</text>
+<rect x="30" y="162" width="196" height="57" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="128" y="184" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">akusala/kusala + roots</text>
+<text x="128" y="198" text-anchor="middle" font-size="10px" fill="#7a5a2a">mn9:3 · kusala 5536, akusala</text>
+<text x="128" y="210" text-anchor="middle" font-size="10px" fill="#7a5a2a">3681 (อภิธรรม)</text>
+<rect x="266" y="167" width="148" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="340" y="189" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">4 kinds of nutriment</text>
+<text x="340" y="204" text-anchor="middle" font-size="10px" fill="#7a5a2a">mn9:11 · āhāra 1251</text>
+<rect x="454" y="162" width="196" height="57" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="552" y="184" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">4 noble truths</text>
+<text x="552" y="198" text-anchor="middle" font-size="10px" fill="#7a5a2a">mn9:14-18 · = วนกลับ SN56.11</text>
+<text x="552" y="210" text-anchor="middle" font-size="10px" fill="#7a5a2a">(401)</text>
+<rect x="690" y="167" width="154" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="767" y="189" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">dependent origination</text>
+<text x="767" y="204" text-anchor="middle" font-size="10px" fill="#7a5a2a">mn9:21-58 · 52</text>
+<rect x="884" y="167" width="124" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="946" y="189" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">3 taints</text>
+<text x="946" y="204" text-anchor="middle" font-size="10px" fill="#7a5a2a">mn9:59-71 · 2053</text>
+</svg>

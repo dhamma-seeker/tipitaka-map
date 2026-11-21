@@ -1,0 +1,81 @@
+{
+ "root": "MN9",
+ "title": "สัมมาทิฏฐิสูตร (แผนที่สัมมาทิฏฐิ)",
+ "nodes": [
+  "ABHIDHAMMA (กุสลติกะ/อาสวโคจฉกะ)",
+  "MN9",
+  "SN56.11 (อริยสัจ 4)",
+  "ahara 4",
+  "akusala/kusala + mula",
+  "ariyasacca 4",
+  "asava 3",
+  "jati -> ... -> avijja",
+  "kusala/akusala/asava",
+  "nana in 4 truths",
+  "paticcasamuppada",
+  "sammaditthi",
+  "tanha -> ariya atthangika magga"
+ ],
+ "edges": [
+  {
+   "from": "MN9",
+   "to": "akusala/kusala + mula",
+   "type": "นิยามสัมมาทิฏฐิ (ฐานที่ 1)",
+   "evidence": "mn9:3.1"
+  },
+  {
+   "from": "MN9",
+   "to": "ahara 4",
+   "type": "นิยามสัมมาทิฏฐิ (ฐานที่ 2)",
+   "evidence": "mn9:11.2-11.4"
+  },
+  {
+   "from": "MN9",
+   "to": "ariyasacca 4",
+   "type": "นิยามสัมมาทิฏฐิ (ฐานที่ 3)",
+   "evidence": "mn9:14.2"
+  },
+  {
+   "from": "MN9",
+   "to": "paticcasamuppada",
+   "type": "นิยามสัมมาทิฏฐิ (ฐานที่ 4)",
+   "evidence": "mn9:21.2"
+  },
+  {
+   "from": "MN9",
+   "to": "asava 3",
+   "type": "นิยามสัมมาทิฏฐิ (ฐานที่ 5)",
+   "evidence": "mn9:59-71"
+  },
+  {
+   "from": "ahara 4",
+   "to": "tanha -> ariya atthangika magga",
+   "type": "สมุทย/นิโรธ/มรรค",
+   "evidence": "mn9:11.5"
+  },
+  {
+   "from": "ariyasacca 4",
+   "to": "SN56.11 (อริยสัจ 4)",
+   "type": "= วนกลับ (วงปิด)",
+   "evidence": "mn9:14.2 = sn45.8:3.2"
+  },
+  {
+   "from": "paticcasamuppada",
+   "to": "jati -> ... -> avijja",
+   "type": "สมุทย/นิโรธ/มรรค (12 ปัจจัย)",
+   "evidence": "mn9:22.9, 62.4"
+  },
+  {
+   "from": "sammaditthi",
+   "to": "nana in 4 truths",
+   "type": "= (SN45.8)",
+   "evidence": "sn45.8:3.2"
+  },
+  {
+   "from": "kusala/akusala/asava",
+   "to": "ABHIDHAMMA (กุสลติกะ/อาสวโคจฉกะ)",
+   "type": "สะพานอภิธรรม",
+   "evidence": "kusala 3723, akusala 2142, asava 944"
+  }
+ ]
+}

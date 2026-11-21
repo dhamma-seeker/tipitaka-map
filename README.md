@@ -54,15 +54,16 @@
 
 ---
 
-## 🌱 Root เพิ่มเติม (สารบัญโดยธรรมชาติของพระไตรปิฎก)
+## 🌱 Root เพิ่มเติม (สารบัญโดยธรรมชาติของพระไตรปิฎก) — 4 ชุดศึกษา
 
-นอกจาก 5 สูตรข้างต้น ยังพบพระสูตรที่ตัวพระไตรปิฎก**สร้างไว้เป็น "สารบัญ" ของตนเอง**อยู่แล้ว: [`root-candidates/additional_roots_report.md`](root-candidates/additional_roots_report.md)
+นอกจาก 5 สูตรข้างต้น ยังพบพระสูตรที่ตัวพระไตรปิฎก**สร้างไว้เป็น "สารบัญ" ของตนเอง**อยู่แล้ว (วิจัยละเอียดแล้ว): [`root-candidates/additional_roots_report.md`](root-candidates/additional_roots_report.md)
 
-| ชนิด | root | แก่น |
+| ชนิด | root | รายงานละเอียด |
 |---|---|---|
-| สารบัญเชิงตัวเลข (INDEX) | [DN 33](root-candidates/additional_roots_report.md) + [DN 34](root-candidates/additional_roots_report.md) | มาติกา 1–10 = สารบัญที่คัมภีร์สร้างเอง |
-| เกณฑ์วินิจฉัยพุทธวจนะ (AUTHORITY) | DN 16 มหาปรินิพพานสูตร | จตุมหาปเทส + โพธิปักขิยธรรม 37 |
-| หลักสูตรกรรมฐาน (CURRICULUM) | MN 62 ราหุโลวาทสูตร + MN 9 สัมมาทิฏฐิสูตร | กรรมฐานครบวงจร / แผนที่สัมมาทิฏฐิ |
+| สารบัญเชิงตัวเลข (INDEX) | สังคีติสูตร (DN 33) + ทสุตตรสูตร (DN 34) | [report](sangiti-dasuttara-mapping/report.md) · [map](sangiti-dasuttara-mapping/map.png) · [data](sangiti-dasuttara-mapping/survey_data.csv) |
+| เกณฑ์วินิจฉัยพุทธวจนะ (AUTHORITY) | มหาปรินิพพานสูตร (DN 16) | [report](mahaparinibbana-mapping/report.md) · [map](mahaparinibbana-mapping/map.png) · [data](mahaparinibbana-mapping/survey_data.csv) |
+| หลักสูตรกรรมฐาน (CURRICULUM) | มหาราหุโลวาทสูตร (MN 62) | [report](rahulovada-mapping/report.md) · [map](rahulovada-mapping/map.png) · [data](rahulovada-mapping/survey_data.csv) |
+| แผนที่สัมมาทิฏฐิ | สัมมาทิฏฐิสูตร (MN 9) | [report](sammaditthi-mapping/report.md) · [map](sammaditthi-mapping/map.png) · [data](sammaditthi-mapping/survey_data.csv) |
 
 **รวม root ทั้งหมด 10 ตัว** (5 รากหลัก + 5 รากเพิ่มเติม) — ดูโครงสร้างรวมได้ที่ [`combined-map/combined_graph.json`](combined-map/combined_graph.json) (28 โหนด, 31 ขอบ)
 
