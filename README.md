@@ -24,10 +24,11 @@
 
 - 📄 **หน้ารวมงานวิจัย:** [`index.html`](index.html) (เปิดใน GitHub Pages หรือคลิกใน repo)
 - 📄 **รายงานฉบับรวม:** [`combined-map/report.md`](combined-map/report.md)
-- 🔗 **โครงสร้าง node–edge รวม:** [`combined-map/combined_graph.json`](combined-map/combined_graph.json) (21 โหนด, 24 ขอบ พร้อมหลักฐาน)
-- 🖼️ **แผนภาพรวม:** [`combined-map/combined_map.svg`](combined-map/combined_map.svg) / [`png`](combined-map/combined_map.png)
+- 🔗 **โครงสร้าง node–edge รวม:** [`combined-map/combined_graph.json`](combined-map/combined_graph.json) (28 โหนด, 31 ขอบ พร้อมหลักฐาน)
+- 🖼️ **แผนภาพรวม 4 แกน + 10 root:** [`combined_map_4axes.svg`](combined-map/combined_map_4axes.svg) / [`png`](combined-map/combined_map_4axes.png)
+- 🖼️ **แผนภาพ 3 คอลัมน์ (เดิม):** [`combined_map.svg`](combined-map/combined_map.svg)
 
-![แผนที่พระไตรปิฎกฉบับรวม](combined-map/combined_map.svg)
+![แผนที่พระไตรปิฎกฉบับสมบูรณ์ (4 แกน + 10 root)](combined-map/combined_map_4axes.svg)
 
 ---
 

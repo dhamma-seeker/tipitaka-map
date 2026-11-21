@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 720" font-family="Georgia, serif">
+<rect width="100%" height="100%" fill="#fffdf5"/>
+<text x="590" y="34" text-anchor="middle" font-size="18px" fill="#6b1a1a" font-weight="bold">แผนที่พระไตรปิฎกฉบับสมบูรณ์ (4 แกน · 10 root)</text>
+<text x="590" y="56" text-anchor="middle" font-size="10.5px" fill="#7a5a2a">สองรากเอก (SN56.11 + DN2) + สารบัญเชิงตัวเลข (DN33/34) + เกณฑ์พุทธวจนะ (DN16) + ปฏิบัติ (MN117→DN22→MN118, MN62, MN9) — จากตัวบทบาลีโรมันเท่านั้น</text>
+<rect x="15" y="80" width="270" height="30" rx="6" fill="#8a1f1f"/>
+<text x="150" y="100" text-anchor="middle" font-size="12.5px" fill="#ffffff" font-weight="bold">WHAT · เนื้อหา (ธรรมะคืออะไร)</text>
+<rect x="20" y="119" width="260" height="52" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.2"/><text x="150" y="139" text-anchor="middle" font-size="12px" fill="#3a2a12" font-weight="normal">ธัมมจักกัปปวัตตนสูตร</text><text x="150" y="156" text-anchor="middle" font-size="9.5px" fill="#f5ead0">อริยสัจ 4 = ธรรมะทั้งหมด</text>
+<rect x="20" y="195" width="260" height="52" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.2"/><text x="150" y="215" text-anchor="middle" font-size="12px" fill="#3a2a12" font-weight="normal">สามัญญผลสูตร</text><text x="150" y="232" text-anchor="middle" font-size="9.5px" fill="#f5ead0">ไตรสิกขา = 3 ปิฎกเป็น 3 ขั้น</text>
+<rect x="295" y="80" width="270" height="30" rx="6" fill="#1f6b4a"/>
+<text x="430" y="100" text-anchor="middle" font-size="12.5px" fill="#ffffff" font-weight="bold">INDEX · สารบัญโครงสร้าง</text>
+<rect x="300" y="119" width="260" height="52" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.2"/><text x="430" y="139" text-anchor="middle" font-size="12px" fill="#3a2a12" font-weight="normal">สังคีติสูตร</text><text x="430" y="156" text-anchor="middle" font-size="9.5px" fill="#f5ead0">มาติกา 1-10 (เอกกะ→ทสกะ)</text>
+<rect x="300" y="195" width="260" height="52" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.2"/><text x="430" y="215" text-anchor="middle" font-size="12px" fill="#3a2a12" font-weight="normal">ทสุตตรสูตร</text><text x="430" y="232" text-anchor="middle" font-size="9.5px" fill="#f5ead0">เมทริกซ์ 10×10 = 100 ช่อง</text>
+<rect x="575" y="80" width="270" height="30" rx="6" fill="#5b2d6b"/>
+<text x="710" y="100" text-anchor="middle" font-size="12.5px" fill="#ffffff" font-weight="bold">AUTHORITY · เกณฑ์วินิจฉัย</text>
+<rect x="580" y="119" width="260" height="52" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.2"/><text x="710" y="139" text-anchor="middle" font-size="12px" fill="#3a2a12" font-weight="normal">มหาปรินิพพานสูตร</text><text x="710" y="156" text-anchor="middle" font-size="9.5px" fill="#f5ead0">จตุมหาปเทส (เกณฑ์พุทธวจนะ)</text>
+<rect x="580" y="195" width="260" height="52" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.2"/><text x="710" y="215" text-anchor="middle" font-size="12px" fill="#3a2a12" font-weight="normal">โพธิปักขิยธรรม 37 + ปัจฉิมวาจา</text><text x="710" y="232" text-anchor="middle" font-size="9.5px" fill="#f5ead0">บทสรุปพระธรรมทั้งหมด</text>
+<rect x="855" y="80" width="270" height="30" rx="6" fill="#2d4a6b"/>
+<text x="990" y="100" text-anchor="middle" font-size="12.5px" fill="#ffffff" font-weight="bold">HOW · ปฏิบัติ</text>
+<rect x="860" y="119" width="260" height="52" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.2"/><text x="990" y="139" text-anchor="middle" font-size="12px" fill="#3a2a12" font-weight="normal">มหาจัตตารีสกสูตร</text><text x="990" y="156" text-anchor="middle" font-size="9.5px" fill="#f5ead0">มรรค 8→10 · โลกิย/โลกุตตร</text>
+<rect x="860" y="195" width="260" height="52" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.2"/><text x="990" y="215" text-anchor="middle" font-size="12px" fill="#3a2a12" font-weight="normal">มหาสติปัฏฐานสูตร</text><text x="990" y="232" text-anchor="middle" font-size="9.5px" fill="#f5ead0">สติปัฏฐาน 4 (หมวดธรรม)</text>
+<rect x="860" y="271" width="260" height="52" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.2"/><text x="990" y="291" text-anchor="middle" font-size="12px" fill="#3a2a12" font-weight="normal">อานาปานสติสูตร</text><text x="990" y="308" text-anchor="middle" font-size="9.5px" fill="#f5ead0">อานาปาน 16 ขั้น → วิชชาวิมุตติ</text>
+<rect x="860" y="347" width="260" height="52" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.2"/><text x="990" y="367" text-anchor="middle" font-size="12px" fill="#3a2a12" font-weight="normal">มหาราหุโลวาทสูตร</text><text x="990" y="384" text-anchor="middle" font-size="9.5px" fill="#f5ead0">หลักสูตรกรรมฐานครบวงจร</text>
+<rect x="860" y="423" width="260" height="52" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.2"/><text x="990" y="443" text-anchor="middle" font-size="12px" fill="#3a2a12" font-weight="normal">สัมมาทิฏฐิสูตร</text><text x="990" y="460" text-anchor="middle" font-size="9.5px" fill="#f5ead0">สัมมาทิฏฐิ = แผนที่ญาณ</text>
+<path d="M 150 233 C 150 436, 150 436, 590 600" fill="none" stroke="#8a6d3b" stroke-width="1.4"/>
+<path d="M 430 233 C 430 436, 430 436, 590 600" fill="none" stroke="#8a6d3b" stroke-width="1.4"/>
+<path d="M 710 233 C 710 436, 710 436, 590 600" fill="none" stroke="#8a6d3b" stroke-width="1.4"/>
+<path d="M 990 461 C 990 550, 990 550, 590 600" fill="none" stroke="#8a6d3b" stroke-width="1.4"/>
+<rect x="310" y="610" width="560" height="52" rx="10" fill="#8a1f1f" stroke="#6b1a1a" stroke-width="1.5"/>
+<text x="590" y="634" text-anchor="middle" font-size="15px" fill="#ffffff" font-weight="bold">พระไตรปิฎก (Tipiṭaka)</text>
+<text x="590" y="652" text-anchor="middle" font-size="10px" fill="#f5ead0">วินัยปิฎก · สุตตันตปิฎก · อภิธรรมปิฎก — เป้าหมายที่ทั้ง 4 แกนชี้ไป</text>
+</svg>
