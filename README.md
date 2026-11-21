@@ -20,6 +20,17 @@
 
 ---
 
+## 🗺️ แผนที่ฉบับรวม (Combined Map)
+
+- 📄 **หน้ารวมงานวิจัย:** [`index.html`](index.html) (เปิดใน GitHub Pages หรือคลิกใน repo)
+- 📄 **รายงานฉบับรวม:** [`combined-map/report.md`](combined-map/report.md)
+- 🔗 **โครงสร้าง node–edge รวม:** [`combined-map/combined_graph.json`](combined-map/combined_graph.json) (21 โหนด, 24 ขอบ พร้อมหลักฐาน)
+- 🖼️ **แผนภาพรวม:** [`combined-map/combined_map.svg`](combined-map/combined_map.svg) / [`png`](combined-map/combined_map.png)
+
+![แผนที่พระไตรปิฎกฉบับรวม](combined-map/combined_map.svg)
+
+---
+
 ## 📂 งานวิจัย 5 ชุด
 
 | # | พระสูตร | รายงาน | แผนที่ | ข้อมูล | เทียบเคียง |

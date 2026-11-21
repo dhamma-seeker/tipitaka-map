@@ -1,0 +1,294 @@
+{
+ "title": "แผนที่พระไตรปิฎกฉบับรวม (Tipiṭaka Combined Map)",
+ "description": "รวม 5 ราก (SN56.11/DN2/MN117/DN22/MN118) + มโนทัศน์เชื่อม + โครง 3 ปิฎก วิเคราะห์จากตัวบทบาลีโรมันเท่านั้น",
+ "nodes": {
+  "SN56.11": {
+   "th": "ธัมมจักกัปปวัตตนสูตร",
+   "role": "WHAT (อริยสัจ 4)",
+   "pitaka": "Suttantapiṭaka",
+   "id": "SN56.11"
+  },
+  "DN2": {
+   "th": "สามัญญผลสูตร",
+   "role": "PATH (ไตรสิกขา)",
+   "pitaka": "Suttantapiṭaka",
+   "id": "DN2"
+  },
+  "MN117": {
+   "th": "มหาจัตตารีสกสูตร",
+   "role": "WHICH (มรรค 8→10)",
+   "pitaka": "Suttantapiṭaka",
+   "id": "MN117"
+  },
+  "DN22": {
+   "th": "มหาสติปัฏฐานสูตร",
+   "role": "WHO (หมวดธรรม)",
+   "pitaka": "Suttantapiṭaka",
+   "id": "DN22"
+  },
+  "MN118": {
+   "th": "อานาปานสติสูตร",
+   "role": "HOW (วิธีปฏิบัติ)",
+   "pitaka": "Suttantapiṭaka",
+   "id": "MN118"
+  },
+  "ariyasacca": {
+   "th": "อริยสัจ 4",
+   "role": "แก่นธรรม",
+   "pitaka": "—",
+   "id": "ariyasacca"
+  },
+  "magga8": {
+   "th": "อริยอัฏฐังคิกมรรค (8)",
+   "role": "ข้อ 4 ของอริยสัจ",
+   "pitaka": "—",
+   "id": "magga8"
+  },
+  "magga10": {
+   "th": "มรรค 10 (8→10)",
+   "role": "+ สัมมาญาณ/สัมมาวิมุตติ",
+   "pitaka": "—",
+   "id": "magga10"
+  },
+  "tissosikkha": {
+   "th": "ไตรสิกขา (ศีล/สมาธิ/ปัญญา)",
+   "role": "สะพาน 3 ปิฎก",
+   "pitaka": "—",
+   "id": "tissosikkha"
+  },
+  "sila": {
+   "th": "ศีล",
+   "role": "→ วินัย",
+   "pitaka": "—",
+   "id": "sila"
+  },
+  "samadhi": {
+   "th": "สมาธิ",
+   "role": "→ สุตตันตะ",
+   "pitaka": "—",
+   "id": "samadhi"
+  },
+  "panna": {
+   "th": "ปัญญา",
+   "role": "→ อภิธรรม",
+   "pitaka": "—",
+   "id": "panna"
+  },
+  "satipatthana": {
+   "th": "สติปัฏฐาน 4",
+   "role": "= สัมมาสติ",
+   "pitaka": "—",
+   "id": "satipatthana"
+  },
+  "bojjhanga": {
+   "th": "โพชฌงค์ 7",
+   "role": "โพธิปักขิยธรรม",
+   "pitaka": "—",
+   "id": "bojjhanga"
+  },
+  "anapanasati": {
+   "th": "อานาปานสติ 16 ขั้น",
+   "role": "กรรมฐาน",
+   "pitaka": "—",
+   "id": "anapanasati"
+  },
+  "lokuttara": {
+   "th": "โลกุตตร/โลกิย (2 ระดับ)",
+   "role": "หมวดจำแนกอภิธรรม",
+   "pitaka": "—",
+   "id": "lokuttara"
+  },
+  "bodhipakkhiya37": {
+   "th": "โพธิปักขิยธรรม 37",
+   "role": "กรอบรวม",
+   "pitaka": "—",
+   "id": "bodhipakkhiya37"
+  },
+  "vijjavimutti": {
+   "th": "วิชชาวิมุตติ / อาสวักขยญาณ",
+   "role": "ผล/ปลายทาง",
+   "pitaka": "—",
+   "id": "vijjavimutti"
+  },
+  "Vinaya": {
+   "th": "วินัยปิฎก",
+   "role": "ปาติโมกข์·วิภังค์·ขันธกะ·ปริวาร",
+   "pitaka": "Vinayapiṭaka",
+   "id": "Vinaya"
+  },
+  "Sutta": {
+   "th": "สุตตันตปิฎก",
+   "role": "ทีฆ·มัชฌิม·สังยุตต·อังคุตตร·ขุททก",
+   "pitaka": "Suttantapiṭaka",
+   "id": "Sutta"
+  },
+  "Abhidhamma": {
+   "th": "อภิธรรมปิฎก",
+   "role": "ธัมมสังคณี·วิภังค์·ธาตุกถา·ปุคคล·กถาวัตถุ·ยมก·ปัฏฐาน",
+   "pitaka": "Abhidhammapiṭaka",
+   "id": "Abhidhamma"
+  }
+ },
+ "edges": [
+  {
+   "from": "SN56.11",
+   "to": "ariyasacca",
+   "type": "นิยาม (แก่น)",
+   "evidence": "sn56.11:4.1"
+  },
+  {
+   "from": "SN56.11",
+   "to": "magga8",
+   "type": "= มัชฌิมาปฏิปทา",
+   "evidence": "sn56.11:3.3"
+  },
+  {
+   "from": "ariyasacca",
+   "to": "magga8",
+   "type": "ข้อ 4 ของอริยสัจ",
+   "evidence": "sn56.11:4.9"
+  },
+  {
+   "from": "DN2",
+   "to": "tissosikkha",
+   "type": "บรรจุไตรสิกขาเป็นลำดับ",
+   "evidence": "dn2:42-98"
+  },
+  {
+   "from": "tissosikkha",
+   "to": "sila",
+   "type": "อธิศีลสิกขา",
+   "evidence": "an3.89:1.3"
+  },
+  {
+   "from": "tissosikkha",
+   "to": "samadhi",
+   "type": "อธิจิตตสิกขา",
+   "evidence": "an3.89:1.3"
+  },
+  {
+   "from": "tissosikkha",
+   "to": "panna",
+   "type": "อธิปัญญาสิกขา",
+   "evidence": "an3.89:1.3"
+  },
+  {
+   "from": "sila",
+   "to": "Vinaya",
+   "type": "ปาติโมกขสังวร/สิกขาบท",
+   "evidence": "mn44:11.3; dn2:42.1"
+  },
+  {
+   "from": "samadhi",
+   "to": "Sutta",
+   "type": "ฌาน/สติปัฏฐาน",
+   "evidence": "mn44:11.4"
+  },
+  {
+   "from": "panna",
+   "to": "Abhidhamma",
+   "type": "ญาณ/ปัญญา",
+   "evidence": "mn44:11.5"
+  },
+  {
+   "from": "MN117",
+   "to": "magga8",
+   "type": "นิยาม 7 องค์ + เอกัคคตา",
+   "evidence": "mn117:3.2-3.3"
+  },
+  {
+   "from": "magga8",
+   "to": "magga10",
+   "type": "ขยาย 8→10 (เสขะ→อรหันต์)",
+   "evidence": "mn117:34.3-34.4"
+  },
+  {
+   "from": "MN117",
+   "to": "lokuttara",
+   "type": "แยก 2 ระดับ (ทฺวายํ)",
+   "evidence": "mn117:6.3-6.4"
+  },
+  {
+   "from": "lokuttara",
+   "to": "Abhidhamma",
+   "type": "โลกุตตรทุกะ (ธัมมสังคณี)",
+   "evidence": "lokuttara 476 ในอภิธรรม"
+  },
+  {
+   "from": "DN22",
+   "to": "satipatthana",
+   "type": "เอกายนมรรค = สติปัฏฐาน 4",
+   "evidence": "dn22:1.7"
+  },
+  {
+   "from": "DN22",
+   "to": "ariyasacca",
+   "type": "บรรจุอริยสัจ 4 ไว้ในหมวดสัจจะ",
+   "evidence": "dn22:17-22"
+  },
+  {
+   "from": "satipatthana",
+   "to": "magga8",
+   "type": "= สัมมาสติ (องค์ที่ 7)",
+   "evidence": "sn45.8:9.2"
+  },
+  {
+   "from": "MN118",
+   "to": "anapanasati",
+   "type": "16 ขั้น (4 จตุรกะ)",
+   "evidence": "mn118:18-21"
+  },
+  {
+   "from": "anapanasati",
+   "to": "satipatthana",
+   "type": "ปริปูเรติ (ทำให้เต็ม)",
+   "evidence": "mn118:15.2"
+  },
+  {
+   "from": "satipatthana",
+   "to": "bojjhanga",
+   "type": "ปริปูเรนติ",
+   "evidence": "mn118:15.3"
+  },
+  {
+   "from": "bojjhanga",
+   "to": "vijjavimutti",
+   "type": "ปริปูเรนติ (ปลายทาง)",
+   "evidence": "mn118:15.4"
+  },
+  {
+   "from": "magga8",
+   "to": "bodhipakkhiya37",
+   "type": "1 ใน 7 หมวด",
+   "evidence": "dn16:3.50.5"
+  },
+  {
+   "from": "satipatthana",
+   "to": "bodhipakkhiya37",
+   "type": "1 ใน 7 หมวด",
+   "evidence": "dn16:3.50.5"
+  },
+  {
+   "from": "bojjhanga",
+   "to": "bodhipakkhiya37",
+   "type": "1 ใน 7 หมวด",
+   "evidence": "dn16:3.50.5"
+  }
+ ],
+ "root_suttas": [
+  "SN56.11",
+  "DN2",
+  "MN117",
+  "DN22",
+  "MN118"
+ ],
+ "two_macro_roots": [
+  "SN56.11",
+  "DN2"
+ ],
+ "three_micro_roots": [
+  "MN117",
+  "DN22",
+  "MN118"
+ ]
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>แผนที่พระไตรปิฎก (Tipiṭaka Map) — หน้ารวมงานวิจัย</title>
+<style>
+  :root { --maroon:#8a1f1f; --gold:#8a6d3b; --bg:#fdfaf3; --card:#fffdf5; --ink:#3a2a12; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:"Georgia","Thonburi","Cordia New",serif; background:var(--bg); color:var(--ink); line-height:1.7; }
+  header { background:linear-gradient(135deg,#6b1a1a,#8a1f1f); color:#fff; padding:2.2rem 1rem; text-align:center; }
+  header h1 { margin:0 0 .4rem; font-size:1.9rem; }
+  header p { margin:.2rem 0; opacity:.92; font-size:.95rem; }
+  main { max-width:980px; margin:0 auto; padding:1.5rem 1rem 3rem; }
+  h2 { color:var(--maroon); border-bottom:2px solid var(--gold); padding-bottom:.3rem; margin-top:2.2rem; }
+  .lead { background:var(--card); border:1px solid #e8dcc3; border-radius:10px; padding:1rem 1.2rem; }
+  .lead code { background:#f1e3c3; padding:.1rem .4rem; border-radius:4px; }
+  table { width:100%; border-collapse:collapse; margin:.8rem 0 1.4rem; font-size:.92rem; background:var(--card); }
+  th,td { border:1px solid #e0d2b4; padding:.5rem .6rem; text-align:left; vertical-align:top; }
+  th { background:#f1e3c3; color:var(--maroon); }
+  a { color:#6b1a1a; text-decoration:none; border-bottom:1px dotted #8a6d3b; }
+  a:hover { color:#a62; border-bottom-style:solid; }
+  img { max-width:100%; height:auto; border:1px solid #e0d2b4; border-radius:8px; }
+  .badge { display:inline-block; background:#f1e3c3; color:var(--maroon); border-radius:10px; padding:.05rem .6rem; font-size:.8rem; margin-right:.3rem; }
+  .macro { background:#8a1f1f; color:#fff; }
+  footer { text-align:center; font-size:.8rem; color:#7a5a2a; padding:1.5rem; border-top:1px solid #e0d2b4; }
+  .caveat { background:#fff8e6; border-left:4px solid var(--gold); padding:.7rem 1rem; border-radius:6px; font-size:.9rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📿 แผนที่พระไตรปิฎก (Tipiṭaka Map)</h1>
+  <p>งานวิจัย: พระสูตรหลักใช้เป็น "โครงสร้าง/สารบัญ" เชื่อมโยงครอบคลุมพระไตรปิฎกทั้ง 3 ปิฎกได้หรือไม่</p>
+  <p>วิเคราะห์จาก <strong>ตัวบทบาลีโรมันเท่านั้น</strong> · tripitaka-mcp (local + online) · SuttaCentral <code>bilara-data</code> (CC0)</p>
+</header>
+
+<main>
+
+  <section class="lead">
+    <h2 style="margin-top:0">🎯 ข้อค้นพบหลัก</h2>
+    <p><strong>แผนที่พระไตรปิฎกที่สมบูรณ์ที่สุด = "สองรากเอก + สามรากย่อย":</strong></p>
+    <table>
+      <tr><th>บทบาท</th><th>พระสูตร</th><th>ครอบคลุม</th></tr>
+      <tr><td><span class="badge macro">รากเอก</span> โครง/สารบัญ (WHAT)</td><td><a href="dhammacakka-mapping/report.md">ธัมมจักกัปปวัตตนสูตร (SN 56.11)</a></td><td>อริยสัจ 4 = ธรรมะทั้งหมด (ครบ 3 ปิฎก 3 รูปแบบ)</td></tr>
+      <tr><td><span class="badge macro">รากเอก</span> ลำดับมรรค (PATH)</td><td><a href="samannaphala-mapping/report.md">สามัญญผลสูตร (DN 2)</a></td><td>ไตรสิกขา = 3 ปิฎกเป็น 3 ขั้น</td></tr>
+      <tr><td><span class="badge">รากย่อย</span> วิเคราะห์มรรค (WHICH)</td><td><a href="mahacattarisaka-mapping/report.md">มหาจัตตารีสกสูตร (MN 117)</a></td><td>มรรค 8→10, โลกิย/โลกุตตร → อภิธรรม</td></tr>
+      <tr><td><span class="badge">รากย่อย</span> หมวดธรรม (WHO)</td><td><a href="mahasatipatthana-mapping/report.md">มหาสติปัฏฐานสูตร (DN 22)</a></td><td>นิวรณ์/ขันธ์/อายตนะ/โพชฌงค์ → อภิธรรม</td></tr>
+      <tr><td><span class="badge">รากย่อย</span> วิธีปฏิบัติ (HOW)</td><td><a href="anapanasati-mapping/report.md">อานาปานสติสูตร (MN 118)</a></td><td>อานาปานสติ 16 ขั้น → วิชชาวิมุตติ</td></tr>
+    </table>
+    <p><strong>แกนคู่:</strong> <a href="dhammacakka-mapping/report.md">SN 56.11</a> บอกว่า "ธรรมะคืออะไร" (อริยสัจ 4) + <a href="samannaphala-mapping/report.md">DN 2</a> บอกว่า "ปฏิบัติอย่างไรเป็นลำดับ" (ไตรสิกขา = 3 ปิฎก) — ทั้งสองบรรจบกันที่ "มรรค" (อริยสัจข้อ 4 = ไตรสิกขา)</p>
+  </section>
+
+  <h2>🗺️ แผนที่ฉบับรวม (Combined Map)</h2>
+  <img src="combined-map/combined_map.svg" alt="แผนที่พระไตรปิฎกฉบับรวม">
+  <p>📄 <a href="combined-map/report.md">อ่านรายงานฉบับรวม</a> · 🔗 <a href="combined-map/combined_graph.json">ดาวน์โหลดโครงสร้าง node–edge (JSON, 21 โหนด 24 ขอบ)</a></p>
+
+  <h2>📂 งานวิจัย 5 ชุด (รายละเอียด)</h2>
+  <table>
+    <tr><th>#</th><th>พระสูตร</th><th>รายงาน</th><th>แผนที่</th><th>ข้อมูล</th></tr>
+    <tr><td>1</td><td>ธัมมจักกัปปวัตตนสูตร (SN 56.11)</td><td><a href="dhammacakka-mapping/report.md">report</a></td><td><a href="dhammacakka-mapping/map.png">png</a> / <a href="dhammacakka-mapping/map.svg">svg</a></td><td><a href="dhammacakka-mapping/survey_data.csv">csv</a></td></tr>
+    <tr><td>2</td><td>มหาสติปัฏฐานสูตร (DN 22)</td><td><a href="mahasatipatthana-mapping/report.md">report</a></td><td><a href="mahasatipatthana-mapping/map.png">png</a></td><td><a href="mahasatipatthana-mapping/survey_data.csv">csv</a></td></tr>
+    <tr><td>3</td><td>อานาปานสติสูตร (MN 118)</td><td><a href="anapanasati-mapping/report.md">report</a></td><td><a href="anapanasati-mapping/map.png">png</a></td><td><a href="anapanasati-mapping/survey_data.csv">csv</a></td></tr>
+    <tr><td>4</td><td>มหาจัตตารีสกสูตร (MN 117)</td><td><a href="mahacattarisaka-mapping/report.md">report</a></td><td><a href="mahacattarisaka-mapping/map.png">png</a></td><td><a href="mahacattarisaka-mapping/survey_data.csv">csv</a></td></tr>
+    <tr><td>5</td><td>สามัญญผลสูตร (DN 2)</td><td><a href="samannaphala-mapping/report.md">report</a></td><td><a href="samannaphala-mapping/map.png">png</a></td><td><a href="samannaphala-mapping/survey_data.csv">csv</a></td></tr>
+  </table>
+
+  <h2>🔬 วิธีวิจัย</h2>
+  <ul>
+    <li><strong>แหล่งข้อมูล:</strong> ตัวบท<strong>ภาษาบาลีโรมันเท่านั้น</strong> (ไม่ใช้การแปลภาษาอังกฤษ/ภาษาอื่น) ผ่าน tripitaka-mcp ทั้ง local + online</li>
+    <li><strong>เครื่องมือ:</strong> <code>get_sutta</code> + <code>survey_corpus</code> (นับการกระจายศัพท์แบบ exhaustive <code>complete:true</code>)</li>
+    <li><strong>ขั้นตอน:</strong> สกัดศัพท์หลัก → สำรวจการกระจายทั่ว 3 ปิฎก → เจาะปมเชื่อมด้วยพระสูตรสะพาน (SN 45.8, MN 44, AN 3.89, DN 16) → ทดสอบสมมติฐาน → สร้างแผนที่ node–edge</li>
+    <li><strong>การยืนยัน:</strong> cross-check ผลระหว่าง server local กับ online (ผลตรงกัน)</li>
+  </ul>
+
+  <div class="caveat">
+    <strong>⚠️ ข้อควรทราบ:</strong> (1) ตัวเลขศัพท์กว้างบางตัว (ศีล/ปัญญา/ขันธ์/ฌาน/อินทรีย์) เป็น<strong>ขอบเขตบน</strong> เพราะ stem ติดคำพ้องรูป (เช่น <code>sīla</code> ติด <code>silā</code> = หิน) — ใช้ยืนยัน "ทิศทางการเข้าถึงปิฎก" ไม่ใช่จำนวนธรรมะจริง; (2) การเชื่อม "วินัย" เป็นเชิงมโนทัศน์ (ผ่านไตรสิกขา/ศีล/สิกขาบท) ตามที่ตัวบาลีบัญญัติใน MN 44
+  </div>
+
+</main>
+
+<footer>
+  <p>งานวิจัยนี้ใช้ข้อมูลเพื่อการศึกษา (Dhamma Dāna) เท่านั้น · ข้อมูลต้นฉบับ: SuttaCentral <code>bilara-data</code> (CC0) · โปรดสอบทานกับฉบับพิมพ์ล่าสุดก่อนอ้างอิงทางวิชาการ</p>
+  <p>Repository: <a href="https://github.com/dhamma-seeker/tipitaka-map">github.com/dhamma-seeker/tipitaka-map</a></p>
+</footer>
+
+</body>
+</html>

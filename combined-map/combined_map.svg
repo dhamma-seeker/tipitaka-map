@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 620" font-family="Georgia, serif">
+<rect width="100%" height="100%" fill="#fffdf5"/>
+<text x="590" y="30" text-anchor="middle" font-size="17px" fill="#6b1a1a" font-weight="bold">แผนที่พระไตรปิฎกฉบับรวม (Tipiṭaka Combined Map)</text>
+<text x="590" y="50" text-anchor="middle" font-size="10px" fill="#7a5a2a">สองรากเอก (SN56.11 + DN2) + สามรากย่อย (MN117 → DN22 → MN118) — จากตัวบทบาลีโรมันเท่านั้น</text>
+<text x="150" y="80" text-anchor="middle" font-size="13px" fill="#3a2a12" font-weight="bold">5 ราก (พระสูตรหลัก)</text>
+<text x="560" y="80" text-anchor="middle" font-size="13px" fill="#3a2a12" font-weight="bold">มโนทัศน์เชื่อม</text>
+<text x="980" y="80" text-anchor="middle" font-size="13px" fill="#3a2a12" font-weight="bold">3 ปิฎก</text>
+<rect x="40" y="104" width="220" height="52" rx="8" fill="#8a1f1f" stroke="#6b1a1a" stroke-width="1.3"/><text x="150" y="124" text-anchor="middle" font-size="12.5px" fill="#ffffff" font-weight="bold">SN56.11 · ธัมมจักกัปปวัตตนสูตร</text><text x="150" y="141" text-anchor="middle" font-size="9.5px" fill="#7a5a2a">WHAT: อริยสัจ 4</text>
+<rect x="40" y="194" width="220" height="52" rx="8" fill="#8a1f1f" stroke="#6b1a1a" stroke-width="1.3"/><text x="150" y="214" text-anchor="middle" font-size="12.5px" fill="#ffffff" font-weight="bold">DN2 · สามัญญผลสูตร</text><text x="150" y="231" text-anchor="middle" font-size="9.5px" fill="#7a5a2a">PATH: ไตรสิกขา</text>
+<rect x="40" y="284" width="220" height="52" rx="8" fill="#f1e3c3" stroke="#6b1a1a" stroke-width="1.3"/><text x="150" y="304" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">MN117 · มหาจัตตารีสกสูตร</text><text x="150" y="321" text-anchor="middle" font-size="9.5px" fill="#7a5a2a">WHICH: มรรค 8→10</text>
+<rect x="40" y="374" width="220" height="52" rx="8" fill="#f1e3c3" stroke="#6b1a1a" stroke-width="1.3"/><text x="150" y="394" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">DN22 · มหาสติปัฏฐานสูตร</text><text x="150" y="411" text-anchor="middle" font-size="9.5px" fill="#7a5a2a">WHO: หมวดธรรม</text>
+<rect x="40" y="464" width="220" height="52" rx="8" fill="#f1e3c3" stroke="#6b1a1a" stroke-width="1.3"/><text x="150" y="484" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">MN118 · อานาปานสติสูตร</text><text x="150" y="501" text-anchor="middle" font-size="9.5px" fill="#7a5a2a">HOW: วิธีปฏิบัติ</text>
+<rect x="440" y="104" width="240" height="52" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/><text x="560" y="124" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">อริยสัจ 4</text><text x="560" y="141" text-anchor="middle" font-size="9.5px" fill="#7a5a2a">แก่นธรรม (ครบ 3 ปิฎก)</text>
+<rect x="440" y="182" width="240" height="52" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/><text x="560" y="202" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">มรรคมีองค์ 8</text><text x="560" y="219" text-anchor="middle" font-size="9.5px" fill="#7a5a2a">ข้อ 4 ของอริยสัจ</text>
+<rect x="440" y="260" width="240" height="52" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/><text x="560" y="280" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">ไตรสิกขา</text><text x="560" y="297" text-anchor="middle" font-size="9.5px" fill="#7a5a2a">ศีล→สมาธิ→ปัญญา</text>
+<rect x="440" y="338" width="240" height="52" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/><text x="560" y="358" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">สติปัฏฐาน 4</text><text x="560" y="375" text-anchor="middle" font-size="9.5px" fill="#7a5a2a">= สัมมาสติ</text>
+<rect x="440" y="416" width="240" height="52" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/><text x="560" y="436" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">โพชฌงค์ 7</text><text x="560" y="453" text-anchor="middle" font-size="9.5px" fill="#7a5a2a">→ วิชชาวิมุตติ</text>
+<rect x="440" y="494" width="240" height="52" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/><text x="560" y="514" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">โพธิปักขิยธรรม 37</text><text x="560" y="531" text-anchor="middle" font-size="9.5px" fill="#7a5a2a">กรอบรวมทั้งหมด</text>
+<rect x="855" y="164" width="250" height="52" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/><text x="980" y="184" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="bold">วินยปิฎก</text><text x="980" y="201" text-anchor="middle" font-size="9.5px" fill="#7a5a2a">ศีล: ปาติโมกข์·วิภังค์·ขันธกะ</text>
+<rect x="855" y="284" width="250" height="52" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/><text x="980" y="304" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="bold">สุตฺตนฺตปิฎก</text><text x="980" y="321" text-anchor="middle" font-size="9.5px" fill="#7a5a2a">สมาธิ: 5 นิกาย</text>
+<rect x="855" y="404" width="250" height="52" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/><text x="980" y="424" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="bold">อภิธมฺมปิฎก</text><text x="980" y="441" text-anchor="middle" font-size="9.5px" fill="#7a5a2a">ปัญญา: 7 คัมภีร์</text>
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#8a6d3b"/></marker></defs>
+<path d="M 260 130 C 350 130, 350 130, 440 130" fill="none" stroke="#8a6d3b" stroke-width="1.4"  marker-end="url(#arr)"/>
+<path d="M 260 220 C 350 220, 350 286, 440 286" fill="none" stroke="#8a6d3b" stroke-width="1.4"  marker-end="url(#arr)"/>
+<path d="M 260 310 C 350 310, 350 208, 440 208" fill="none" stroke="#8a6d3b" stroke-width="1.4"  marker-end="url(#arr)"/>
+<path d="M 260 400 C 350 400, 350 364, 440 364" fill="none" stroke="#8a6d3b" stroke-width="1.4"  marker-end="url(#arr)"/>
+<path d="M 260 490 C 350 490, 350 442, 440 442" fill="none" stroke="#8a6d3b" stroke-width="1.4"  marker-end="url(#arr)"/>
+<path d="M 680 271 C 768 271, 768 182, 855 182" fill="none" stroke="#8a6d3b" stroke-width="1.4"  marker-end="url(#arr)"/>
+<path d="M 680 286 C 768 286, 768 310, 855 310" fill="none" stroke="#8a6d3b" stroke-width="1.4"  marker-end="url(#arr)"/>
+<path d="M 680 301 C 768 301, 768 438, 855 438" fill="none" stroke="#8a6d3b" stroke-width="1.4"  marker-end="url(#arr)"/>
+<path d="M 560 156 C 560 156, 560 182, 560 182" fill="none" stroke="#8a6d3b" stroke-width="1.4" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+<path d="M 560 234 C 560 234, 560 338, 560 338" fill="none" stroke="#8a6d3b" stroke-width="1.4" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+<path d="M 560 390 C 560 390, 560 416, 560 416" fill="none" stroke="#8a6d3b" stroke-width="1.4" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+<path d="M 560 468 C 560 468, 560 494, 560 494" fill="none" stroke="#8a6d3b" stroke-width="1.4" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+</svg>
