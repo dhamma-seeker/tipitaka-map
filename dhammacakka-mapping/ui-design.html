@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>หัวข้อธรรม — ธัมมจักกัปปวัตตนสูตร (ออกแบบ v2)</title>
+<style>
+  :root{
+    --bg:#F5F6FA; --surface:#FFFFFF; --surface-2:#EEF1F7;
+    --ink:#0F172A; --thai:#334155; --muted:#475569;
+    --pali:#1E3A8A; --primary:#1E3A8A; --on-primary:#FFFFFF;
+    --gold:#CA8A04; --gold-ink:#713F12; --gold-soft:#FEF6E0;
+    --night:#0F1E46;
+    --line:#E2E8F0; --shadow:0 1px 2px rgba(15,23,42,.06),0 4px 12px rgba(15,23,42,.08);
+    --shadow-lg:0 8px 30px rgba(15,23,42,.18);
+    --r:16px; --rp:12px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0B1220; --surface:#131C2E; --surface-2:#1C2740;
+      --ink:#E2E8F0; --thai:#CBD5E1; --muted:#94A3B8;
+      --pali:#C7D7FE; --primary:#93B4FF; --on-primary:#0B1220;
+      --gold:#FACC15; --gold-ink:#FACC15; --gold-soft:#231E10;
+      --line:#26324A;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 12px rgba(0,0,0,.4);
+      --shadow-lg:0 8px 30px rgba(0,0,0,.6);
+    }
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:"Noto Sans Thai","Noto Sans",system-ui,sans-serif;
+    background:transparent; color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+  }
+  .phone{width:min(430px,100%); min-height:100vh; background:var(--bg); color:var(--ink); overflow:hidden; position:relative; box-shadow:0 0 0 1px var(--line),var(--shadow-lg);}
+  button{font-family:inherit; cursor:pointer;}
+  .pali{font-family:"Noto Sans","Noto Sans Thai",sans-serif;}
+
+  /* topbar */
+  .topbar{position:sticky; top:0; z-index:20; display:flex; align-items:center; gap:12px; padding:12px 16px; background:color-mix(in srgb,var(--bg) 86%,transparent); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);}
+  .iconbtn{width:44px; height:44px; flex:none; display:grid; place-items:center; border:none; background:transparent; color:var(--ink); border-radius:var(--rp);}
+  .iconbtn:focus-visible{outline:3px solid var(--primary); outline-offset:2px;}
+  .iconbtn svg{width:24px; height:24px;}
+  .topbar .tt{flex:1; min-width:0;}
+  .topbar h1{font-size:20px; font-weight:700; line-height:1.2;}
+  .topbar .sub{font-size:13px; color:var(--muted); margin-top:1px;}
+
+  main{padding:8px 16px 36px;}
+
+  /* ===== HERO — วงล้อ (พื้น night เสมอ) ===== */
+  .hero{
+    background:radial-gradient(90% 70% at 50% 0%, #1E3A5F 0%, #0F1E46 55%, #0A1430 100%);
+    border-radius:20px; padding:22px 16px 20px; overflow:hidden; position:relative;
+    box-shadow:var(--shadow-lg); color:#E2E8F0;
+  }
+  .hero .kicker{text-align:center; font-size:12px; color:#94A3B8; letter-spacing:.07em;}
+  .hero .name{text-align:center; font-size:23px; font-weight:700; color:#FDE68A; margin-top:3px;}
+  .hero .ref{text-align:center; font-size:12.5px; color:#93B4FF; font-weight:600; margin-top:2px; font-family:"Noto Sans","Noto Sans Thai",sans-serif;}
+
+  .wheel{position:relative; width:min(300px,88%); aspect-ratio:1/1; margin:14px auto 0; touch-action:none;}
+  .wheel svg{position:absolute; inset:0; width:100%; height:100%; display:block;}
+  .rays{animation:raysPulse 5s ease-in-out infinite;}
+  @keyframes raysPulse{0%,100%{opacity:.5;} 50%{opacity:.85;}}
+  .glow{animation:glowPulse 4s ease-in-out infinite;}
+  @keyframes glowPulse{0%,100%{opacity:.7;} 50%{opacity:1;}}
+  .rim{fill:none; stroke:#FACC15; stroke-width:5;}
+  .rim-in{fill:none; stroke:#FACC15; stroke-width:1.6; opacity:.5;}
+  .spoke{stroke:#FDE68A; stroke-width:3; stroke-linecap:round; opacity:.85; transition:stroke .3s, stroke-width .3s, filter .3s; cursor:pointer;}
+  .spoke.on{stroke:#FACC15; stroke-width:5.5; filter:drop-shadow(0 0 6px rgba(250,204,21,.9));}
+  .hub{fill:#0A1430; stroke:#FACC15; stroke-width:1.5;}
+  .hub-text{fill:#FACC15; font-size:13.5px; font-weight:700; font-family:inherit; text-anchor:middle;}
+  .hub-sub{fill:#93B4FF; font-size:9.5px; font-family:inherit; text-anchor:middle; opacity:.9;}
+  /* ป้าย 8 องค์ (HTML, หมุนตาม JS) */
+  .spoke-label{
+    position:absolute; transform:translate(-50%,-50%);
+    min-width:44px; height:30px; padding:0 8px;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(15,30,70,.78); color:#E2E8F0;
+    border:1px solid rgba(250,204,21,.4); border-radius:999px;
+    font-size:12.5px; font-weight:700; white-space:nowrap;
+    transition:background .25s, color .25s, border-color .25s, box-shadow .25s;
+    will-change:left,top;
+  }
+  .spoke-label.on{background:#FACC15; color:#713F12; border-color:#FACC15; box-shadow:0 0 12px rgba(250,204,21,.7);}
+
+  .magga-nav{display:flex; justify-content:center; align-items:center; gap:14px; margin-top:8px;}
+  .magga-nav button{width:44px; height:44px; border-radius:50%; border:1px solid rgba(250,204,21,.5); background:rgba(255,255,255,.06); color:#FACC15; display:grid; place-items:center; font-size:20px; line-height:1;}
+  .magga-nav button:active{background:rgba(250,204,21,.2);}
+  .magga-nav button:focus-visible{outline:3px solid #93B4FF; outline-offset:2px;}
+
+  .magga-card{
+    margin-top:14px; background:var(--surface); color:var(--ink);
+    border-radius:var(--r); padding:14px 16px; box-shadow:var(--shadow);
+    display:flex; flex-direction:column; gap:4px;
+  }
+  .magga-card .grp{font-size:11px; font-weight:700; color:var(--gold-ink); letter-spacing:.05em;}
+  .magga-card .full{font-size:20px; font-weight:700;}
+  .magga-card .pali{font-size:12.5px; color:var(--pali); font-weight:600;}
+  .magga-card .def{font-size:14.5px; color:var(--thai); line-height:1.5; margin-top:2px;}
+  .magga-card .ev{margin-top:6px; font-size:12.5px; color:var(--muted); font-weight:600;}
+
+  .read-full{
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    width:100%; margin-top:12px; padding:14px;
+    background:var(--primary); color:var(--on-primary);
+    border:none; border-radius:var(--rp); font-size:16px; font-weight:700;
+  }
+  .read-full:active{opacity:.9;}
+  .read-full:focus-visible{outline:3px solid #FACC15; outline-offset:2px;}
+  .read-full svg{width:20px; height:20px;}
+
+  /* ===== section ===== */
+  .sec{margin-top:26px;}
+  .sec-head{display:flex; align-items:baseline; gap:8px; margin-bottom:10px;}
+  .sec-head h2{font-size:16px; font-weight:700;}
+  .sec-head .pali{font-size:11.5px; color:var(--muted); font-weight:500;}
+
+  .truth-cards{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
+  .card{text-align:left; background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:13px 14px; box-shadow:var(--shadow); color:var(--ink); min-height:96px; display:flex; flex-direction:column; gap:4px; transition:transform .2s;}
+  .card:active{transform:scale(.98);}
+  .card:focus-visible{outline:3px solid var(--primary); outline-offset:2px;}
+  .card .no{font-size:11px; color:var(--gold-ink); font-weight:700; letter-spacing:.04em;}
+  .card .t{font-size:16px; font-weight:700; line-height:1.2;}
+  .card .p{font-size:12px; color:var(--pali); font-weight:600;}
+  .card .d{font-size:12.5px; color:var(--thai); line-height:1.4;}
+
+  .pitaka{display:flex; flex-direction:column; gap:10px;}
+  .pitaka-card{display:flex; align-items:center; gap:12px; text-align:left; background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:14px; box-shadow:var(--shadow); color:var(--ink); min-height:64px;}
+  .pitaka-card:active{transform:scale(.99);}
+  .pitaka-card:focus-visible{outline:3px solid var(--primary); outline-offset:2px;}
+  .pitaka-card .ic{width:44px; height:44px; flex:none; border-radius:12px; display:grid; place-items:center; background:var(--gold-soft); color:var(--gold-ink);}
+  .pitaka-card .ic svg{width:22px; height:22px;}
+  .pitaka-card .meta{flex:1; min-width:0;}
+  .pitaka-card .meta b{font-size:15.5px; font-weight:700; display:block;}
+  .pitaka-card .meta span{font-size:12px; color:var(--thai); line-height:1.35;}
+  .pitaka-card .chev{color:var(--muted); flex:none;}
+
+  .method{background:var(--night); border-radius:var(--r); padding:16px; color:#E2E8F0; box-shadow:var(--shadow);}
+  .method .no{font-size:11px; color:#FACC15; font-weight:700; letter-spacing:.05em;}
+  .method h3{font-size:16px; font-weight:700; margin-top:2px; color:#FDE68A;}
+  .method .flow{display:flex; flex-wrap:wrap; gap:6px; margin-top:10px;}
+  .method .flow span{font-size:12px; padding:4px 10px; border-radius:999px; background:rgba(255,255,255,.08); color:#E2E8F0;}
+  .method .flow span.b{background:#FACC15; color:#713F12; font-weight:700;}
+
+  .footnote{font-size:11.5px; color:var(--muted); line-height:1.5; margin-top:26px; padding-top:12px; border-top:1px solid var(--line);}
+
+  /* ===== bottom sheet ===== */
+  .scrim{position:fixed; inset:0; background:rgba(15,23,42,.45); opacity:0; pointer-events:none; transition:opacity .25s; z-index:30;}
+  .scrim.open{opacity:1; pointer-events:auto;}
+  .sheet{position:fixed; left:0; right:0; bottom:0; z-index:40; max-width:430px; margin:0 auto; background:var(--surface); color:var(--ink); border-radius:20px 20px 0 0; box-shadow:var(--shadow-lg); padding:8px 18px calc(18px + env(safe-area-inset-bottom)); transform:translateY(105%); transition:transform .3s cubic-bezier(.32,.72,.24,1); max-height:82vh; overflow-y:auto;}
+  .sheet.open{transform:translateY(0);}
+  .sheet .grab{width:40px; height:4px; border-radius:999px; background:var(--line); margin:6px auto 14px;}
+  .sheet .close{position:absolute; top:10px; right:10px; width:40px; height:40px; border:none; background:transparent; color:var(--muted); border-radius:var(--rp); display:grid; place-items:center;}
+  .sheet .close svg{width:20px; height:20px;}
+  .sheet .tag{display:inline-block; font-size:11px; font-weight:700; color:var(--gold-ink); background:var(--gold-soft); padding:3px 10px; border-radius:999px; letter-spacing:.04em;}
+  .sheet h3{font-size:22px; font-weight:700; margin-top:8px; line-height:1.25;}
+  .sheet .pali{font-size:13px; color:var(--pali); font-weight:600; margin-top:2px;}
+  .sheet .desc{font-size:15px; color:var(--thai); line-height:1.6; margin-top:10px;}
+  .sheet .ev{margin-top:14px; padding:12px 14px; border-radius:12px; background:var(--surface-2); border:1px solid var(--line);}
+  .sheet .ev .lab{font-size:11px; color:var(--muted); font-weight:600; letter-spacing:.05em; margin-bottom:4px;}
+  .sheet .ev .cite{font-size:14px; font-weight:600; color:var(--ink);}
+  .sheet .bridge{margin-top:10px; font-size:13px; color:var(--gold-ink); font-weight:600;}
+
+  /* ===== Story reader (ปัด/แตะ) preview ===== */
+  .story{
+    position:fixed; inset:0; z-index:50; background:#0A1430;
+    display:flex; flex-direction:column; transform:translateY(100%);
+    transition:transform .35s cubic-bezier(.32,.72,.24,1);
+  }
+  .story.open{transform:translateY(0);}
+  .story .stop{display:flex; align-items:center; justify-content:space-between; padding:12px 16px; color:#E2E8F0;}
+  .story .stop .prog{flex:1; height:4px; background:rgba(255,255,255,.18); border-radius:999px; margin:0 12px; overflow:hidden;}
+  .story .stop .prog i{display:block; height:100%; width:10%; background:#FACC15; border-radius:999px; transition:width .3s;}
+  .story .s-close{width:40px; height:40px; border:none; background:transparent; color:#CBD5E1; display:grid; place-items:center; font-size:26px; line-height:1;}
+  .story .stage{flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; padding:0 28px 20px; text-align:center; overflow-y:auto;}
+  .story .verse-no{font-size:12px; color:#FACC15; font-weight:700; letter-spacing:.06em;}
+  .story .thai{font-size:21px; line-height:1.65; color:#E2E8F0; font-weight:500; text-wrap:pretty;}
+  .story .pali{font-size:15px; line-height:1.5; color:#C7D7FE;}
+  .story .sum{font-size:14px; color:#94A3B8; line-height:1.5; border-top:1px solid rgba(255,255,255,.12); padding-top:10px;}
+  .story .hud{display:flex; align-items:center; justify-content:space-between; padding:10px 18px calc(16px + env(safe-area-inset-bottom)); color:#CBD5E1;}
+  .story .hud button{width:48px; height:48px; border-radius:50%; border:1px solid rgba(255,255,255,.2); background:rgba(255,255,255,.06); color:#FACC15; display:grid; place-items:center;}
+  .story .hud button:focus-visible{outline:3px solid #93B4FF; outline-offset:2px;}
+  .story .hud .hint{font-size:13px; color:#94A3B8;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important; animation:none !important;}
+  }
+</style>
+</head>
+<body>
+<div class="phone">
+
+  <header class="topbar">
+    <button class="iconbtn" aria-label="กลับ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+    <div class="tt"><h1>หัวข้อธรรม</h1><div class="sub">ธัมมจักกัปปวัตตนสูตร · วงล้อพระธรรม</div></div>
+    <button class="iconbtn" aria-label="ตั้งค่า">Aa</button>
+  </header>
+
+  <main>
+    <!-- HERO: วงล้อ -->
+    <section class="hero">
+      <div class="kicker">หมุนหรือแตะซี่ · ดูมรรค 8 ทีละองค์</div>
+      <div class="name">ธัมมจักกัปปวัตตนสูตร</div>
+      <div class="ref">Dhammacakkappavattana Sutta · SN 56.11</div>
+
+      <div class="wheel" id="wheel">
+        <svg viewBox="0 0 200 200">
+          <defs>
+            <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0" stop-color="#FACC15" stop-opacity=".5"/>
+              <stop offset="1" stop-color="#FACC15" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="softBlur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.2"/></filter>
+          </defs>
+          <!-- ฉัพพรรณรังสี 6 สี -->
+          <g class="rays" filter="url(#softBlur)">
+            <line x1="100" y1="100" x2="100" y2="4"   stroke="#93C5FD" stroke-width="3" stroke-linecap="round"/>
+            <line x1="100" y1="100" x2="183" y2="52"  stroke="#FDE68A" stroke-width="3" stroke-linecap="round"/>
+            <line x1="100" y1="100" x2="183" y2="148" stroke="#FCA5A5" stroke-width="3" stroke-linecap="round"/>
+            <line x1="100" y1="100" x2="100" y2="196" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+            <line x1="100" y1="100" x2="17" y2="148"  stroke="#FDBA74" stroke-width="3" stroke-linecap="round"/>
+            <line x1="100" y1="100" x2="17" y2="52"   stroke="#E9D5FF" stroke-width="3" stroke-linecap="round"/>
+          </g>
+          <!-- แสงทองเรือง -->
+          <circle class="glow" cx="100" cy="100" r="62" fill="url(#goldGlow)"/>
+          <!-- วงล้อ -->
+          <g id="rot">
+            <circle class="rim-in" cx="100" cy="100" r="88"/>
+            <circle class="rim" cx="100" cy="100" r="82"/>
+            <g id="spokes"></g>
+          </g>
+          <circle class="hub" cx="100" cy="100" r="38"/>
+          <text class="hub-text" x="100" y="102">SN 56.11</text>
+          <text class="hub-sub" x="100" y="118">ธัมมจักร</text>
+        </svg>
+        <div id="labels"></div>
+      </div>
+
+      <div class="magga-nav">
+        <button id="prev" aria-label="องค์ก่อนหน้า">‹</button>
+        <button id="next" aria-label="องค์ถัดไป">›</button>
+      </div>
+
+      <div class="magga-card" id="maggaCard">
+        <span class="grp" id="mcGrp"></span>
+        <span class="full" id="mcFull"></span>
+        <span class="pali" id="mcPali"></span>
+        <span class="def" id="mcDef"></span>
+        <span class="ev" id="mcEv"></span>
+      </div>
+
+      <button class="read-full" id="readFull">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        อ่านพระสูตรเต็ม · ปัด/แตะ
+      </button>
+    </section>
+
+    <!-- อริยสัจ 4 -->
+    <section class="sec">
+      <div class="sec-head"><h2>อริยสัจ 4</h2><span class="pali">cattāri ariyasaccāni</span></div>
+      <div class="truth-cards">
+        <button class="card" data-node="dukkha"><span class="no">สัจจะที่ 1</span><span class="t">ทุกข์</span><span class="p">dukkha</span><span class="d">ความยึดมั่นในเบญจขันธ์</span></button>
+        <button class="card" data-node="samudaya"><span class="no">สัจจะที่ 2</span><span class="t">สมุทัย</span><span class="p">samudaya</span><span class="d">ตัณหา 3 → ปฏิจจสมุปบาท</span></button>
+        <button class="card" data-node="nirodha"><span class="no">สัจจะที่ 3</span><span class="t">นิโรธ</span><span class="p">nirodha</span><span class="d">ความดับตัณหา = นิพพาน</span></button>
+        <button class="card" data-node="magga"><span class="no">สัจจะที่ 4</span><span class="t">มรรค</span><span class="p">magga</span><span class="d">อริยมรรคมีองค์ 8</span></button>
+      </div>
+    </section>
+
+    <!-- ไตรสิกขา → 3 ปิฎก -->
+    <section class="sec">
+      <div class="sec-head"><h2>ไตรสิกขา → 3 ปิฎก</h2><span class="pali">tisso sikkhā · MN 44</span></div>
+      <div class="pitaka">
+        <button class="pitaka-card" data-node="vinaya">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4 0 7-2.7 7-6V6a4 4 0 0 0-4-4h-3a4 4 0 0 0-4 4v10c0 1.7 1.3 3 3 3h4"/></svg></span>
+          <span class="meta"><b>ศีล → วินัยปิฎก</b><span>ปาติโมกข์ · สิกขาบท · วิภังค์ · ขันธกะ</span></span>
+          <span class="chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+        </button>
+        <button class="pitaka-card" data-node="suttanta">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
+          <span class="meta"><b>สมาธิ → สุตตันตปิฎก</b><span>สติปัฏฐาน · ฌาน · โพชฌงค์ · 5 นิกาย</span></span>
+          <span class="chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+        </button>
+        <button class="pitaka-card" data-node="abhidhamma">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></span>
+          <span class="meta"><b>ปัญญา → อภิธรรมปิฎก</b><span>ธัมมสังคณี · วิภังค์ · ปฏฐาน · วนกลับอริยสัจ 4</span></span>
+          <span class="chev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ติปริวัฏฏ์ -->
+    <section class="sec">
+      <div class="sec-head"><h2>ติปริวัฏฏ์ ทวาทสาการ</h2><span class="pali">tiparivaṭṭa · 3 รอบ 12 อาการ</span></div>
+      <div class="method">
+        <div class="no">วิธีของพระสูตร · ปรากฏเพียง 7 ข้อความทั่วทั้งพระไตรปิฎก</div>
+        <h3>ทำ 4 กิจ ใน 3 รอบ</h3>
+        <div class="flow">
+          <span>ปริญญา — รู้ทุกข์</span><span>ปหาน — ละสมุทัย</span><span>สจฉิกิริยา — ทำนิโรธให้แจ้ง</span><span>ภาวนา — เจริญมรรค</span><span class="b">→ ธัมมจักขุ → วิมุตติ</span>
+        </div>
+      </div>
+    </section>
+
+    <p class="footnote">ต้นแบบการออกแบบ v2 (ยังไม่ใช่เนื้อหาใช้จริง) · วงล้อ 8 ซี่ = มรรค 8 · ฉัพพรรณรังสี 6 สี: นีล ปีต โลหิต โอทาต มัญเชฐ ประภัสสร · สะพาน MN 44 / AN 3.89 / DN 2 / DN 16 · วนกลับ: สัมมาทิฏฐิ = ญาณในอริยสัจ 4</p>
+  </main>
+
+  <!-- bottom sheet -->
+  <div class="scrim" id="scrim"></div>
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true">
+    <div class="grab"></div>
+    <button class="close" id="sheetClose" aria-label="ปิด"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    <span class="tag" id="sheetTag"></span>
+    <h3 id="sheetTitle"></h3>
+    <div class="pali" id="sheetPali"></div>
+    <p class="desc" id="sheetDesc"></p>
+    <div class="ev"><div class="lab">หลักฐานในพระไตรปิฎก</div><div class="cite" id="sheetEv"></div></div>
+    <div class="bridge" id="sheetBridge"></div>
+  </div>
+
+  <!-- Story reader (ปัด/แตะ) -->
+  <div class="story" id="story" role="dialog" aria-modal="true">
+    <div class="stop">
+      <button class="s-close" id="storyClose" aria-label="ปิด">×</button>
+      <div class="prog"><i id="storyProg"></i></div>
+      <span style="font-size:12px;color:#94A3B8;" id="storyCount">1/10</span>
+    </div>
+    <div class="stage" id="storyStage"></div>
+    <div class="hud">
+      <button id="storyPrev" aria-label="ย้อน"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+      <span class="hint">แตะหรือปัดขึ้นเพื่ออ่าน</span>
+      <button id="storyNext" aria-label="ถัดไป"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ===== มรรค 8 (8 ซี่) =====
+const MAGGA = [
+  {t:"ทิฏฐิ", full:"สัมมาทิฏฐิ", pali:"sammādiṭṭhi", grp:"ปัญญา · องค์ที่ 1", def:"ความเห็นชอบ = ญาณในอริยสัจ 4", ev:"SN 45.8:3.2 · วนกลับที่ราก"},
+  {t:"สังกัปปะ", full:"สัมมาสังกัปปะ", pali:"sammāsaṅkappa", grp:"ปัญญา · องค์ที่ 2", def:"ดำริชอบ = เนกขัมมะ อพยาบาท อวิหิงสา", ev:"SN 45.8:4.2"},
+  {t:"วาจา", full:"สัมมาวาจา", pali:"sammāvācā", grp:"ศีล · องค์ที่ 3", def:"เจรจาชอบ = เว้นวจีทุจริต 4", ev:"SN 45.8:5.2"},
+  {t:"กัมมันตะ", full:"สัมมากัมมันตะ", pali:"sammākammanta", grp:"ศีล · องค์ที่ 4", def:"การงานชอบ = เว้นกายทุจริต 3", ev:"SN 45.8:6.2"},
+  {t:"อาชีวะ", full:"สัมมาอาชีวะ", pali:"sammāājīva", grp:"ศีล · องค์ที่ 5", def:"เลี้ยงชีพชอบ = ละมิจฉาชีวะ", ev:"SN 45.8:7.2"},
+  {t:"วายามะ", full:"สัมมาวายามะ", pali:"sammāvāyāma", grp:"สมาธิ · องค์ที่ 6", def:"เพียรชอบ = สัมมัปปธาน 4", ev:"SN 45.8:8.2"},
+  {t:"สติ", full:"สัมมาสติ", pali:"sammāsati", grp:"สมาธิ · องค์ที่ 7", def:"ระลึกชอบ = สติปัฏฐาน 4", ev:"SN 45.8:9.2"},
+  {t:"สมาธิ", full:"สัมมาสมาธิ", pali:"sammāsamādhi", grp:"สมาธิ · องค์ที่ 8", def:"ตั้งมั่นชอบ = ฌาน 4", ev:"SN 45.8:10.2"},
+];
+const N = 8;
+let cur = 0;
+let rot = 0;   // มุมหมุนของวงล้อ (องศา)
+const spokeAngle = k => 22.5 + k*45;   // มุมซี่ k บนวงล้อ (0 = บน, ตามเข็ม)
+
+const spokesG = document.getElementById("spokes");
+const labelsBox = document.getElementById("labels");
+const wheelEl = document.getElementById("wheel");
+
+(function drawSpokes(){
+  let d = "";
+  for(let k=0;k<N;k++){
+    const a = spokeAngle(k) * Math.PI/180;
+    const x1 = 100 + 38*Math.sin(a), y1 = 100 - 38*Math.cos(a);
+    const x2 = 100 + 82*Math.sin(a), y2 = 100 - 82*Math.cos(a);
+    d += `<line class="spoke" data-k="${k}" x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"/>`;
+  }
+  spokesG.innerHTML = d;
+})();
+
+labelsBox.innerHTML = MAGGA.map((m,k)=>`<button class="spoke-label" data-k="${k}" style="left:50%;top:50%;">${m.t}</button>`).join("");
+
+function positionLabels(){
+  const box = wheelEl.getBoundingClientRect();
+  const cx = box.width/2, cy = box.height/2;
+  const r = box.width/2 * 0.92;
+  document.querySelectorAll(".spoke-label").forEach(lb=>{
+    const k = +lb.dataset.k;
+    const a = (spokeAngle(k) + rot) * Math.PI/180;
+    lb.style.left = (cx + r*Math.sin(a)) + "px";
+    lb.style.top  = (cy - r*Math.cos(a)) + "px";
+  });
+}
+
+function applyRot(){
+  document.getElementById("rot").setAttribute("transform", `rotate(${rot} 100 100)`);
+  document.querySelectorAll(".spoke").forEach(s=> s.classList.toggle("on", +s.dataset.k === cur));
+  document.querySelectorAll(".spoke-label").forEach(lb=> lb.classList.toggle("on", +lb.dataset.k === cur));
+  positionLabels();
+  renderCard();
+}
+function goTo(k){
+  cur = ((k % N) + N) % N;
+  rot = -spokeAngle(cur);
+  applyRot();
+}
+
+function renderCard(){
+  const m = MAGGA[cur];
+  document.getElementById("mcGrp").textContent = m.grp;
+  document.getElementById("mcFull").textContent = m.full;
+  document.getElementById("mcPali").textContent = m.pali;
+  document.getElementById("mcDef").textContent = m.def;
+  document.getElementById("mcEv").textContent = "หลักฐาน: " + m.ev;
+}
+
+document.querySelectorAll(".spoke-label").forEach(lb=> lb.addEventListener("click", ()=> goTo(+lb.dataset.k)));
+spokesG.addEventListener("click", e=>{ const s = e.target.closest(".spoke"); if(s) goTo(+s.dataset.k); });
+document.getElementById("prev").addEventListener("click", ()=> goTo(cur-1));
+document.getElementById("next").addEventListener("click", ()=> goTo(cur+1));
+
+// ลากหมุน
+let dragging=false, lastA=0;
+wheelEl.addEventListener("pointerdown", e=>{
+  dragging=true;
+  const r = wheelEl.getBoundingClientRect();
+  lastA = Math.atan2(e.clientX - r.left - r.width/2, -(e.clientY - r.top - r.height/2));
+  wheelEl.setPointerCapture(e.pointerId);
+});
+wheelEl.addEventListener("pointermove", e=>{
+  if(!dragging) return;
+  const r = wheelEl.getBoundingClientRect();
+  const a = Math.atan2(e.clientX - r.left - r.width/2, -(e.clientY - r.top - r.height/2));
+  rot += (a - lastA) * 180/Math.PI; lastA = a;
+  let best=0, bd=1e9;
+  for(let k=0;k<N;k++){
+    let d = Math.abs(spokeAngle(k) + rot); d = Math.min(d, 360-d);
+    if(d < bd){ bd=d; best=k; }
+  }
+  cur = best;
+  applyRot();
+});
+wheelEl.addEventListener("pointerup", ()=> dragging=false);
+wheelEl.addEventListener("pointercancel", ()=> dragging=false);
+
+// ===== bottom sheet =====
+const NODES = {
+  dukkha:{tag:"อริยสัจข้อ 1", title:"ทุกข์", pali:"dukkha ariyasacca", desc:"ความเกิด แก่ เจ็บ ตาย ความโศก ความทุกข์ใจ ความคับแค้น กล่าวโดยย่อคือ ความยึดมั่นในเบญจขันธ์ (รูป เวทนา สัญญา สังขาร วิญญาณ)", ev:"SN 56.11:4.2 · MN 44:2.3–2.5", bridge:"แตกไป: ขันธ์ / อายตนะ / ธาตุ"},
+  samudaya:{tag:"อริยสัจข้อ 2", title:"สมุทัย", pali:"dukkhasamudaya ariyasacca", desc:"เหตุเกิดทุกข์ คือ ตัณหา 3 — กามตัณหา ภวตัณหา วิภวตัณหา ที่ทำให้เกิดภพใหม่ พร้อมด้วยความกำหนัดเพลิดเพลิน", ev:"SN 56.11:4.4–4.5", bridge:"สืบเนื่อง: ปฏิจจสมุปบาท (SN 12)"},
+  nirodha:{tag:"อริยสัจข้อ 3", title:"นิโรธ", pali:"dukkhanirodha ariyasacca", desc:"ความดับตัณหาโดยสิ้นเชิงไม่เหลือ (อเสสวิราคนิโรธ) ความสละ สลัด ปล่อย ไม่ยึดมั่น = นิพพาน", ev:"SN 56.11:4.7 · MN 44:29.12", bridge:""},
+  magga:{tag:"อริยสัจข้อ 4", title:"มรรค", pali:"dukkhanirodhagāminī paṭipadā", desc:"ทางปฏิบัติให้ถึงความดับทุกข์ = มัชฌิมาปฏิปทา = อริยอัฏฐังคิกมรรค หลีกเว้นที่สุดโต่งสองทาง", ev:"SN 56.11:4.9", bridge:"มรรค 8 จัดหมวดเป็นไตรสิกขา (MN 44:11)"},
+  vinaya:{tag:"ไตรสิกขา · ศีล", title:"วินัยปิฎก", pali:"Vinayapiṭaka · adhisīla", desc:"ศีลสิกขา → ปาติโมกข์สังวร สิกขาบท วิภังค์ ขันธกะ ปรากฏในมหาวรรค (มหาขันธกะ) ที่เล่าปฐมเทศนาคำต่อคำ", ev:"pli-tv-kd1:6.19.1+ · DN 2:42.1", bridge:"เชื่อมแบบมโนทัศน์ผ่าน 'ศีล'"},
+  suttanta:{tag:"ไตรสิกขา · สมาธิ", title:"สุตตันตปิฎก", pali:"Suttantapiṭaka · adhicitta", desc:"สมาธิสิกขา → สติปัฏฐาน สัมมัปปธาน ฌาน โพชฌงค์ กระจาย 5 นิกาย", ev:"SN 45.8:8–10 · MN 44:12", bridge:""},
+  abhidhamma:{tag:"ไตรสิกขา · ปัญญา", title:"อภิธรรมปิฎก", pali:"Abhidhammapiṭaka · adhipaññā", desc:"ปัญญาสิกขา → ธัมมสังคณี วิภังค์ ปฏฐาน สัจจวิภังค์ (vb4) อธิปัญญา = รู้แจ้งอริยสัจ 4", ev:"AN 3.89:4.2 · vb4:1.1", bridge:"วนกลับที่ราก: อธิปัญญา = อริยสัจ 4"}
+};
+const sheet = document.getElementById("sheet"), scrim = document.getElementById("scrim");
+function openSheet(id){ const n=NODES[id]; if(!n) return;
+  document.getElementById("sheetTag").textContent=n.tag;
+  document.getElementById("sheetTitle").textContent=n.title;
+  document.getElementById("sheetPali").textContent=n.pali;
+  document.getElementById("sheetDesc").textContent=n.desc;
+  document.getElementById("sheetEv").textContent=n.ev;
+  document.getElementById("sheetBridge").textContent=n.bridge?"↳ "+n.bridge:"";
+  sheet.classList.add("open"); scrim.classList.add("open");
+}
+function closeSheet(){ sheet.classList.remove("open"); scrim.classList.remove("open"); }
+document.querySelectorAll("[data-node]").forEach(el=> el.addEventListener("click", ()=> openSheet(el.dataset.node)));
+document.getElementById("sheetClose").addEventListener("click", closeSheet);
+scrim.addEventListener("click", closeSheet);
+document.addEventListener("keydown", e=>{ if(e.key==="Escape"){ closeSheet(); document.getElementById("story").classList.remove("open"); } });
+
+// ===== Story reader (ปัด/แตะ) preview =====
+const VERSES = [
+  {th:"ผู้ฉลาดในสิ่งที่เป็นประโยชน์ ผู้มุ่งจะบรรลุทางอันสงบ ควรทำอย่างนี้ คือ เป็นคนที่ทำได้จริง ซื่อตรง ว่าง่าย อ่อนโยน ไม่หยิ่ง", pi:"Karaṇīyamatthakusalena — yantaṁ santaṁ padaṁ abhisamecca…", sum:"ผู้มุ่งนิพพาน ต้องเป็นคนซื่อตรง ว่าง่าย อ่อนโยน ไม่หยิ่ง"},
+  {th:"(ตัวอย่างคาถา 2) ควรเป็นผู้สันโดษ เลี้ยงง่าย มีกิจน้อย มีวัตรเบา สำรวมอินทรีย์…", pi:"(คาถาที่ 2)", sum:"(สรุปคาถา 2 — เนื้อหาจริงจะมาจาก SN 56.11 ทั้งพระสูตร)"},
+  {th:"(ตัวอย่างคาถา 3) ไม่พึงทำความชั่วแม้เล็กน้อย ที่วิญญูชนพึงติเตียน…", pi:"(คาถาที่ 3)", sum:"(สรุปคาถา 3)"},
+];
+let vcur = 0;
+const story = document.getElementById("story");
+function renderStory(){
+  const v = VERSES[vcur];
+  document.getElementById("storyStage").innerHTML =
+    `<div class="verse-no">SN 56.11 · คาถา ${vcur+1} / ${VERSES.length}</div>
+     <div class="thai">${v.th}</div>
+     <div class="pali">${v.pi}</div>
+     <div class="sum">${v.sum}</div>`;
+  document.getElementById("storyCount").textContent = `${vcur+1}/${VERSES.length}`;
+  document.getElementById("storyProg").style.width = ((vcur+1)/VERSES.length*100)+"%";
+}
+document.getElementById("readFull").addEventListener("click", ()=>{ vcur=0; renderStory(); story.classList.add("open"); });
+document.getElementById("storyClose").addEventListener("click", ()=> story.classList.remove("open"));
+document.getElementById("storyPrev").addEventListener("click", ()=>{ if(vcur>0){vcur--; renderStory();} });
+document.getElementById("storyNext").addEventListener("click", ()=>{ if(vcur<VERSES.length-1){vcur++; renderStory();} });
+document.getElementById("storyStage").addEventListener("click", ()=>{ if(vcur<VERSES.length-1){vcur++; renderStory();} });
+
+// init
+goTo(0);
+addEventListener("resize", positionLabels);
+</script>
+</body>
+</html>

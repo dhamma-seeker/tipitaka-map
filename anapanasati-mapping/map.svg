@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1650 394" font-family="Georgia, serif">
+<rect width="100%" height="100%" fill="#fffdf5"/>
+<path d="M 1000 53 C 1000 105, 436 105, 436 152" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1000 53 C 1000 105, 1152 105, 1152 150" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1000 53 C 1000 105, 1537 105, 1537 150" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 436 208 C 436 255, 104 255, 104 296" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 436 208 C 436 255, 298 255, 298 302" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 436 208 C 436 255, 510 255, 510 302" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 436 208 C 436 255, 728 255, 728 302" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1152 210 C 1152 255, 931 255, 931 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1152 210 C 1152 255, 1131 255, 1131 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1152 210 C 1152 255, 1334 255, 1334 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<rect x="932" y="7" width="136" height="46" rx="8" fill="#8a1f1f" stroke="#6b1a1a" stroke-width="1.3"/>
+<text x="1000" y="29" text-anchor="middle" font-size="12.5px" fill="#ffffff" font-weight="bold">MN 118 Anapanasati</text>
+<text x="1000" y="44" text-anchor="middle" font-size="10px" fill="#7a5a2a">the root sutta</text>
+<rect x="353" y="152" width="166" height="57" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="436" y="174" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">anapanassati (16 steps)</text>
+<text x="436" y="188" text-anchor="middle" font-size="10px" fill="#7a5a2a">โส สโตว อสฺสสติ สโตว</text>
+<text x="436" y="200" text-anchor="middle" font-size="10px" fill="#7a5a2a">ปสฺสสติ (mn118:17.2)</text>
+<rect x="30" y="296" width="148" height="68" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="104" y="318" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">tetrad 1: body</text>
+<text x="104" y="333" text-anchor="middle" font-size="10px" fill="#7a5a2a">ทีฆ/รสฺส ·</text>
+<text x="104" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">สพฺพกายปฏิสํเวที ·</text>
+<text x="104" y="355" text-anchor="middle" font-size="10px" fill="#7a5a2a">ปสฺสมฺภยํ กายสงฺขารํ</text>
+<rect x="218" y="302" width="160" height="57" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="298" y="324" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">tetrad 2: feeling</text>
+<text x="298" y="338" text-anchor="middle" font-size="10px" fill="#7a5a2a">ปีติปฏิสํเวที · สุข ·</text>
+<text x="298" y="350" text-anchor="middle" font-size="10px" fill="#7a5a2a">จิตฺตสงฺขาร · ปสฺสทฺธิ</text>
+<rect x="418" y="302" width="184" height="57" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="510" y="324" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">tetrad 3: mind</text>
+<text x="510" y="338" text-anchor="middle" font-size="10px" fill="#7a5a2a">จิตฺต · อภิปฺปโมทย · สมาทห</text>
+<text x="510" y="350" text-anchor="middle" font-size="10px" fill="#7a5a2a">· วิโมจย</text>
+<rect x="642" y="302" width="172" height="57" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="728" y="324" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">tetrad 4: dhammas</text>
+<text x="728" y="338" text-anchor="middle" font-size="10px" fill="#7a5a2a">อนิจฺจ · วิราค · นิโรธ ·</text>
+<text x="728" y="350" text-anchor="middle" font-size="10px" fill="#7a5a2a">ปฏินิสฺสคฺคานุปสฺสี</text>
+<rect x="1064" y="150" width="178" height="61" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="1152" y="172" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">cascade: satipatthana -&gt;</text>
+<text x="1152" y="186" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">bojjhanga -&gt; vijjavimutti</text>
+<text x="1152" y="202" text-anchor="middle" font-size="10px" fill="#7a5a2a">mn118:15.2–15.4</text>
+<rect x="854" y="307" width="154" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="931" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">4 satipatthana</text>
+<text x="931" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">369/4/96 (ครบ 3 ปิฎก)</text>
+<rect x="1048" y="307" width="166" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="1131" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">7 bojjhanga</text>
+<text x="1131" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">629/12/119 (ครบ 3 ปิฎก)</text>
+<rect x="1254" y="307" width="160" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="1334" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">vijjavimutti</text>
+<text x="1334" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">54/0/0 (เฉพาะสุตตันตะ)</text>
+<rect x="1454" y="150" width="166" height="61" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="1537" y="172" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">37 bodhipakkhiya +</text>
+<text x="1537" y="186" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">brahmavihara</text>
+<text x="1537" y="202" text-anchor="middle" font-size="10px" fill="#7a5a2a">อ้างในอุทเทส (mn118:14)</text>
+</svg>

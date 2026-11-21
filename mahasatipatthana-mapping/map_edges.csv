@@ -1,0 +1,21 @@
+from_node,to_node,edge_type,evidence
+DN22,ekayano maggo = cattaro satipatthana,นิยาม,dn22:1.7
+ekayano maggo,kayanupassana,องค์ที่ 1,dn22:1.9
+ekayano maggo,vedananupassana,องค์ที่ 2,dn22:1.10
+ekayano maggo,cittanupassana,องค์ที่ 3,dn22:1.11
+ekayano maggo,dhammanupassana,องค์ที่ 4,dn22:1.12
+kayanupassana,anapana·iriyapatha·patikula·dhatu·sivathika,ขยายความ,dn22:2-10
+dhammanupassana,panca nivarana,ขยายความ,dn22:13.12
+dhammanupassana,pancupadanakkhandha,ขยายความ,dn22:14.1
+dhammanupassana,cha ayatana,ขยายความ,dn22:15.1
+dhammanupassana,satta bojjhanga,ขยายความ,dn22:16
+dhammanupassana,cattari ariyasaccani,ขยายความ,dn22:17-22
+cattari ariyasaccani,ariyo atthangiko maggo,บรรจุ (= SN56.11),dn22:21.2-21.3
+sammaditthi,nana in 4 truths,นิยาม (วนกลับอริยสัจ),dn22:21.5
+satipatthana,sammasati,= (SN45.8),sn45.8:9.2
+satipatthana,samadhinimitta,= (MN44),mn44:12.3
+sammasati -> tisso sikkha,sila -> VINAYAPITAKA,สะพาน,mn44:11.3; an3.89:2.2
+sammasati -> tisso sikkha,samadhi -> SUTTANTAPITAKA,สะพาน,mn44:11.4
+sammasati -> tisso sikkha,panna -> ABHIDHAMMAPITAKA,สะพาน,mn44:11.5
+satipatthana,37 bodhipakkhiya dhamma,รวมอยู่ใน,dn16:3.50.5
+nivarana/khandha/ayatana/dhatu/vedana,ABHIDHAMMA (ds·vb·dt·ya),วัตถุวิเคราะห์,(survey)

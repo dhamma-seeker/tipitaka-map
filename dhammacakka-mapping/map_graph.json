@@ -1,0 +1,228 @@
+{
+ "root": "SN56.11",
+ "nodes": [
+  "3 veramani (panatipata...)",
+  "37 bodhipakkhiya dhamma (1 ใน 7 หมวด)",
+  "4 jhana",
+  "4 sammappadhana",
+  "4 satipatthana",
+  "4 veramani (musavada...)",
+  "ABHIDHAMMA vb4 Saccavibhanga",
+  "SN56.11",
+  "SUTTA SN56 Saccasamyutta / MN141",
+  "VINAYA pli-tv-kd1 (Mahavagga first teaching)",
+  "VINAYAPITAKA (patimokkha/sikkhapada/vibhanga)",
+  "adhisila/adhicitta/adhipanna",
+  "ariya atthangika magga",
+  "ariyasacca",
+  "cattari ariyasaccani",
+  "dhammacakkhu -> vimutti",
+  "dukkha",
+  "dve anta (2 extremes)",
+  "khandha/ayatana/dhatu",
+  "magga",
+  "majjhima patipada",
+  "micchajiva pahaya",
+  "nana in 4 truths",
+  "nana in ariyasacca -> ABHIDHAMMA (ds/vb/patthana)",
+  "nekkhamma/abyapada/avihimsa",
+  "nibbana (asesaviraganirodha)",
+  "nirodha",
+  "pancupadanakkhandha",
+  "panna",
+  "paticcasamuppada",
+  "samadhi",
+  "sammaajiva",
+  "sammaditthi",
+  "sammakammanta",
+  "sammasamadhi",
+  "sammasankappa",
+  "sammasati",
+  "sammavaca",
+  "sammavayama",
+  "samudaya",
+  "satipatthana/sammappadhana/jhana/bojjhanga",
+  "sila",
+  "tanha",
+  "tanha (kama/bhava/vibhava)",
+  "tiparivatta dvadasakara",
+  "tisso sikkha",
+  "tisso sikkha (sila/samadhi/panna)"
+ ],
+ "edges": [
+  {
+   "from": "SN56.11",
+   "to": "dve anta (2 extremes)",
+   "type": "มีองค์ประกอบ",
+   "evidence": "sn56.11:2.1-2.3"
+  },
+  {
+   "from": "SN56.11",
+   "to": "majjhima patipada",
+   "type": "นิยาม",
+   "evidence": "sn56.11:2.4"
+  },
+  {
+   "from": "majjhima patipada",
+   "to": "ariya atthangika magga",
+   "type": "= (สมมูล)",
+   "evidence": "sn56.11:3.2"
+  },
+  {
+   "from": "SN56.11",
+   "to": "cattari ariyasaccani",
+   "type": "แก่น",
+   "evidence": "sn56.11:4.1-4.10"
+  },
+  {
+   "from": "SN56.11",
+   "to": "tiparivatta dvadasakara",
+   "type": "วิธี/กระบวน",
+   "evidence": "sn56.11:9.1"
+  },
+  {
+   "from": "SN56.11",
+   "to": "dhammacakkhu -> vimutti",
+   "type": "ผล",
+   "evidence": "sn56.11:10.3, 11.2"
+  },
+  {
+   "from": "dukkha",
+   "to": "pancupadanakkhandha",
+   "type": "ขยายความ",
+   "evidence": "sn56.11:4.2"
+  },
+  {
+   "from": "pancupadanakkhandha",
+   "to": "khandha/ayatana/dhatu",
+   "type": "= sakkaya (MN44)",
+   "evidence": "mn44:2.3-2.5"
+  },
+  {
+   "from": "samudaya",
+   "to": "tanha (kama/bhava/vibhava)",
+   "type": "ขยายความ",
+   "evidence": "sn56.11:4.4-4.5"
+  },
+  {
+   "from": "tanha",
+   "to": "paticcasamuppada",
+   "type": "สืบเนื่อง",
+   "evidence": "sn12 (Nidanasamyutta)"
+  },
+  {
+   "from": "nirodha",
+   "to": "nibbana (asesaviraganirodha)",
+   "type": "ขยายความ",
+   "evidence": "sn56.11:4.7; mn44:29.12"
+  },
+  {
+   "from": "magga",
+   "to": "ariya atthangika magga",
+   "type": "= (สมมูล)",
+   "evidence": "sn56.11:4.9"
+  },
+  {
+   "from": "ariya atthangika magga",
+   "to": "tisso sikkha (sila/samadhi/panna)",
+   "type": "จัดหมวด",
+   "evidence": "mn44:11.3-11.5"
+  },
+  {
+   "from": "tisso sikkha",
+   "to": "adhisila/adhicitta/adhipanna",
+   "type": "นิยาม",
+   "evidence": "an3.89:1.3"
+  },
+  {
+   "from": "sila",
+   "to": "VINAYAPITAKA (patimokkha/sikkhapada/vibhanga)",
+   "type": "สะพาน",
+   "evidence": "an3.89:2.2; dn2:42.1"
+  },
+  {
+   "from": "samadhi",
+   "to": "satipatthana/sammappadhana/jhana/bojjhanga",
+   "type": "สะพาน",
+   "evidence": "sn45.8:8-10; mn44:12"
+  },
+  {
+   "from": "panna",
+   "to": "nana in ariyasacca -> ABHIDHAMMA (ds/vb/patthana)",
+   "type": "สะพาน(วนกลับราก)",
+   "evidence": "an3.89:4.2; sn45.8:3.2"
+  },
+  {
+   "from": "sammaditthi",
+   "to": "nana in 4 truths",
+   "type": "นิยาม",
+   "evidence": "sn45.8:3.2"
+  },
+  {
+   "from": "sammasankappa",
+   "to": "nekkhamma/abyapada/avihimsa",
+   "type": "นิยาม",
+   "evidence": "sn45.8:4.2"
+  },
+  {
+   "from": "sammavaca",
+   "to": "4 veramani (musavada...)",
+   "type": "นิยาม",
+   "evidence": "sn45.8:5.2"
+  },
+  {
+   "from": "sammakammanta",
+   "to": "3 veramani (panatipata...)",
+   "type": "นิยาม",
+   "evidence": "sn45.8:6.2"
+  },
+  {
+   "from": "sammaajiva",
+   "to": "micchajiva pahaya",
+   "type": "นิยาม",
+   "evidence": "sn45.8:7.2"
+  },
+  {
+   "from": "sammavayama",
+   "to": "4 sammappadhana",
+   "type": "นิยาม",
+   "evidence": "sn45.8:8.2"
+  },
+  {
+   "from": "sammasati",
+   "to": "4 satipatthana",
+   "type": "นิยาม",
+   "evidence": "sn45.8:9.2"
+  },
+  {
+   "from": "sammasamadhi",
+   "to": "4 jhana",
+   "type": "นิยาม",
+   "evidence": "sn45.8:10.2"
+  },
+  {
+   "from": "ariyasacca",
+   "to": "VINAYA pli-tv-kd1 (Mahavagga first teaching)",
+   "type": "ปรากฏ",
+   "evidence": "pli-tv-kd1:6.19.1+"
+  },
+  {
+   "from": "ariyasacca",
+   "to": "ABHIDHAMMA vb4 Saccavibhanga",
+   "type": "ปรากฏ",
+   "evidence": "vb4:1.1-1.2"
+  },
+  {
+   "from": "ariyasacca",
+   "to": "SUTTA SN56 Saccasamyutta / MN141",
+   "type": "ปรากฏ",
+   "evidence": "sn56.11; mn141"
+  },
+  {
+   "from": "ariya atthangika magga",
+   "to": "37 bodhipakkhiya dhamma (1 ใน 7 หมวด)",
+   "type": "รวมอยู่ใน",
+   "evidence": "dn16:3.50.5"
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+term_pali,sutta_segments,vinaya_segments,abhidhamma_segments,total_segments,total_suttas,note_th,covers_3_pitakas
+ariyasacca,344,23,34,401,88,อริยสัจ 4 — แกนของพระสูตร; ครบ 3 ปิฎก (SN56.11 / pli-tv-kd1 / vb4),YES
+atthangika,244,17,0,261,99,มรรคมีองค์ 8 (อริโย อฏฺฐงฺคิโก มคฺโค),partial
+sammaditthi,826,5,235,1066,455,สมฺมาทิฏฺฐิ,YES
+sammasankappa,85,0,2,87,60,สมฺมาสงฺกปฺโป,partial
+sammavaca,169,2,46,217,108,สมฺมาวาจา,YES
+sammakammanta,61,0,2,63,46,สมฺมากมฺมนฺโต,partial
+sammaajiva,58,0,2,60,45,สมฺมาอาชีโว,partial
+sammavayama,53,0,2,55,45,สมฺมาวายาโม,partial
+sammasati,195,2,104,301,137,สมฺมาสติ,YES
+sammasamadhi,463,2,126,591,265,สมฺมาสมาธิ,YES
+sila,2296,310,633,3239,826,ศีล — สะพานไปวินัย (over-match: silā=หิน),YES
+samadhi,1847,83,374,2304,616,สมาธิ,YES
+panna,5351,1963,1147,8461,1508,ปัญญา (over-match: paññatti/paññāpeti),YES
+sikkha,876,1267,94,2237,699,สิกขา — ไตรสิกขา (วินัยเด่น),YES
+patimokkha,127,364,5,496,99,ปาติโมกข์ — วินัย,YES
+sikkhapada,107,555,55,717,343,สิกขาบท — วินัย,YES
+tanha,1818,17,275,2110,431,ตณฺหา (สมุทัย),YES
+dhammacakka,234,3,3,240,71,ธมฺมจกฺก,YES
+tiparivatta,5,2,0,7,4,ติปริวฏฺฏ ทฺวาทสาการ — เอกลักษณ์พระสูตรนี้,partial
+upadanakkhandha,59,0,4,63,34,อุปาทานกฺขนฺธา (ทุกข์),partial
+paticcasamuppada,39,3,10,52,39,ปฏิจฺจสมุปฺปาท (สมุทัย),YES
+satipatthana,369,4,96,469,197,สติปัฏฐาน,YES
+jhana,1246,248,1565,3059,398,ฌาน (over-match: jhāyati),YES
+sammappadhana,155,5,53,213,105,สมฺมปฺปธาน,YES
+bojjhanga,629,12,119,760,168,โพชฺฌงฺค,YES
+indriya,689,17,1849,2555,324,อินฺทฺริย,YES
+khandha,292,32,4963,5287,249,ขนฺธ (over-match: khandhaka),YES
+bodhipakkhiya,56,0,0,56,29,โพธิปักขิยธรรม 37,partial
+nibbana,1408,14,377,1799,471,นิพฺพาน (นิโรธ),YES
+magganga,51,0,160,211,34,มคฺคงฺค (อภิธรรมเด่น),partial
+patimokkhasamvara,71,4,3,78,57,ปาติโมกฺขสํวร (DN2 อนุปุพพิกถา),YES
+saccavibhanga,2,0,1,3,2,สจฺจวิภงฺค (อภิธรรม วิภงฺค),partial

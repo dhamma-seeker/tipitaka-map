@@ -1,0 +1,86 @@
+{
+ "root": "DN2",
+ "nodes": [
+  "ABHIDHAMMAPITAKA (ปญฺญา, ญาณ)",
+  "DN2",
+  "SUTTANTAPITAKA (jhāna, satipatthana)",
+  "VINAYA / SUTTA / ABHIDHAMMA",
+  "VINAYAPITAKA (patimokkha, sikkhapada)",
+  "anupubbikatha (อนุปุพพิกถา) = sila -> samadhi -> panna",
+  "indriyasamvara -> satisampajanna -> santosa -> nivaranappahana -> 4 jhana",
+  "nanadassana -> abhinna 7 -> asavakkhaya",
+  "panna",
+  "panna (4.3.3)",
+  "patimokkhasamvara",
+  "patimokkhasamvara -> cula/majjhima/mahasila",
+  "samadhi",
+  "samadhi (4.3.2)",
+  "samannaphala (สามัญญผล)",
+  "sila (4.3.1)",
+  "sila->samadhi->panna",
+  "tisso sikkha",
+  "tisso sikkha (ไตรสิกขา)"
+ ],
+ "edges": [
+  {
+   "from": "DN2",
+   "to": "anupubbikatha (อนุปุพพิกถา) = sila -> samadhi -> panna",
+   "type": "แก่น",
+   "evidence": "dn2:39-98"
+  },
+  {
+   "from": "sila (4.3.1)",
+   "to": "patimokkhasamvara -> cula/majjhima/mahasila",
+   "type": "ขั้นที่ 1",
+   "evidence": "dn2:42-64"
+  },
+  {
+   "from": "patimokkhasamvara",
+   "to": "VINAYAPITAKA (patimokkha, sikkhapada)",
+   "type": "สะพานวินัย (ศัพท์วินัยเอง)",
+   "evidence": "dn2:42.1"
+  },
+  {
+   "from": "samadhi (4.3.2)",
+   "to": "indriyasamvara -> satisampajanna -> santosa -> nivaranappahana -> 4 jhana",
+   "type": "ขั้นที่ 2",
+   "evidence": "dn2:64-84"
+  },
+  {
+   "from": "samadhi",
+   "to": "SUTTANTAPITAKA (jhāna, satipatthana)",
+   "type": "สะพานสุตตันตะ",
+   "evidence": "jhāna 1246"
+  },
+  {
+   "from": "panna (4.3.3)",
+   "to": "nanadassana -> abhinna 7 -> asavakkhaya",
+   "type": "ขั้นที่ 3",
+   "evidence": "dn2:83-98"
+  },
+  {
+   "from": "panna",
+   "to": "ABHIDHAMMAPITAKA (ปญฺญา, ญาณ)",
+   "type": "สะพานอภิธรรม",
+   "evidence": "paññā 1147"
+  },
+  {
+   "from": "DN2",
+   "to": "samannaphala (สามัญญผล)",
+   "type": "เป้าหมาย",
+   "evidence": "dn2:99"
+  },
+  {
+   "from": "sila->samadhi->panna",
+   "to": "tisso sikkha (ไตรสิกขา)",
+   "type": "= โครงเดียวกัน",
+   "evidence": "an3.89:1.3"
+  },
+  {
+   "from": "tisso sikkha",
+   "to": "VINAYA / SUTTA / ABHIDHAMMA",
+   "type": "= 3 ปิฎก",
+   "evidence": "mn44:11.3-11.5"
+  }
+ ]
+}

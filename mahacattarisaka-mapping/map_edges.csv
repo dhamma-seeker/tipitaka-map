@@ -1,0 +1,14 @@
+from_node,to_node,edge_type,evidence
+MN117,ariyo sammasamadhi saupaniso saparikkharo,แก่น,mn117:2.1-3.4
+ariyo sammasamadhi,satta anga (7 องค์) + cittassa ekaggata,นิยาม,mn117:3.2-3.3
+sammaditthi,pubbangama (ผู้นำของทุกองค์),บทบาท,mn117:4.1
+sammaditthi,dvaya: sasava/lokiya vs anasava/lokuttara,2 ระดับ,mn117:6.3-6.4
+dvaya: lokuttara/magganga,ABHIDHAMMA (ธมฺมสงฺคณี โลกุตตรทุกะ),สะพานอภิธรรม,lokuttara 476
+marga 8,marga 10 (+ sammana + sammavimutti),ขยาย,mn117:34.3
+marga 8,sekkha (เสขะ),อัฏฐงฺคสมนฺนาคโต,mn117:34.4
+marga 10,araha (อรหันต์),ทสงฺคสมนฺนาคโต,mn117:34.4
+MN117,20 kusala + 20 akusala (มหาจตฺตารีสก),สรุป,mn117:36
+miccha/samma 10 คู่,อกุศล/กุศล 20+20,โครงคู่ตรงข้าม,mn117:35
+sammavaca/kammanta/ajiva,VINAYA (ศีล),ผ่านไตรสิกขา,mn44:11.3
+sammavayama/sati/samadhi,SUTTA (สมาธิ),ผ่านไตรสิกขา,mn44:11.4
+sammaditthi/sankappa,ABHIDHAMMA (ปัญญา),ผ่านไตรสิกขา,mn44:11.5

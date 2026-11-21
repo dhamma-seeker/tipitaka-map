@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2528 683" font-family="Georgia, serif">
+<rect width="100%" height="100%" fill="#fffdf5"/>
+<path d="M 1647 53 C 1647 105, 684 105, 684 152" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1647 53 C 1647 105, 2004 105, 2004 157" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1647 53 C 1647 105, 2429 105, 2429 150" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 684 208 C 684 255, 137 255, 137 302" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 684 208 C 684 255, 382 255, 382 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 684 208 C 684 255, 620 255, 620 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 684 208 C 684 255, 1196 255, 1196 302" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1196 358 C 1196 405, 825 405, 825 457" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1196 358 C 1196 405, 995 405, 995 457" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1196 358 C 1196 405, 1165 405, 1165 457" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1196 358 C 1196 405, 1332 405, 1332 457" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1196 358 C 1196 405, 1548 405, 1548 452" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1548 508 C 1548 555, 1528 555, 1528 607" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 2004 203 C 2004 255, 1757 255, 1757 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 2004 203 C 2004 255, 1980 255, 1980 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 2004 203 C 2004 255, 2212 255, 2212 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<rect x="1564" y="7" width="164" height="46" rx="8" fill="#8a1f1f" stroke="#6b1a1a" stroke-width="1.3"/>
+<text x="1647" y="29" text-anchor="middle" font-size="12.5px" fill="#ffffff" font-weight="bold">DN 22 Mahasatipatthana</text>
+<text x="1647" y="44" text-anchor="middle" font-size="10px" fill="#7a5a2a">the root sutta</text>
+<rect x="576" y="152" width="214" height="57" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="684" y="174" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">ekayano maggo = 4 satipatthana</text>
+<text x="684" y="188" text-anchor="middle" font-size="10px" fill="#7a5a2a">sattānaṁ visuddhiyā …</text>
+<text x="684" y="200" text-anchor="middle" font-size="10px" fill="#7a5a2a">nibbānassa sacchikiriyāya</text>
+<rect x="30" y="302" width="214" height="57" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="137" y="324" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">kayanupassana (body)</text>
+<text x="137" y="338" text-anchor="middle" font-size="10px" fill="#7a5a2a">ānāpāna·iriyāpatha·sampajāna·p</text>
+<text x="137" y="350" text-anchor="middle" font-size="10px" fill="#7a5a2a">aṭikūla·dhātu·sivathika</text>
+<rect x="284" y="307" width="195" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="382" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">vedananupassana (feeling)</text>
+<text x="382" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">sukhā·dukkhā·adukkhamasukhā</text>
+<rect x="519" y="307" width="202" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="620" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">cittanupassana (mind)</text>
+<text x="620" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">sarāga·vītarāga … (16 อาการ)</text>
+<rect x="1098" y="302" width="195" height="57" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="1196" y="324" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">dhammanupassana (dhammas)</text>
+<text x="1196" y="338" text-anchor="middle" font-size="10px" fill="#7a5a2a">5 นิวรณ์·5 ขันธ์·6 อายตนะ·7</text>
+<text x="1196" y="350" text-anchor="middle" font-size="10px" fill="#7a5a2a">โพชฌงค์·4 สัจจะ</text>
+<rect x="761" y="457" width="127" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="825" y="479" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">5 nivarana</text>
+<text x="825" y="494" text-anchor="middle" font-size="10px" fill="#7a5a2a">→ Abhidhamma 387</text>
+<rect x="928" y="457" width="133" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="995" y="479" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">5 khandha</text>
+<text x="995" y="494" text-anchor="middle" font-size="10px" fill="#7a5a2a">→ Abhidhamma 4963</text>
+<rect x="1102" y="457" width="127" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="1165" y="479" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">6 ayatana</text>
+<text x="1165" y="494" text-anchor="middle" font-size="10px" fill="#7a5a2a">→ Abhidhamma 298</text>
+<rect x="1269" y="457" width="127" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="1332" y="479" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">7 bojjhanga</text>
+<text x="1332" y="494" text-anchor="middle" font-size="10px" fill="#7a5a2a">→ Abhidhamma 119</text>
+<rect x="1456" y="452" width="183" height="57" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="1548" y="474" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">4 ariyasacca</text>
+<text x="1548" y="488" text-anchor="middle" font-size="10px" fill="#7a5a2a">→ pli-tv-kd1 + vb4 (ครบ 3</text>
+<text x="1548" y="500" text-anchor="middle" font-size="10px" fill="#7a5a2a">ปิฎก)</text>
+<rect x="1436" y="607" width="183" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="1528" y="629" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">8-fold path</text>
+<text x="1528" y="644" text-anchor="middle" font-size="10px" fill="#7a5a2a">= เนื้อหา SN56.11 ทั้งชุด</text>
+<rect x="1916" y="157" width="177" height="46" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="2004" y="179" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">satipatthana = sammasati</text>
+<text x="2004" y="194" text-anchor="middle" font-size="10px" fill="#7a5a2a">tisso sikkhā (MN44)</text>
+<rect x="1659" y="307" width="195" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="1757" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">sila -&gt; VINAYA</text>
+<text x="1757" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">ผ่านศีล/สิกขาบท (MN44:11.3)</text>
+<rect x="1894" y="307" width="171" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="1980" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">samadhi -&gt; SUTTA</text>
+<text x="1980" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">สติปัฏฐาน·ฌาน (MN44:12)</text>
+<rect x="2105" y="307" width="214" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="2212" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">panna -&gt; ABHIDHAMMA</text>
+<text x="2212" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">นิวรณ์·ขันธ์·อายตนะ·ธาตุ·เวทนา</text>
+<rect x="2359" y="150" width="140" height="61" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="2429" y="172" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">satipatthana in 37</text>
+<text x="2429" y="186" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">bodhipakkhiya</text>
+<text x="2429" y="202" text-anchor="middle" font-size="10px" fill="#7a5a2a">DN16:3.50.5</text>
+</svg>

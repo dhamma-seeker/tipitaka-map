@@ -1,0 +1,134 @@
+{
+ "root": "MN118",
+ "nodes": [
+  "37 bodhipakkhiya + 4 brahmavihara",
+  "MN118",
+  "anapanassati 16 steps",
+  "cattaro satipatthana",
+  "cittanupassana",
+  "dhammanupassana",
+  "kayanupassana",
+  "sammasati",
+  "sammasati (SN45.8:9.2)",
+  "satipatthana",
+  "satta bojjhanga",
+  "sila -> VINAYA / samadhi -> SUTTA / panna -> ABHIDHAMMA",
+  "tetrad 1",
+  "tetrad 1: kaya (digha/rassa/sabbakaya/kayasankhara)",
+  "tetrad 2",
+  "tetrad 2: vedana (piti/sukha/cittasankhara)",
+  "tetrad 3",
+  "tetrad 3: citta (citta/pamodaya/samadaha/vimocaya)",
+  "tetrad 4",
+  "tetrad 4: dhamma (anicca/viraga/nirodha/patinissagga)",
+  "tisso sikkha",
+  "tisso sikkha (MN44)",
+  "vedananupassana",
+  "vijjavimutti",
+  "viveka/viraga/nirodha/vossagga nissita"
+ ],
+ "edges": [
+  {
+   "from": "MN118",
+   "to": "anapanassati 16 steps",
+   "type": "แก่น",
+   "evidence": "mn118:17-21"
+  },
+  {
+   "from": "anapanassati 16 steps",
+   "to": "tetrad 1: kaya (digha/rassa/sabbakaya/kayasankhara)",
+   "type": "จตุรกะ 1",
+   "evidence": "mn118:18"
+  },
+  {
+   "from": "anapanassati 16 steps",
+   "to": "tetrad 2: vedana (piti/sukha/cittasankhara)",
+   "type": "จตุรกะ 2",
+   "evidence": "mn118:19"
+  },
+  {
+   "from": "anapanassati 16 steps",
+   "to": "tetrad 3: citta (citta/pamodaya/samadaha/vimocaya)",
+   "type": "จตุรกะ 3",
+   "evidence": "mn118:20"
+  },
+  {
+   "from": "anapanassati 16 steps",
+   "to": "tetrad 4: dhamma (anicca/viraga/nirodha/patinissagga)",
+   "type": "จตุรกะ 4",
+   "evidence": "mn118:21"
+  },
+  {
+   "from": "anapanassati 16 steps",
+   "to": "cattaro satipatthana",
+   "type": "paripureti (ทำให้เต็ม)",
+   "evidence": "mn118:15.2"
+  },
+  {
+   "from": "cattaro satipatthana",
+   "to": "satta bojjhanga",
+   "type": "paripurenti",
+   "evidence": "mn118:15.3"
+  },
+  {
+   "from": "satta bojjhanga",
+   "to": "vijjavimutti",
+   "type": "paripurenti (ปลายทาง)",
+   "evidence": "mn118:15.4"
+  },
+  {
+   "from": "tetrad 1",
+   "to": "kayanupassana",
+   "type": "= หมวดกาย",
+   "evidence": "mn118:24.5"
+  },
+  {
+   "from": "tetrad 2",
+   "to": "vedananupassana",
+   "type": "= หมวดเวทนา",
+   "evidence": "mn118:25.5"
+  },
+  {
+   "from": "tetrad 3",
+   "to": "cittanupassana",
+   "type": "= หมวดจิต",
+   "evidence": "mn118:26.5"
+  },
+  {
+   "from": "tetrad 4",
+   "to": "dhammanupassana",
+   "type": "= หมวดธรรม",
+   "evidence": "mn118:27.5"
+  },
+  {
+   "from": "satta bojjhanga",
+   "to": "viveka/viraga/nirodha/vossagga nissita",
+   "type": "คุณลักษณะ",
+   "evidence": "mn118:42.1"
+  },
+  {
+   "from": "MN118",
+   "to": "37 bodhipakkhiya + 4 brahmavihara",
+   "type": "อ้างในอุทเทส",
+   "evidence": "mn118:14"
+  },
+  {
+   "from": "satipatthana",
+   "to": "sammasati (SN45.8:9.2)",
+   "type": "= องค์ที่ 7 ของมรรค",
+   "evidence": "sn45.8:9.2"
+  },
+  {
+   "from": "sammasati",
+   "to": "tisso sikkha (MN44)",
+   "type": "จัดหมวด",
+   "evidence": "mn44:11"
+  },
+  {
+   "from": "tisso sikkha",
+   "to": "sila -> VINAYA / samadhi -> SUTTA / panna -> ABHIDHAMMA",
+   "type": "สะพาน 3 ปิฎก",
+   "evidence": "mn44:11.3-11.5"
+  }
+ ]
+}

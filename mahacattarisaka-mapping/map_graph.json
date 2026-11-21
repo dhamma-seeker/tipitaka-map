@@ -1,0 +1,108 @@
+{
+ "root": "MN117",
+ "nodes": [
+  "20 kusala + 20 akusala (มหาจตฺตารีสก)",
+  "ABHIDHAMMA (ธมฺมสงฺคณี โลกุตตรทุกะ)",
+  "ABHIDHAMMA (ปัญญา)",
+  "MN117",
+  "SUTTA (สมาธิ)",
+  "VINAYA (ศีล)",
+  "araha (อรหันต์)",
+  "ariyo sammasamadhi",
+  "ariyo sammasamadhi saupaniso saparikkharo",
+  "dvaya: lokuttara/magganga",
+  "dvaya: sasava/lokiya vs anasava/lokuttara",
+  "marga 10",
+  "marga 10 (+ sammana + sammavimutti)",
+  "marga 8",
+  "miccha/samma 10 คู่",
+  "pubbangama (ผู้นำของทุกองค์)",
+  "sammaditthi",
+  "sammaditthi/sankappa",
+  "sammavaca/kammanta/ajiva",
+  "sammavayama/sati/samadhi",
+  "satta anga (7 องค์) + cittassa ekaggata",
+  "sekkha (เสขะ)",
+  "อกุศล/กุศล 20+20"
+ ],
+ "edges": [
+  {
+   "from": "MN117",
+   "to": "ariyo sammasamadhi saupaniso saparikkharo",
+   "type": "แก่น",
+   "evidence": "mn117:2.1-3.4"
+  },
+  {
+   "from": "ariyo sammasamadhi",
+   "to": "satta anga (7 องค์) + cittassa ekaggata",
+   "type": "นิยาม",
+   "evidence": "mn117:3.2-3.3"
+  },
+  {
+   "from": "sammaditthi",
+   "to": "pubbangama (ผู้นำของทุกองค์)",
+   "type": "บทบาท",
+   "evidence": "mn117:4.1"
+  },
+  {
+   "from": "sammaditthi",
+   "to": "dvaya: sasava/lokiya vs anasava/lokuttara",
+   "type": "2 ระดับ",
+   "evidence": "mn117:6.3-6.4"
+  },
+  {
+   "from": "dvaya: lokuttara/magganga",
+   "to": "ABHIDHAMMA (ธมฺมสงฺคณี โลกุตตรทุกะ)",
+   "type": "สะพานอภิธรรม",
+   "evidence": "lokuttara 476"
+  },
+  {
+   "from": "marga 8",
+   "to": "marga 10 (+ sammana + sammavimutti)",
+   "type": "ขยาย",
+   "evidence": "mn117:34.3"
+  },
+  {
+   "from": "marga 8",
+   "to": "sekkha (เสขะ)",
+   "type": "อัฏฐงฺคสมนฺนาคโต",
+   "evidence": "mn117:34.4"
+  },
+  {
+   "from": "marga 10",
+   "to": "araha (อรหันต์)",
+   "type": "ทสงฺคสมนฺนาคโต",
+   "evidence": "mn117:34.4"
+  },
+  {
+   "from": "MN117",
+   "to": "20 kusala + 20 akusala (มหาจตฺตารีสก)",
+   "type": "สรุป",
+   "evidence": "mn117:36"
+  },
+  {
+   "from": "miccha/samma 10 คู่",
+   "to": "อกุศล/กุศล 20+20",
+   "type": "โครงคู่ตรงข้าม",
+   "evidence": "mn117:35"
+  },
+  {
+   "from": "sammavaca/kammanta/ajiva",
+   "to": "VINAYA (ศีล)",
+   "type": "ผ่านไตรสิกขา",
+   "evidence": "mn44:11.3"
+  },
+  {
+   "from": "sammavayama/sati/samadhi",
+   "to": "SUTTA (สมาธิ)",
+   "type": "ผ่านไตรสิกขา",
+   "evidence": "mn44:11.4"
+  },
+  {
+   "from": "sammaditthi/sankappa",
+   "to": "ABHIDHAMMA (ปัญญา)",
+   "type": "ผ่านไตรสิกขา",
+   "evidence": "mn44:11.5"
+  }
+ ]
+}

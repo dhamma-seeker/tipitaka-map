@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1092 546" font-family="Georgia, serif">
+<rect width="100%" height="100%" fill="#fffdf5"/>
+<path d="M 676 53 C 676 105, 358 105, 358 152" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 676 53 C 676 105, 767 105, 767 152" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 676 53 C 676 105, 973 105, 973 144" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 358 208 C 358 255, 139 255, 139 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 358 208 C 358 255, 357 255, 357 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 358 208 C 358 255, 578 255, 578 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 139 353 C 139 405, 119 405, 119 444" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 357 353 C 357 405, 337 405, 337 457" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 578 353 C 578 405, 558 405, 558 450" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<rect x="612" y="7" width="130" height="46" rx="8" fill="#8a1f1f" stroke="#6b1a1a" stroke-width="1.3"/>
+<text x="676" y="29" text-anchor="middle" font-size="12.5px" fill="#ffffff" font-weight="bold">DN 2 Samannaphala</text>
+<text x="676" y="44" text-anchor="middle" font-size="10px" fill="#7a5a2a">the root sutta</text>
+<rect x="266" y="152" width="184" height="57" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="358" y="174" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">gradual path = 3 trainings</text>
+<text x="358" y="188" text-anchor="middle" font-size="10px" fill="#7a5a2a">ลำดับเดียวจากบรรพชาถึงอรหั</text>
+<text x="358" y="200" text-anchor="middle" font-size="10px" fill="#7a5a2a">ต</text>
+<rect x="98" y="307" width="82" height="46" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="139" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">1) sila</text>
+<text x="139" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">dn2:42-64</text>
+<rect x="30" y="444" width="178" height="72" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="119" y="466" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">patimokkhasamvara -&gt;</text>
+<text x="119" y="481" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">morality</text>
+<text x="119" y="496" text-anchor="middle" font-size="10px" fill="#7a5a2a">→ วินยปิฏก (ปาติโมกข 364,</text>
+<text x="119" y="507" text-anchor="middle" font-size="10px" fill="#7a5a2a">สิกขาบท 555)</text>
+<rect x="313" y="307" width="88" height="46" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="357" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">2) samadhi</text>
+<text x="357" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">dn2:64-84</text>
+<rect x="248" y="457" width="178" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="337" y="479" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">restraint -&gt; 4 jhana</text>
+<text x="337" y="494" text-anchor="middle" font-size="10px" fill="#7a5a2a">→ สุตฺตนฺตปิฏก (ฌาน 1246)</text>
+<rect x="537" y="307" width="82" height="46" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="578" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">3) panna</text>
+<text x="578" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">dn2:83-98</text>
+<rect x="466" y="450" width="184" height="61" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="558" y="472" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">nana -&gt; abhinna -&gt;</text>
+<text x="558" y="486" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">asavakkhaya</text>
+<text x="558" y="502" text-anchor="middle" font-size="10px" fill="#7a5a2a">→ อภิธมฺมปิฏก (ปญฺญา 1147)</text>
+<rect x="690" y="152" width="154" height="57" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="767" y="174" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">samannaphala (fruits)</text>
+<text x="767" y="188" text-anchor="middle" font-size="10px" fill="#7a5a2a">เป้าหมาย/แรงจูงใจ</text>
+<text x="767" y="200" text-anchor="middle" font-size="10px" fill="#7a5a2a">(sāmaññaphala 136)</text>
+<rect x="884" y="144" width="178" height="72" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="973" y="166" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">patimokkhasamvara = first</text>
+<text x="973" y="181" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">step</text>
+<text x="973" y="196" text-anchor="middle" font-size="10px" fill="#7a5a2a">→ วินยปิฏกโดยตรง</text>
+<text x="973" y="207" text-anchor="middle" font-size="10px" fill="#7a5a2a">(dn2:42.1)</text>
+</svg>

@@ -1,0 +1,153 @@
+{
+ "root": "DN22",
+ "nodes": [
+  "37 bodhipakkhiya dhamma",
+  "ABHIDHAMMA (ds·vb·dt·ya)",
+  "DN22",
+  "anapana·iriyapatha·patikula·dhatu·sivathika",
+  "ariyo atthangiko maggo",
+  "cattari ariyasaccani",
+  "cha ayatana",
+  "cittanupassana",
+  "dhammanupassana",
+  "ekayano maggo",
+  "ekayano maggo = cattaro satipatthana",
+  "kayanupassana",
+  "nana in 4 truths",
+  "nivarana/khandha/ayatana/dhatu/vedana",
+  "panca nivarana",
+  "pancupadanakkhandha",
+  "panna -> ABHIDHAMMAPITAKA",
+  "samadhi -> SUTTANTAPITAKA",
+  "samadhinimitta",
+  "sammaditthi",
+  "sammasati",
+  "sammasati -> tisso sikkha",
+  "satipatthana",
+  "satta bojjhanga",
+  "sila -> VINAYAPITAKA",
+  "vedananupassana"
+ ],
+ "edges": [
+  {
+   "from": "DN22",
+   "to": "ekayano maggo = cattaro satipatthana",
+   "type": "นิยาม",
+   "evidence": "dn22:1.7"
+  },
+  {
+   "from": "ekayano maggo",
+   "to": "kayanupassana",
+   "type": "องค์ที่ 1",
+   "evidence": "dn22:1.9"
+  },
+  {
+   "from": "ekayano maggo",
+   "to": "vedananupassana",
+   "type": "องค์ที่ 2",
+   "evidence": "dn22:1.10"
+  },
+  {
+   "from": "ekayano maggo",
+   "to": "cittanupassana",
+   "type": "องค์ที่ 3",
+   "evidence": "dn22:1.11"
+  },
+  {
+   "from": "ekayano maggo",
+   "to": "dhammanupassana",
+   "type": "องค์ที่ 4",
+   "evidence": "dn22:1.12"
+  },
+  {
+   "from": "kayanupassana",
+   "to": "anapana·iriyapatha·patikula·dhatu·sivathika",
+   "type": "ขยายความ",
+   "evidence": "dn22:2-10"
+  },
+  {
+   "from": "dhammanupassana",
+   "to": "panca nivarana",
+   "type": "ขยายความ",
+   "evidence": "dn22:13.12"
+  },
+  {
+   "from": "dhammanupassana",
+   "to": "pancupadanakkhandha",
+   "type": "ขยายความ",
+   "evidence": "dn22:14.1"
+  },
+  {
+   "from": "dhammanupassana",
+   "to": "cha ayatana",
+   "type": "ขยายความ",
+   "evidence": "dn22:15.1"
+  },
+  {
+   "from": "dhammanupassana",
+   "to": "satta bojjhanga",
+   "type": "ขยายความ",
+   "evidence": "dn22:16"
+  },
+  {
+   "from": "dhammanupassana",
+   "to": "cattari ariyasaccani",
+   "type": "ขยายความ",
+   "evidence": "dn22:17-22"
+  },
+  {
+   "from": "cattari ariyasaccani",
+   "to": "ariyo atthangiko maggo",
+   "type": "บรรจุ (= SN56.11)",
+   "evidence": "dn22:21.2-21.3"
+  },
+  {
+   "from": "sammaditthi",
+   "to": "nana in 4 truths",
+   "type": "นิยาม (วนกลับอริยสัจ)",
+   "evidence": "dn22:21.5"
+  },
+  {
+   "from": "satipatthana",
+   "to": "sammasati",
+   "type": "= (SN45.8)",
+   "evidence": "sn45.8:9.2"
+  },
+  {
+   "from": "satipatthana",
+   "to": "samadhinimitta",
+   "type": "= (MN44)",
+   "evidence": "mn44:12.3"
+  },
+  {
+   "from": "sammasati -> tisso sikkha",
+   "to": "sila -> VINAYAPITAKA",
+   "type": "สะพาน",
+   "evidence": "mn44:11.3; an3.89:2.2"
+  },
+  {
+   "from": "sammasati -> tisso sikkha",
+   "to": "samadhi -> SUTTANTAPITAKA",
+   "type": "สะพาน",
+   "evidence": "mn44:11.4"
+  },
+  {
+   "from": "sammasati -> tisso sikkha",
+   "to": "panna -> ABHIDHAMMAPITAKA",
+   "type": "สะพาน",
+   "evidence": "mn44:11.5"
+  },
+  {
+   "from": "satipatthana",
+   "to": "37 bodhipakkhiya dhamma",
+   "type": "รวมอยู่ใน",
+   "evidence": "dn16:3.50.5"
+  },
+  {
+   "from": "nivarana/khandha/ayatana/dhatu/vedana",
+   "to": "ABHIDHAMMA (ds·vb·dt·ya)",
+   "type": "วัตถุวิเคราะห์",
+   "evidence": "(survey)"
+  }
+ ]
+}

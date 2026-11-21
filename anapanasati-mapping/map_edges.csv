@@ -1,0 +1,18 @@
+from_node,to_node,edge_type,evidence
+MN118,anapanassati 16 steps,แก่น,mn118:17-21
+anapanassati 16 steps,tetrad 1: kaya (digha/rassa/sabbakaya/kayasankhara),จตุรกะ 1,mn118:18
+anapanassati 16 steps,tetrad 2: vedana (piti/sukha/cittasankhara),จตุรกะ 2,mn118:19
+anapanassati 16 steps,tetrad 3: citta (citta/pamodaya/samadaha/vimocaya),จตุรกะ 3,mn118:20
+anapanassati 16 steps,tetrad 4: dhamma (anicca/viraga/nirodha/patinissagga),จตุรกะ 4,mn118:21
+anapanassati 16 steps,cattaro satipatthana,paripureti (ทำให้เต็ม),mn118:15.2
+cattaro satipatthana,satta bojjhanga,paripurenti,mn118:15.3
+satta bojjhanga,vijjavimutti,paripurenti (ปลายทาง),mn118:15.4
+tetrad 1,kayanupassana,= หมวดกาย,mn118:24.5
+tetrad 2,vedananupassana,= หมวดเวทนา,mn118:25.5
+tetrad 3,cittanupassana,= หมวดจิต,mn118:26.5
+tetrad 4,dhammanupassana,= หมวดธรรม,mn118:27.5
+satta bojjhanga,viveka/viraga/nirodha/vossagga nissita,คุณลักษณะ,mn118:42.1
+MN118,37 bodhipakkhiya + 4 brahmavihara,อ้างในอุทเทส,mn118:14
+satipatthana,sammasati (SN45.8:9.2),= องค์ที่ 7 ของมรรค,sn45.8:9.2
+sammasati,tisso sikkha (MN44),จัดหมวด,mn44:11
+tisso sikkha,sila -> VINAYA / samadhi -> SUTTA / panna -> ABHIDHAMMA,สะพาน 3 ปิฎก,mn44:11.3-11.5

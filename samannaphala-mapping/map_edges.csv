@@ -1,0 +1,11 @@
+from_node,to_node,edge_type,evidence
+DN2,anupubbikatha (อนุปุพพิกถา) = sila -> samadhi -> panna,แก่น,dn2:39-98
+sila (4.3.1),patimokkhasamvara -> cula/majjhima/mahasila,ขั้นที่ 1,dn2:42-64
+patimokkhasamvara,"VINAYAPITAKA (patimokkha, sikkhapada)",สะพานวินัย (ศัพท์วินัยเอง),dn2:42.1
+samadhi (4.3.2),indriyasamvara -> satisampajanna -> santosa -> nivaranappahana -> 4 jhana,ขั้นที่ 2,dn2:64-84
+samadhi,"SUTTANTAPITAKA (jhāna, satipatthana)",สะพานสุตตันตะ,jhāna 1246
+panna (4.3.3),nanadassana -> abhinna 7 -> asavakkhaya,ขั้นที่ 3,dn2:83-98
+panna,"ABHIDHAMMAPITAKA (ปญฺญา, ญาณ)",สะพานอภิธรรม,paññā 1147
+DN2,samannaphala (สามัญญผล),เป้าหมาย,dn2:99
+sila->samadhi->panna,tisso sikkha (ไตรสิกขา),= โครงเดียวกัน,an3.89:1.3
+tisso sikkha,VINAYA / SUTTA / ABHIDHAMMA,= 3 ปิฎก,mn44:11.3-11.5

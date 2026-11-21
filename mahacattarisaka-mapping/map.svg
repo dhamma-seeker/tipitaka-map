@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1438 396" font-family="Georgia, serif">
+<rect width="100%" height="100%" fill="#fffdf5"/>
+<path d="M 734 53 C 734 105, 124 105, 124 150" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 734 53 C 734 105, 330 105, 330 157" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 734 53 C 734 105, 652 105, 652 157" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 734 53 C 734 105, 1052 105, 1052 146" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 734 53 C 734 105, 1325 105, 1325 157" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 124 210 C 124 255, 104 255, 104 294" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 330 203 C 330 255, 310 255, 310 296" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 652 203 C 652 255, 525 255, 525 302" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 652 203 C 652 255, 740 255, 740 302" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1052 214 C 1052 255, 940 255, 940 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<path d="M 1052 214 C 1052 255, 1125 255, 1125 307" fill="none" stroke="#8a6d3b" stroke-width="1.2"/>
+<rect x="654" y="7" width="160" height="46" rx="8" fill="#8a1f1f" stroke="#6b1a1a" stroke-width="1.3"/>
+<text x="734" y="29" text-anchor="middle" font-size="12.5px" fill="#ffffff" font-weight="bold">MN 117 Mahacattarisaka</text>
+<text x="734" y="44" text-anchor="middle" font-size="10px" fill="#7a5a2a">the root sutta</text>
+<rect x="41" y="150" width="166" height="61" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="124" y="172" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">noble sammasamadhi with</text>
+<text x="124" y="186" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">supports</text>
+<text x="124" y="202" text-anchor="middle" font-size="10px" fill="#7a5a2a">mn117:2.1</text>
+<rect x="30" y="294" width="148" height="72" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="104" y="316" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">7 factors +</text>
+<text x="104" y="331" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">one-pointedness</text>
+<text x="104" y="346" text-anchor="middle" font-size="10px" fill="#7a5a2a">สมฺมาทิฏฺฐิ…สมฺมาสติ</text>
+<text x="104" y="357" text-anchor="middle" font-size="10px" fill="#7a5a2a">(mn117:3.2-3.3)</text>
+<rect x="241" y="157" width="178" height="46" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="330" y="179" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">sammaditthi as forerunner</text>
+<text x="330" y="194" text-anchor="middle" font-size="10px" fill="#7a5a2a">mn117:4.1</text>
+<rect x="218" y="296" width="184" height="68" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="310" y="318" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">10 wrong vs 10 right</text>
+<text x="310" y="333" text-anchor="middle" font-size="10px" fill="#7a5a2a">ทิฏฺฐิ·สงฺกปฺป·วาจา·กมฺมนฺ</text>
+<text x="310" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">ต·อาชีว·วายาม·สติ·สมาธิ·ญา</text>
+<text x="310" y="355" text-anchor="middle" font-size="10px" fill="#7a5a2a">ณ·วิมุตฺติ</text>
+<rect x="588" y="157" width="130" height="46" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="652" y="179" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">two-fold analysis</text>
+<text x="652" y="194" text-anchor="middle" font-size="10px" fill="#7a5a2a">mn117:6.3-6.4</text>
+<rect x="442" y="302" width="166" height="57" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="525" y="324" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">mundane (with taints)</text>
+<text x="525" y="338" text-anchor="middle" font-size="10px" fill="#7a5a2a">วนเวียนในสังสาร (sāsava</text>
+<text x="525" y="350" text-anchor="middle" font-size="10px" fill="#7a5a2a">300 ในอภิธรรม)</text>
+<rect x="648" y="302" width="184" height="57" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="740" y="324" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">transcendent (path factor)</text>
+<text x="740" y="338" text-anchor="middle" font-size="10px" fill="#7a5a2a">→ อภิธรรม: โลกุตตรทุกะ</text>
+<text x="740" y="350" text-anchor="middle" font-size="10px" fill="#7a5a2a">(lokuttara 476)</text>
+<rect x="964" y="146" width="178" height="68" rx="8" fill="#f1e3c3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="1052" y="168" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">8-fold to 10-fold</text>
+<text x="1052" y="183" text-anchor="middle" font-size="10px" fill="#7a5a2a">อฏฺฐงฺคสมนฺนาคโต เสกฺโข ·</text>
+<text x="1052" y="194" text-anchor="middle" font-size="10px" fill="#7a5a2a">ทสงฺคสมนฺนาคโต อรหา</text>
+<text x="1052" y="205" text-anchor="middle" font-size="10px" fill="#7a5a2a">(mn117:34.4)</text>
+<rect x="872" y="307" width="136" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="940" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">+ sammana (9th)</text>
+<text x="940" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">เฉพาะสุตตันตะ (32)</text>
+<rect x="1048" y="307" width="154" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="1125" y="329" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">+ sammavimutti (10th)</text>
+<text x="1125" y="344" text-anchor="middle" font-size="10px" fill="#7a5a2a">เฉพาะสุตตันตะ (103)</text>
+<rect x="1242" y="157" width="166" height="46" rx="8" fill="#fdf6e3" stroke="#8a6d3b" stroke-width="1.3"/>
+<text x="1325" y="179" text-anchor="middle" font-size="12.5px" fill="#3a2a12" font-weight="normal">the Great Forty (20+20)</text>
+<text x="1325" y="194" text-anchor="middle" font-size="10px" fill="#7a5a2a">mn117:36</text>
+</svg>

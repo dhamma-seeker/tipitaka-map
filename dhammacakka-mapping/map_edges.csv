@@ -1,0 +1,30 @@
+from_node,to_node,edge_type,evidence_segment
+SN56.11,dve anta (2 extremes),มีองค์ประกอบ,sn56.11:2.1-2.3
+SN56.11,majjhima patipada,นิยาม,sn56.11:2.4
+majjhima patipada,ariya atthangika magga,= (สมมูล),sn56.11:3.2
+SN56.11,cattari ariyasaccani,แก่น,sn56.11:4.1-4.10
+SN56.11,tiparivatta dvadasakara,วิธี/กระบวน,sn56.11:9.1
+SN56.11,dhammacakkhu -> vimutti,ผล,"sn56.11:10.3, 11.2"
+dukkha,pancupadanakkhandha,ขยายความ,sn56.11:4.2
+pancupadanakkhandha,khandha/ayatana/dhatu,= sakkaya (MN44),mn44:2.3-2.5
+samudaya,tanha (kama/bhava/vibhava),ขยายความ,sn56.11:4.4-4.5
+tanha,paticcasamuppada,สืบเนื่อง,sn12 (Nidanasamyutta)
+nirodha,nibbana (asesaviraganirodha),ขยายความ,sn56.11:4.7; mn44:29.12
+magga,ariya atthangika magga,= (สมมูล),sn56.11:4.9
+ariya atthangika magga,tisso sikkha (sila/samadhi/panna),จัดหมวด,mn44:11.3-11.5
+tisso sikkha,adhisila/adhicitta/adhipanna,นิยาม,an3.89:1.3
+sila,VINAYAPITAKA (patimokkha/sikkhapada/vibhanga),สะพาน,an3.89:2.2; dn2:42.1
+samadhi,satipatthana/sammappadhana/jhana/bojjhanga,สะพาน,sn45.8:8-10; mn44:12
+panna,nana in ariyasacca -> ABHIDHAMMA (ds/vb/patthana),สะพาน(วนกลับราก),an3.89:4.2; sn45.8:3.2
+sammaditthi,nana in 4 truths,นิยาม,sn45.8:3.2
+sammasankappa,nekkhamma/abyapada/avihimsa,นิยาม,sn45.8:4.2
+sammavaca,4 veramani (musavada...),นิยาม,sn45.8:5.2
+sammakammanta,3 veramani (panatipata...),นิยาม,sn45.8:6.2
+sammaajiva,micchajiva pahaya,นิยาม,sn45.8:7.2
+sammavayama,4 sammappadhana,นิยาม,sn45.8:8.2
+sammasati,4 satipatthana,นิยาม,sn45.8:9.2
+sammasamadhi,4 jhana,นิยาม,sn45.8:10.2
+ariyasacca,VINAYA pli-tv-kd1 (Mahavagga first teaching),ปรากฏ,pli-tv-kd1:6.19.1+
+ariyasacca,ABHIDHAMMA vb4 Saccavibhanga,ปรากฏ,vb4:1.1-1.2
+ariyasacca,SUTTA SN56 Saccasamyutta / MN141,ปรากฏ,sn56.11; mn141
+ariya atthangika magga,37 bodhipakkhiya dhamma (1 ใน 7 หมวด),รวมอยู่ใน,dn16:3.50.5
