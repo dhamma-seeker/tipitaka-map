@@ -54,6 +54,20 @@
 
 ---
 
+## 🌱 Root เพิ่มเติม (สารบัญโดยธรรมชาติของพระไตรปิฎก)
+
+นอกจาก 5 สูตรข้างต้น ยังพบพระสูตรที่ตัวพระไตรปิฎก**สร้างไว้เป็น "สารบัญ" ของตนเอง**อยู่แล้ว: [`root-candidates/additional_roots_report.md`](root-candidates/additional_roots_report.md)
+
+| ชนิด | root | แก่น |
+|---|---|---|
+| สารบัญเชิงตัวเลข (INDEX) | [DN 33](root-candidates/additional_roots_report.md) + [DN 34](root-candidates/additional_roots_report.md) | มาติกา 1–10 = สารบัญที่คัมภีร์สร้างเอง |
+| เกณฑ์วินิจฉัยพุทธวจนะ (AUTHORITY) | DN 16 มหาปรินิพพานสูตร | จตุมหาปเทส + โพธิปักขิยธรรม 37 |
+| หลักสูตรกรรมฐาน (CURRICULUM) | MN 62 ราหุโลวาทสูตร + MN 9 สัมมาทิฏฐิสูตร | กรรมฐานครบวงจร / แผนที่สัมมาทิฏฐิ |
+
+**รวม root ทั้งหมด 10 ตัว** (5 รากหลัก + 5 รากเพิ่มเติม) — ดูโครงสร้างรวมได้ที่ [`combined-map/combined_graph.json`](combined-map/combined_graph.json) (28 โหนด, 31 ขอบ)
+
+---
+
 ## 🔬 วิธีวิจัย (methodology)
 
 1. **แหล่งข้อมูล:** ตัวบท**ภาษาบาลีโรมัน**เท่านั้น (ไม่ใช้การแปลภาษาอังกฤษ/ภาษาอื่นในการวิเคราะห์) ผ่าน tripitaka-mcp ทั้ง local และ online — ฐานข้อมูล SuttaCentral `bilara-data` (CC0)

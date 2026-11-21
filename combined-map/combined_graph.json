@@ -127,6 +127,48 @@
    "role": "ธัมมสังคณี·วิภังค์·ธาตุกถา·ปุคคล·กถาวัตถุ·ยมก·ปัฏฐาน",
    "pitaka": "Abhidhammapiṭaka",
    "id": "Abhidhamma"
+  },
+  "DN33": {
+   "th": "สังคีติสูตร",
+   "role": "INDEX (สารบัญเชิงตัวเลข 1-10)",
+   "pitaka": "Suttantapiṭaka",
+   "id": "DN33"
+  },
+  "DN34": {
+   "th": "ทสุตตรสูตร",
+   "role": "INDEX (สารบัญเชิงตัวเลข 1-10)",
+   "pitaka": "Suttantapiṭaka",
+   "id": "DN34"
+  },
+  "DN16": {
+   "th": "มหาปรินิพพานสูตร",
+   "role": "AUTHORITY (จตุมหาปเทส)",
+   "pitaka": "Suttantapiṭaka",
+   "id": "DN16"
+  },
+  "MN62": {
+   "th": "มหาราหุโลวาทสูตร",
+   "role": "CURRICULUM (กรรมฐานครบวงจร)",
+   "pitaka": "Suttantapiṭaka",
+   "id": "MN62"
+  },
+  "MN9": {
+   "th": "สัมมาทิฏฐิสูตร",
+   "role": "สัมมาทิฏฐิ = แผนที่ญาณ",
+   "pitaka": "Suttantapiṭaka",
+   "id": "MN9"
+  },
+  "matika": {
+   "th": "มาติกา (แม่บท)",
+   "role": "สารบัญเชิงตัวเลข",
+   "pitaka": "—",
+   "id": "matika"
+  },
+  "mahapadesa": {
+   "th": "จตุมหาปเทส (4 มหาปเทส)",
+   "role": "เกณฑ์วินิจฉัยพุทธวจนะ",
+   "pitaka": "—",
+   "id": "mahapadesa"
   }
  },
  "edges": [
@@ -273,6 +315,48 @@
    "to": "bodhipakkhiya37",
    "type": "1 ใน 7 หมวด",
    "evidence": "dn16:3.50.5"
+  },
+  {
+   "from": "DN33",
+   "to": "matika",
+   "type": "จัดหมวด 1-10 (เอกกะ-ทสกะ)",
+   "evidence": "dn33 (โครงสร้าง)"
+  },
+  {
+   "from": "DN34",
+   "to": "matika",
+   "type": "จัดหมวด 1-10 (เอโก-ทส ธมฺมา)",
+   "evidence": "dn34 (โครงสร้าง)"
+  },
+  {
+   "from": "DN16",
+   "to": "mahapadesa",
+   "type": "จตุมหาปเทส = เกณฑ์พุทธวจนะ",
+   "evidence": "dn16:4.8.13"
+  },
+  {
+   "from": "DN16",
+   "to": "bodhipakkhiya37",
+   "type": "บรรจุโพธิปักขิยธรรม 37",
+   "evidence": "dn16:3.50.5"
+  },
+  {
+   "from": "DN16",
+   "to": "ariyasacca",
+   "type": "อริยสัจกถา (หมวด 8)",
+   "evidence": "dn16:2.1.0"
+  },
+  {
+   "from": "MN62",
+   "to": "anapanasati",
+   "type": "กรรมฐาน (ธาตุ→อานาปาน→พรหมวิหาร→อสุภ→อนิจฉ)",
+   "evidence": "mn62 (โครงสร้าง)"
+  },
+  {
+   "from": "MN9",
+   "to": "sammādiṭṭhi",
+   "type": "สัมมาทิฏฐิ = อกุศล/กุศล→อาหาร→สัจจะ→ปฏิจจสมุปบาท→อาสวะ",
+   "evidence": "mn9 (โครงสร้าง)"
   }
  ],
  "root_suttas": [
@@ -280,7 +364,12 @@
   "DN2",
   "MN117",
   "DN22",
-  "MN118"
+  "MN118",
+  "DN33",
+  "DN34",
+  "DN16",
+  "MN62",
+  "MN9"
  ],
  "two_macro_roots": [
   "SN56.11",
@@ -290,5 +379,14 @@
   "MN117",
   "DN22",
   "MN118"
+ ],
+ "native_index_roots": [
+  "DN33",
+  "DN34"
+ ],
+ "authority_root": "DN16",
+ "curriculum_roots": [
+  "MN62",
+  "MN9"
  ]
 }
