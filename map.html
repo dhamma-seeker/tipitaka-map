@@ -78,6 +78,9 @@
   .purpose p{font-size:.86rem;color:var(--muted);margin:.3rem 0 0}
 
   .empty{color:var(--faint);text-align:center;padding:1.5rem;font-size:.9rem}
+  .coverage-list{max-height:180px;overflow-y:auto;display:flex;flex-wrap:wrap;gap:.3rem;margin:.4rem 0 .8rem;padding:.5rem;border:1px solid var(--border);border-radius:8px;background:var(--surface)}
+  .coverage-list a{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.72rem;background:var(--accent-soft);color:#7a5e1e;padding:.1rem .5rem;border-radius:6px;border:none;white-space:nowrap}
+  .coverage-list a:hover{background:var(--primary);color:#fff}
   footer{text-align:center;font-size:.85rem;color:var(--muted);padding:2rem 1rem;border-top:1px solid var(--border);margin-top:2rem}
   footer a{color:var(--primary)}
 </style>
@@ -221,6 +224,10 @@ window.showTerm = function(pali){
     <div class="term-counts" style="margin:.4rem 0"><span>สุตตันตะ ${t.sutta}</span><span>วินัย ${t.vinaya}</span><span>อภิธรรม ${t.abhidhamma}</span><span>รวม ${t.total}</span></div>
     <p style="color:#6c6355;font-size:.9rem">พระสูตรที่เชื่อม (${connectedSuttas.length}):</p>
     <div class="links">${connectedSuttas.map(c=>{const s=DATA.suttas.find(x=>x.id===c.suttaId);return s?`<a href="${s.report||readerUrl(c.ev)}">${s.num} ${s.th}</a>`:"";}).join("")}</div>
+    ${t.suttas && t.suttas.length ? `
+      <p style="color:#6c6355;font-size:.9rem;margin-top:.9rem">ปรากฏในพระสูตร/คัมภีร์ทั้งหมด <strong>${t.suttas.length}</strong> ฉบับ (index เชิงความหมาย):</p>
+      <div class="coverage-list">${t.suttas.map(id=>`<a href="https://tripitaka-mcp.com/read/${id}" target="_blank" rel="noopener" title="${id}">${id}</a>`).join("")}</div>
+    ` : `<p style="color:#9a8f7d;font-size:.85rem;margin-top:.9rem">ศัพท์กว้าง — มีเฉพาะตัวเลขรวมต่อปิฎก (ไม่ได้นับรายพระสูตร)</p>`}
     <p style="color:#6c6355;font-size:.9rem;margin-top:.8rem">ท่อนข้อความสำคัญ (${segs.length}):</p>
     ${segs.map(s=>`
       <div class="seg">
